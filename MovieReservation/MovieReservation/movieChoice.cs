@@ -109,19 +109,19 @@ namespace MovieReservation
 
         private void movieChoice_Load(object sender, EventArgs e)
         {
-            Image image1 = Image.FromFile(@"C:\MovieReservation\MoviePictures\afb1.png");
+            Image image1 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\afb1.png");
             this.pictureBox1.Image = image1;
 
-            Image image2 = Image.FromFile(@"C:\MovieReservation\MoviePictures\afb2.png");
+            Image image2 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\afb2.png");
             this.pictureBox2.Image = image2;
 
-            Image image3 = Image.FromFile(@"C:\MovieReservation\MoviePictures\afb3.png");
+            Image image3 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\afb3.png");
             this.pictureBox3.Image = image3;
 
-            Image image4 = Image.FromFile(@"C:\MovieReservation\MoviePictures\afb4.png");
+            Image image4 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\afb4.png");
             this.pictureBox4.Image = image4;
 
-            Image image5 = Image.FromFile(@"C:\MovieReservation\MoviePictures\afb8.png");
+            Image image5 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\afb8.png");
             this.pictureBox5.Image = image5;
         }
     }

@@ -25,13 +25,13 @@ namespace MovieReservation
             ageLimit = AgeLimit;
             picture = Picture;
 
-            Image image1 = Image.FromFile(@"C:\MovieReservation\MoviePictures\" + Picture + ".png");
+            Image image1 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Picture + ".png");
             this.pictureBox1.Image = image1;
 
-            Image image2 = Image.FromFile(@"C:\MovieReservation\MoviePictures\" + Genre + ".png");
+            Image image2 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Genre + ".png");
             this.pictureBox2.Image = image2;
 
-            Image image3 = Image.FromFile(@"C:\MovieReservation\MoviePictures\" + AgeLimit + ".png");
+            Image image3 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + AgeLimit + ".png");
             this.pictureBox3.Image = image3;
 
             label1.Text = Name;
@@ -40,6 +40,7 @@ namespace MovieReservation
             {
                 checkBox1.Enabled = true;
                 button2.Enabled = false;
+                // kind uithalen van scherm
             }
             else
             {

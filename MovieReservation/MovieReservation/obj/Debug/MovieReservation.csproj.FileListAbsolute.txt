@@ -1,0 +1,14 @@
+C:\MovieReservation\MovieReservation\bin\Debug\MovieReservation.exe.config
+C:\MovieReservation\MovieReservation\bin\Debug\MovieReservation.exe
+C:\MovieReservation\MovieReservation\bin\Debug\MovieReservation.pdb
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.csprojAssemblyReference.cache
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.collaboratorLogin.resources
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.dateTime.resources
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Form1.resources
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.movieChoice.resources
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Properties.Resources.resources
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Room.resources
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Ticket.resources
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.csproj.GenerateResource.cache
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.exe
+C:\MovieReservation\MovieReservation\obj\Debug\MovieReservation.pdb

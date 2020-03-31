@@ -22,6 +22,7 @@ namespace MovieReservation
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
+            this.Hide();
             f1.ShowDialog();
             this.Close();
         }
@@ -45,6 +46,11 @@ namespace MovieReservation
             {
                 MessageBox.Show("Verkeerde inloggegevens!");
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

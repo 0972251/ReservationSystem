@@ -55,6 +55,7 @@ namespace MovieReservation
             string Picture = "afb1";
 
             dateTime dt = new dateTime(Name, Genre, AgeLimit, Picture);
+            this.Hide();
             dt.ShowDialog();
             this.Close();
         }
@@ -67,6 +68,7 @@ namespace MovieReservation
             string Picture = "afb2";
 
             dateTime dt = new dateTime(Name, Genre, AgeLimit, Picture);
+            this.Hide();
             dt.ShowDialog();
             this.Close();
         }
@@ -79,6 +81,7 @@ namespace MovieReservation
             string Picture = "afb3"; 
 
             dateTime dt = new dateTime(Name, Genre, AgeLimit, Picture);
+            this.Hide();
             dt.ShowDialog();
             this.Close();
         }
@@ -91,6 +94,7 @@ namespace MovieReservation
             string Picture = "afb4";
 
             dateTime dt = new dateTime(Name, Genre, AgeLimit, Picture);
+            this.Hide();
             dt.ShowDialog();
             this.Close();
         }
@@ -103,6 +107,7 @@ namespace MovieReservation
             string Picture = "afb8";
 
             dateTime dt = new dateTime(Name, Genre, AgeLimit, Picture);
+            this.Hide();
             dt.ShowDialog();
             this.Close();
         }

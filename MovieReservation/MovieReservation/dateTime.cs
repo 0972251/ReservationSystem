@@ -44,6 +44,7 @@ namespace MovieReservation
             if (count >= 1 && count2 >= 1)
             {
                 Ticket tk = new Ticket(name, genre, ageLimit, picture);
+                this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
@@ -66,11 +67,17 @@ namespace MovieReservation
         private void button2_Click(object sender, EventArgs e)
         {
             movieChoice mc = new movieChoice();
+            this.Hide();
             mc.ShowDialog();
             this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTime_Load(object sender, EventArgs e)
         {
 
         }

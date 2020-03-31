@@ -20,6 +20,7 @@ namespace MovieReservation
         private void Klant_Click(object sender, EventArgs e)
         {
             movieChoice movie = new movieChoice();
+            this.Hide();
             movie.ShowDialog();
             this.Close();
         }
@@ -27,6 +28,7 @@ namespace MovieReservation
         private void Medewerker_Click(object sender, EventArgs e)
         {
             collaboratorLogin login = new collaboratorLogin();
+            this.Hide();
             login.ShowDialog();
             this.Close();
         }

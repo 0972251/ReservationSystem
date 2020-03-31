@@ -57,12 +57,13 @@
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(285, 132);
+            this.checkBox1.Location = new System.Drawing.Point(380, 162);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(358, 36);
+            this.checkBox1.Size = new System.Drawing.Size(433, 44);
             this.checkBox1.TabIndex = 51;
-            this.checkBox1.Text = "Ben je 16 jaar of ouder zo ja klik op het knop om\r\nverder te gaan zo niet u mag d" +
-    "eze film niet zien";
+            this.checkBox1.Text = "Ben je 16 jaar of ouder zo ja klik op de knop om\r\nverder te gaan zo niet u mag de" +
+    "ze film niet zien";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -81,9 +82,10 @@
             "7",
             "8",
             "9"});
-            this.comboBox4.Location = new System.Drawing.Point(635, 329);
+            this.comboBox4.Location = new System.Drawing.Point(847, 405);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(29, 21);
+            this.comboBox4.Size = new System.Drawing.Size(37, 24);
             this.comboBox4.TabIndex = 50;
             this.comboBox4.Text = "0";
             // 
@@ -102,9 +104,10 @@
             "7",
             "8",
             "9"});
-            this.comboBox3.Location = new System.Drawing.Point(635, 294);
+            this.comboBox3.Location = new System.Drawing.Point(847, 362);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(29, 21);
+            this.comboBox3.Size = new System.Drawing.Size(37, 24);
             this.comboBox3.TabIndex = 49;
             this.comboBox3.Text = "0";
             // 
@@ -123,9 +126,10 @@
             "7",
             "8",
             "9"});
-            this.comboBox2.Location = new System.Drawing.Point(635, 257);
+            this.comboBox2.Location = new System.Drawing.Point(847, 316);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(29, 21);
+            this.comboBox2.Size = new System.Drawing.Size(37, 24);
             this.comboBox2.TabIndex = 48;
             this.comboBox2.Text = "0";
             // 
@@ -144,9 +148,10 @@
             "7",
             "8",
             "9"});
-            this.comboBox1.Location = new System.Drawing.Point(635, 222);
+            this.comboBox1.Location = new System.Drawing.Point(847, 273);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(29, 21);
+            this.comboBox1.Size = new System.Drawing.Size(37, 24);
             this.comboBox1.TabIndex = 47;
             this.comboBox1.Text = "0";
             // 
@@ -155,9 +160,10 @@
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(282, 257);
+            this.label10.Location = new System.Drawing.Point(376, 316);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 18);
+            this.label10.Size = new System.Drawing.Size(87, 24);
             this.label10.TabIndex = 46;
             this.label10.Text = "Student:";
             // 
@@ -166,9 +172,10 @@
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(282, 294);
+            this.label9.Location = new System.Drawing.Point(376, 362);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 18);
+            this.label9.Size = new System.Drawing.Size(134, 24);
             this.label9.TabIndex = 45;
             this.label9.Text = "Kind (2 t/m 6)";
             // 
@@ -177,9 +184,10 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(282, 329);
+            this.label8.Location = new System.Drawing.Point(376, 405);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 18);
+            this.label8.Size = new System.Drawing.Size(125, 24);
             this.label8.TabIndex = 44;
             this.label8.Text = "Senior (65+)";
             // 
@@ -188,9 +196,10 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(282, 222);
+            this.label7.Location = new System.Drawing.Point(376, 273);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 18);
+            this.label7.Size = new System.Drawing.Size(94, 24);
             this.label7.TabIndex = 43;
             this.label7.Text = "Normaal:";
             // 
@@ -199,9 +208,10 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(570, 257);
+            this.label6.Location = new System.Drawing.Point(760, 316);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 18);
+            this.label6.Size = new System.Drawing.Size(74, 24);
             this.label6.TabIndex = 42;
             this.label6.Text = "Aantal:";
             // 
@@ -210,9 +220,10 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(570, 294);
+            this.label5.Location = new System.Drawing.Point(760, 362);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 18);
+            this.label5.Size = new System.Drawing.Size(74, 24);
             this.label5.TabIndex = 41;
             this.label5.Text = "Aantal:";
             // 
@@ -221,9 +232,10 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(570, 329);
+            this.label4.Location = new System.Drawing.Point(760, 405);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 18);
+            this.label4.Size = new System.Drawing.Size(74, 24);
             this.label4.TabIndex = 40;
             this.label4.Text = "Aantal:";
             // 
@@ -232,17 +244,19 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(570, 222);
+            this.label3.Location = new System.Drawing.Point(760, 273);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 18);
+            this.label3.Size = new System.Drawing.Size(74, 24);
             this.label3.TabIndex = 39;
             this.label3.Text = "Aantal:";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(626, 393);
+            this.button2.Location = new System.Drawing.Point(835, 484);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 45);
+            this.button2.Size = new System.Drawing.Size(216, 55);
             this.button2.TabIndex = 38;
             this.button2.Text = "Doorgaan";
             this.button2.UseVisualStyleBackColor = true;
@@ -250,9 +264,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(35, 22);
+            this.button1.Location = new System.Drawing.Point(47, 27);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 45);
+            this.button1.Size = new System.Drawing.Size(216, 55);
             this.button1.TabIndex = 37;
             this.button1.Text = "Terug";
             this.button1.UseVisualStyleBackColor = true;
@@ -262,44 +277,48 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(275, 22);
+            this.label1.Location = new System.Drawing.Point(367, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(476, 55);
+            this.label1.Size = new System.Drawing.Size(588, 69);
             this.label1.TabIndex = 36;
             this.label1.Text = "Film naam komt hier";
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(132, 281);
+            this.pictureBox3.Location = new System.Drawing.Point(176, 346);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(65, 62);
+            this.pictureBox3.Size = new System.Drawing.Size(87, 76);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 35;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(64, 281);
+            this.pictureBox2.Location = new System.Drawing.Point(85, 346);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(62, 62);
+            this.pictureBox2.Size = new System.Drawing.Size(83, 76);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(64, 92);
+            this.pictureBox1.Location = new System.Drawing.Point(85, 113);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 183);
+            this.pictureBox1.Size = new System.Drawing.Size(177, 225);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
             // Ticket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
@@ -319,8 +338,10 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Ticket";
             this.Text = "Ticket";
+            this.Load += new System.EventHandler(this.Ticket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

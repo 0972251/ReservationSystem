@@ -65,6 +65,7 @@ namespace MovieReservation
             int totalSeats = Normaal + Student + Kind + Senior;
 
             Room room = new Room(totalSeats);
+            this.Hide();
             room.ShowDialog();
             this.Close();
         }
@@ -72,6 +73,7 @@ namespace MovieReservation
         private void button1_Click(object sender, EventArgs e)
         {
             dateTime dt = new dateTime(name, genre, ageLimit, picture);
+            this.Hide();
             dt.ShowDialog();
             this.Close();
             
@@ -88,6 +90,11 @@ namespace MovieReservation
                 button2.Enabled = true;
             }
             
+        }
+
+        private void Ticket_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

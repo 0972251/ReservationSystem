@@ -26,3 +26,4 @@ C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservatio
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.csproj.GenerateResource.cache
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.exe
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.pdb
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.TicketIfNot16.resources

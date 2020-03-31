@@ -43,10 +43,20 @@ namespace MovieReservation
         {
             if (count >= 1 && count2 >= 1)
             {
-                Ticket tk = new Ticket(name, genre, ageLimit, picture);
-                this.Hide();
-                tk.ShowDialog();
-                this.Close();
+                if (ageLimit == "16")
+                {
+                    Ticket tk = new Ticket(name, genre, ageLimit, picture);
+                    this.Hide();
+                    tk.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    TicketIfNot16 tk16 = new TicketIfNot16(name, genre, ageLimit, picture);
+                    this.Hide();
+                    tk16.ShowDialog();
+                    this.Close();
+                }
             }
             else
             {

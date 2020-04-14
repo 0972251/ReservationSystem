@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="actionScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="actionScreen.Designer.cs">
+      <DependentUpon>actionScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="collaboratorLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="TicketIfNot16.Designer.cs">
       <DependentUpon>TicketIfNot16.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="actionScreen.resx">
+      <DependentUpon>actionScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="collaboratorLogin.resx">
       <DependentUpon>collaboratorLogin.cs</DependentUpon>
     </EmbeddedResource>

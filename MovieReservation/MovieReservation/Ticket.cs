@@ -16,6 +16,7 @@ namespace MovieReservation
         string genre;
         string ageLimit;
         string picture;
+        string beschrijving;
         public Ticket(string Name, string Genre, string AgeLimit, string Picture)
         {
             InitializeComponent();
@@ -72,7 +73,7 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(name, genre, ageLimit, picture);
+            dateTime dt = new dateTime(name, genre, ageLimit, picture, beschrijving);
             this.Hide();
             dt.ShowDialog();
             this.Close();

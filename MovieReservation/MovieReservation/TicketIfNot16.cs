@@ -16,7 +16,8 @@ namespace MovieReservation
         string genre;
         string ageLimit;
         string picture;
-        public TicketIfNot16(string Name, string Genre, string AgeLimit, string Picture)
+        string beschrijving;
+        public TicketIfNot16(string Name, string Genre, string AgeLimit, string Picture, string Beschrijving)
         {
             InitializeComponent();
 
@@ -24,6 +25,7 @@ namespace MovieReservation
             genre = Genre;
             ageLimit = AgeLimit;
             picture = Picture;
+            beschrijving = Beschrijving;
 
             Image image1 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Picture + ".png");
             this.pictureBox1.Image = image1;
@@ -59,7 +61,7 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(name, genre, ageLimit, picture);
+            dateTime dt = new dateTime(name, genre, ageLimit, picture, beschrijving);
             this.Hide();
             dt.ShowDialog();
             this.Close();

@@ -12,27 +12,30 @@ namespace MovieReservation
 {
     public partial class Ticket : Form
     {
-        string name;
-        string genre;
-        string ageLimit;
-        string picture;
-        string beschrijving;
-        public Ticket(string Name, string Genre, string AgeLimit, string Picture)
+        public string Name;
+        public string Genre;
+        public string AgeLimit;
+        public string Picture;
+        public string Description;
+
+        public Ticket(string name, string genre, string ageLimit, string picture)
         {
             InitializeComponent();
 
-            name = Name;
-            genre = Genre;
-            ageLimit = AgeLimit;
-            picture = Picture;
+            Name = name;
+            Genre = genre;
+            AgeLimit = ageLimit;
+            Picture = picture;
 
-            Image image1 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Picture + ".png");
+            string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+
+            Image image1 = Image.FromFile(path + @"\MoviePictures\" + Picture + ".png");
             this.pictureBox1.Image = image1;
 
-            Image image2 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Genre + ".png");
+            Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
             this.pictureBox2.Image = image2;
 
-            Image image3 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + AgeLimit + ".png");
+            Image image3 = Image.FromFile(path + @"\MoviePictures\" + AgeLimit + ".png");
             this.pictureBox3.Image = image3;
 
             label1.Text = Name;
@@ -41,7 +44,6 @@ namespace MovieReservation
             {
                 checkBox1.Enabled = true;
                 button2.Enabled = false;
-                // kind uithalen van scherm
             }
             else
             {
@@ -54,16 +56,14 @@ namespace MovieReservation
         private void button2_Click(object sender, EventArgs e)
         {
             string ticket1 = comboBox1.Text.ToString();
-            string ticket2 = comboBox1.Text.ToString();
-            string ticket3 = comboBox1.Text.ToString();
-            string ticket4 = comboBox1.Text.ToString();
+            string ticket2 = comboBox2.Text.ToString();
+            string ticket4 = comboBox4.Text.ToString();
 
             int Normaal = int.Parse(ticket1);
             int Student = int.Parse(ticket2);
-            int Kind = int.Parse(ticket3);
             int Senior = int.Parse(ticket4);
 
-            int totalSeats = Normaal + Student + Kind + Senior;
+            int totalSeats = Normaal + Student + Senior;
 
             Room room = new Room(totalSeats);
             this.Hide();
@@ -73,7 +73,7 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(name, genre, ageLimit, picture, beschrijving);
+            dateTime dt = new dateTime(Name, Genre, AgeLimit, Picture, Description);
             this.Hide();
             dt.ShowDialog();
             this.Close();

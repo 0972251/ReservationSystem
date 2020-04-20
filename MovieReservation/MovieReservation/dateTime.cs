@@ -29,13 +29,15 @@ namespace MovieReservation
             picture = Picture;
             beschrijving = Beschrijving;
 
-            Image image1 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Picture + ".png");
+            string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+
+            Image image1 = Image.FromFile(path + @"\MoviePictures\" + Picture + ".png");
             this.pictureBox1.Image = image1;
 
-            Image image2 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Genre + ".png");
+            Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
             this.pictureBox2.Image = image2;
 
-            Image image3 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + AgeLimit + ".png");
+            Image image3 = Image.FromFile(path + @"\MoviePictures\" + AgeLimit + ".png");
             this.pictureBox3.Image = image3;
 
             label3.Text = Name;

@@ -27,13 +27,15 @@ namespace MovieReservation
             picture = Picture;
             beschrijving = Beschrijving;
 
-            Image image1 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Picture + ".png");
+            string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+
+            Image image1 = Image.FromFile(path + @"\MoviePictures\" + Picture + ".png");
             this.pictureBox1.Image = image1;
 
-            Image image2 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Genre + ".png");
+            Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
             this.pictureBox2.Image = image2;
 
-            Image image3 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + AgeLimit + ".png");
+            Image image3 = Image.FromFile(path + @"\MoviePictures\" + AgeLimit + ".png");
             this.pictureBox3.Image = image3;
 
             label1.Text = Name;
@@ -42,9 +44,9 @@ namespace MovieReservation
         private void button2_Click(object sender, EventArgs e)
         {
             string ticket1 = comboBox1.Text.ToString();
-            string ticket2 = comboBox1.Text.ToString();
-            string ticket3 = comboBox1.Text.ToString();
-            string ticket4 = comboBox1.Text.ToString();
+            string ticket2 = comboBox2.Text.ToString();
+            string ticket3 = comboBox3.Text.ToString();
+            string ticket4 = comboBox4.Text.ToString();
 
             int Normaal = int.Parse(ticket1);
             int Student = int.Parse(ticket2);

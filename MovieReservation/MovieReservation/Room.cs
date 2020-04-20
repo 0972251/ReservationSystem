@@ -34,9 +34,9 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button1.Enabled = false;
+            A1.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
-            button1.BackColor = Red;
+            A1.BackColor = Red;
             count += 1;
             if (count == AmountSeats)
             {

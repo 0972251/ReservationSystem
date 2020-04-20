@@ -37,15 +37,6 @@
         },
 
         "N5": {
-            "Title": "F9",
-            "Genre": "Nieuw",
-            "Age": 16,
-            "Time": "135 minuten",
-            "Description": "'Fast 9' volgt Dominic Toretto die zich samen met Letty Ortiz teruggetrokken heeft om een gezin te stichten. Ze proberen hun zoon Brian onder rustige omstandigheden op te voeden, waarbij ze hun roekeloze bestaan achter zich hebben gelaten. Onder andere de terugkeer van Cipher lijkt echter roet in het eten te gooien.",
-            "PictureName": "afb20"
-        },
-
-        "N6": {
             "Title": "Sonic the Hedgehog",
             "Genre": "Nieuw",
             "Age": 16,
@@ -55,44 +46,52 @@
         }
     },
 
-    
-    "Actie": {
-        "A1": {
-            "Title": "Star Wars: The Rise of Skywalker",
-            "Genre": "Actie",
-            "Age": 16,
-            "Time": "142 minuten",
-            "Description": "Een jaar na de gebeurtenissen uit 'The Last Jedi' vindt voor een laatste keer de confrontatie tussen het verzet en de First Order plaats. Wie komt er als overwinnaar uit de bus? Naast de strijd moeten Rey en consorten ook hun persoonlijke demonen en verleden onder ogen zien. Terwijl het conflict tussen de Jedi en de Sith zijn hoogtepunt bereikt, mengen ook oude bekenden zich in de strijd",
-            "PictureName": "afb21"
-        },
 
-        "A2": {
-            "Title": "Bad Boys For Life",
-            "Genre" : "Actie",
-            "Age": 16,
-            "Time": "119 minuten",
-            "Description": "Mike Lowrey en Marcus Burnett zijn nog steeds werkzaam bij de politie van Miami. Terwijl Marcus al denkt aan pensioen, om eindelijk van zijn gezin en nieuwe kleinkind te genieten, is zijn partner Mike van plan tot zijn honderdste achter de boeven aan te zitten. Ongewild moeten ze allebei in actie komen als een gewelddadige seriemoordenaar Mike boven aan zijn dodenlijst zet. Ze krijgen hulp van een nieuw opgerichte politie-eenheid vol jonge honden, die zich bedienen van de modernste technische snufjes.",
-            "PictureName": "afb22"
-        },
-
-        "A3": {
-            "Title": "Jumanji: The next level",
-            "Genre": "Actie",
-            "Age": 16,
-            "Time": "123 minuten",
-            "Description": "In 'Jumanji: The Next Level' keert het groepje terug, maar is het spel veranderd. Wanneer ze terugkeren naar Jumanji om iemand van hen te redden, ontdekken ze dat niets is wat ze vooraf hadden verwacht. De spelers zullen onbekende delen moeten trotseren, van dorre woestijnen tot besneeuwde bergen, om te ontsnappen aan 's werelds meest gevaarlijke spel.",
-            "PictureName": "afb23"
-        },
-
-        "A4": {
-            "Title": "Gemini Man",
-            "Genre": "Actie",
-            "Age": 16,
-            "Time": "117 minuten",
-            "Description": "Henry Brogan is een moordenaar op leeftijd, werkzaam voor de NSA, die van plan is zijn carrière de rug toe te keren. Zijn opdrachtgevers willen hem echter niet laten gaan. Henry moet het plotseling opnemen tegen zijn opvolger, die wel erg veel gelijkenissen vertoont.",
-            "PictureName": "afb24"
-        }
+  "Actie": {
+    "A1": {
+      "Title": "Star Wars: The Rise of Skywalker",
+      "Genre": "Actie",
+      "Age": 16,
+      "Time": "142 minuten",
+      "Description": "Een jaar na de gebeurtenissen uit 'The Last Jedi' vindt voor een laatste keer de confrontatie tussen het verzet en de First Order plaats. Wie komt er als overwinnaar uit de bus? Naast de strijd moeten Rey en consorten ook hun persoonlijke demonen en verleden onder ogen zien. Terwijl het conflict tussen de Jedi en de Sith zijn hoogtepunt bereikt, mengen ook oude bekenden zich in de strijd",
+      "PictureName": "afb21"
     },
+
+    "A2": {
+      "Title": "Bad Boys For Life",
+      "Genre": "Actie",
+      "Age": 16,
+      "Time": "119 minuten",
+      "Description": "Mike Lowrey en Marcus Burnett zijn nog steeds werkzaam bij de politie van Miami. Terwijl Marcus al denkt aan pensioen, om eindelijk van zijn gezin en nieuwe kleinkind te genieten, is zijn partner Mike van plan tot zijn honderdste achter de boeven aan te zitten. Ongewild moeten ze allebei in actie komen als een gewelddadige seriemoordenaar Mike boven aan zijn dodenlijst zet. Ze krijgen hulp van een nieuw opgerichte politie-eenheid vol jonge honden, die zich bedienen van de modernste technische snufjes.",
+      "PictureName": "afb22"
+    },
+
+    "A3": {
+      "Title": "Jumanji: The next level",
+      "Genre": "Actie",
+      "Age": 16,
+      "Time": "123 minuten",
+      "Description": "In 'Jumanji: The Next Level' keert het groepje terug, maar is het spel veranderd. Wanneer ze terugkeren naar Jumanji om iemand van hen te redden, ontdekken ze dat niets is wat ze vooraf hadden verwacht. De spelers zullen onbekende delen moeten trotseren, van dorre woestijnen tot besneeuwde bergen, om te ontsnappen aan 's werelds meest gevaarlijke spel.",
+      "PictureName": "afb23"
+    },
+
+    "A4": {
+      "Title": "Gemini Man",
+      "Genre": "Actie",
+      "Age": 16,
+      "Time": "117 minuten",
+      "Description": "Henry Brogan is een moordenaar op leeftijd, werkzaam voor de NSA, die van plan is zijn carrière de rug toe te keren. Zijn opdrachtgevers willen hem echter niet laten gaan. Henry moet het plotseling opnemen tegen zijn opvolger, die wel erg veel gelijkenissen vertoont.",
+      "PictureName": "afb24"
+    },
+    "N5": {
+      "Title": "F9",
+      "Genre": "Actie",
+      "Age": 16,
+      "Time": "135 minuten",
+      "Description": "'Fast 9' volgt Dominic Toretto die zich samen met Letty Ortiz teruggetrokken heeft om een gezin te stichten. Ze proberen hun zoon Brian onder rustige omstandigheden op te voeden, waarbij ze hun roekeloze bestaan achter zich hebben gelaten. Onder andere de terugkeer van Cipher lijkt echter roet in het eten te gooien.",
+      "PictureName": "afb20"
+    }
+  },
 
     
     "Comedy": {

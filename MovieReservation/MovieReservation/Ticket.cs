@@ -12,43 +12,44 @@ namespace MovieReservation
 {
     public partial class Ticket : Form
     {
-        public string Name;
+        public string Title;
         public string Genre;
-        public string AgeLimit;
-        public string Picture;
+        public string Age;
+        public string PictureName;
         public string Description;
 
-        public Ticket(string name, string genre, string ageLimit, string picture)
+        public Ticket(string title, string genre, string age, string pictureName, string description)
         {
             InitializeComponent();
 
-            Name = name;
+            Title = title;
             Genre = genre;
-            AgeLimit = ageLimit;
-            Picture = picture;
+            Age = age;
+            PictureName = pictureName;
+            Description = description;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
-            Image image1 = Image.FromFile(path + @"\MoviePictures\" + Picture + ".png");
+            Image image1 = Image.FromFile(path + @"\MoviePictures\" + PictureName + ".png");
             this.pictureBox1.Image = image1;
 
             Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
             this.pictureBox2.Image = image2;
 
-            Image image3 = Image.FromFile(path + @"\MoviePictures\" + AgeLimit + ".png");
+            Image image3 = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
             this.pictureBox3.Image = image3;
 
             label1.Text = Name;
 
-            if (ageLimit == "16")
+            if (Age == "16")
             {
                 checkBox1.Enabled = true;
-                button2.Enabled = false;
+                FindSeat.Enabled = false;
             }
             else
             {
                 checkBox1.Enabled = false;
-                button2.Enabled = true;
+                FindSeat.Enabled = true;
             }
            
         }
@@ -65,7 +66,7 @@ namespace MovieReservation
 
             int totalSeats = Normaal + Student + Senior;
 
-            Room room = new Room(totalSeats);
+            Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
             this.Hide();
             room.ShowDialog();
             this.Close();
@@ -73,7 +74,7 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(Name, Genre, AgeLimit, Picture, Description);
+            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description);
             this.Hide();
             dt.ShowDialog();
             this.Close();
@@ -84,11 +85,11 @@ namespace MovieReservation
         {
             if (checkBox1.Checked == false)
             {
-                button2.Enabled = false;
+                FindSeat.Enabled = false;
             }
             else
             {
-                button2.Enabled = true;
+                FindSeat.Enabled = true;
             }
             
         }

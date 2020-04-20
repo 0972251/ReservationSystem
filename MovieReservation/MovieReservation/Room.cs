@@ -13,14 +13,23 @@ namespace MovieReservation
 
     public partial class Room : Form
     {
-        int aantalStoelen;
-        int count = 0;
+        public int AmountSeats;
+        public int count = 0;
+        public string Title;
+        public string Genre;
+        public string Age;
+        public string PictureName;
+        public string Description;
 
-        public Room(int aantalSeats)
+        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description)
         {
             InitializeComponent();
-
-            aantalStoelen = aantalSeats;
+            Title = title;
+            Genre = genre;
+            Age = age;
+            PictureName = pictureName;
+            Description = description;
+            AmountSeats = amountSeats;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,7 +38,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button1.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -52,7 +61,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button2.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -75,7 +84,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button3.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -98,7 +107,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button4.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -121,7 +130,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button6.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -144,7 +153,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button5.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -167,7 +176,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button7.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -190,7 +199,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button8.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -213,7 +222,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button9.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -236,7 +245,7 @@ namespace MovieReservation
             Color Red = Color.FromArgb(119, 136, 153);
             button10.BackColor = Red;
             count += 1;
-            if (count == aantalStoelen)
+            if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
@@ -577,7 +586,20 @@ namespace MovieReservation
 
         private void button57_Click(object sender, EventArgs e)
         {
-
+            if (Age == "16")
+            {
+                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description);
+                this.Hide();
+                tk.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description);
+                this.Hide();
+                tk16.ShowDialog();
+                this.Close();
+            }
         }
     }
 }

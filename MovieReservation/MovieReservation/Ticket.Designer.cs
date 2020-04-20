@@ -38,8 +38,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.FindSeat = new System.Windows.Forms.Button();
+            this.GoToBackScreen = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -192,25 +192,25 @@
             this.label3.TabIndex = 39;
             this.label3.Text = "Aantal:";
             // 
-            // button2
+            // FindSeat
             // 
-            this.button2.Location = new System.Drawing.Point(626, 393);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 45);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "Doorgaan";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.FindSeat.Location = new System.Drawing.Point(626, 393);
+            this.FindSeat.Name = "FindSeat";
+            this.FindSeat.Size = new System.Drawing.Size(162, 45);
+            this.FindSeat.TabIndex = 38;
+            this.FindSeat.Text = "Stoel Kiezen";
+            this.FindSeat.UseVisualStyleBackColor = true;
+            this.FindSeat.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // GoToBackScreen
             // 
-            this.button1.Location = new System.Drawing.Point(35, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 45);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Terug";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.GoToBackScreen.Location = new System.Drawing.Point(35, 22);
+            this.GoToBackScreen.Name = "GoToBackScreen";
+            this.GoToBackScreen.Size = new System.Drawing.Size(162, 45);
+            this.GoToBackScreen.TabIndex = 37;
+            this.GoToBackScreen.Text = "Terug";
+            this.GoToBackScreen.UseVisualStyleBackColor = true;
+            this.GoToBackScreen.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -264,8 +264,8 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.FindSeat);
+            this.Controls.Add(this.GoToBackScreen);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -293,8 +293,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button FindSeat;
+        private System.Windows.Forms.Button GoToBackScreen;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;

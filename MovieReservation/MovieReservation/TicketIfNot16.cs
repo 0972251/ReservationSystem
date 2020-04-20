@@ -12,30 +12,30 @@ namespace MovieReservation
 {
     public partial class TicketIfNot16 : Form
     {
-        string name;
-        string genre;
-        string ageLimit;
-        string picture;
-        string beschrijving;
-        public TicketIfNot16(string Name, string Genre, string AgeLimit, string Picture, string Beschrijving)
+        public string Title;
+        public string Genre;
+        public string Age;
+        public string PictureName;
+        public string Description;
+        public TicketIfNot16(string title, string genre, string age, string pictureName, string description)
         {
             InitializeComponent();
 
-            name = Name;
-            genre = Genre;
-            ageLimit = AgeLimit;
-            picture = Picture;
-            beschrijving = Beschrijving;
+            Title = title;
+            Genre = genre;
+            Age = age;
+            PictureName = pictureName;
+            Description = description;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
-            Image image1 = Image.FromFile(path + @"\MoviePictures\" + Picture + ".png");
+            Image image1 = Image.FromFile(path + @"\MoviePictures\" + PictureName + ".png");
             this.pictureBox1.Image = image1;
 
             Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
             this.pictureBox2.Image = image2;
 
-            Image image3 = Image.FromFile(path + @"\MoviePictures\" + AgeLimit + ".png");
+            Image image3 = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
             this.pictureBox3.Image = image3;
 
             label1.Text = Name;
@@ -55,7 +55,7 @@ namespace MovieReservation
 
             int totalSeats = Normaal + Student + Kind + Senior;
 
-            Room room = new Room(totalSeats);
+            Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
             this.Hide();
             room.ShowDialog();
             this.Close();
@@ -63,7 +63,7 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(name, genre, ageLimit, picture, beschrijving);
+            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description);
             this.Hide();
             dt.ShowDialog();
             this.Close();

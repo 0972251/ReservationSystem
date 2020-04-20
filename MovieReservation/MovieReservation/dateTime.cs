@@ -48,7 +48,7 @@ namespace MovieReservation
             {
                 if (ageLimit == "16")
                 {
-                    Ticket tk = new Ticket(name, genre, ageLimit, picture);
+                    Ticket tk = new Ticket(name, genre, ageLimit, picture, beschrijving);
                     this.Hide();
                     tk.ShowDialog();
                     this.Close();

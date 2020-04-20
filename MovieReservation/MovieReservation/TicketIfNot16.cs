@@ -66,5 +66,10 @@ namespace MovieReservation
             dt.ShowDialog();
             this.Close();
         }
+
+        private void TicketIfNot16_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

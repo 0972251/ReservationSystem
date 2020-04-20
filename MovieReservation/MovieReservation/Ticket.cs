@@ -17,7 +17,7 @@ namespace MovieReservation
         string ageLimit;
         string picture;
         string beschrijving;
-        public Ticket(string Name, string Genre, string AgeLimit, string Picture)
+        public Ticket(string Name, string Genre, string AgeLimit, string Picture, string Beschrijving)
         {
             InitializeComponent();
 
@@ -25,6 +25,7 @@ namespace MovieReservation
             genre = Genre;
             ageLimit = AgeLimit;
             picture = Picture;
+            beschrijving = Beschrijving;
 
             Image image1 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Picture + ".png");
             this.pictureBox1.Image = image1;

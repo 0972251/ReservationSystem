@@ -12,50 +12,52 @@ namespace MovieReservation
 {
     public partial class dateTime : Form
     {
-        int count = 0;
-        int count2 = 0;
-        string name;
-        string genre;
-        string ageLimit;
-        string picture;
-        string beschrijving;
-        public dateTime(string Name, string Genre, string AgeLimit, string Picture, string Beschrijving)
+        public int count = 0;
+        public int count2 = 0;
+        public string Title;
+        public string Genre;
+        public string Age;
+        public string PictureName;
+        public string Description;
+        public dateTime(string title, string genre, string age, string pictureName, string description)
         {
             InitializeComponent();
-            
-            name = Name;
-            genre = Genre;
-            ageLimit = AgeLimit;
-            picture = Picture;
-            beschrijving = Beschrijving;
 
-            Image image1 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Picture + ".png");
+            Title = title;
+            Genre = genre;
+            Age = age;
+            PictureName = pictureName;
+            Description = description;
+
+            string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+
+            Image image1 = Image.FromFile(path + @"\MoviePictures\" + PictureName + ".png");
             this.pictureBox1.Image = image1;
 
-            Image image2 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Genre + ".png");
+            Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
             this.pictureBox2.Image = image2;
 
-            Image image3 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + AgeLimit + ".png");
+            Image image3 = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
             this.pictureBox3.Image = image3;
 
             label3.Text = Name;
-            label4.Text = Beschrijving;
+            label4.Text = Description;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (count >= 1 && count2 >= 1)
             {
-                if (ageLimit == "16")
+                if (Age == "16")
                 {
-                    Ticket tk = new Ticket(name, genre, ageLimit, picture, beschrijving);
+                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description);
                     this.Hide();
                     tk.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    TicketIfNot16 tk16 = new TicketIfNot16(name, genre, ageLimit, picture, beschrijving);
+                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description);
                     this.Hide();
                     tk16.ShowDialog();
                     this.Close();

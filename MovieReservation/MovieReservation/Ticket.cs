@@ -12,42 +12,44 @@ namespace MovieReservation
 {
     public partial class Ticket : Form
     {
-        string name;
-        string genre;
-        string ageLimit;
-        string picture;
-        string beschrijving;
-        public Ticket(string Name, string Genre, string AgeLimit, string Picture, string Beschrijving)
+        public string Title;
+        public string Genre;
+        public string Age;
+        public string PictureName;
+        public string Description;
+
+        public Ticket(string title, string genre, string age, string pictureName, string description)
         {
             InitializeComponent();
 
-            name = Name;
-            genre = Genre;
-            ageLimit = AgeLimit;
-            picture = Picture;
-            beschrijving = Beschrijving;
+            Title = title;
+            Genre = genre;
+            Age = age;
+            PictureName = pictureName;
+            Description = description;
 
-            Image image1 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Picture + ".png");
+            string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+
+            Image image1 = Image.FromFile(path + @"\MoviePictures\" + PictureName + ".png");
             this.pictureBox1.Image = image1;
 
-            Image image2 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + Genre + ".png");
+            Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
             this.pictureBox2.Image = image2;
 
-            Image image3 = Image.FromFile(@"C:\ReservationSystem\MovieReservation\MoviePictures\" + AgeLimit + ".png");
+            Image image3 = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
             this.pictureBox3.Image = image3;
 
             label1.Text = Name;
 
-            if (ageLimit == "16")
+            if (Age == "16")
             {
                 checkBox1.Enabled = true;
-                button2.Enabled = false;
-                // kind uithalen van scherm
+                FindSeat.Enabled = false;
             }
             else
             {
                 checkBox1.Enabled = false;
-                button2.Enabled = true;
+                FindSeat.Enabled = true;
             }
            
         }
@@ -55,18 +57,16 @@ namespace MovieReservation
         private void button2_Click(object sender, EventArgs e)
         {
             string ticket1 = comboBox1.Text.ToString();
-            string ticket2 = comboBox1.Text.ToString();
-            string ticket3 = comboBox1.Text.ToString();
-            string ticket4 = comboBox1.Text.ToString();
+            string ticket2 = comboBox2.Text.ToString();
+            string ticket4 = comboBox4.Text.ToString();
 
             int Normaal = int.Parse(ticket1);
             int Student = int.Parse(ticket2);
-            int Kind = int.Parse(ticket3);
             int Senior = int.Parse(ticket4);
 
-            int totalSeats = Normaal + Student + Kind + Senior;
+            int totalSeats = Normaal + Student + Senior;
 
-            Room room = new Room(totalSeats);
+            Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
             this.Hide();
             room.ShowDialog();
             this.Close();
@@ -74,7 +74,7 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(name, genre, ageLimit, picture, beschrijving);
+            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description);
             this.Hide();
             dt.ShowDialog();
             this.Close();
@@ -85,11 +85,11 @@ namespace MovieReservation
         {
             if (checkBox1.Checked == false)
             {
-                button2.Enabled = false;
+                FindSeat.Enabled = false;
             }
             else
             {
-                button2.Enabled = true;
+                FindSeat.Enabled = true;
             }
             
         }

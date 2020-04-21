@@ -53,15 +53,14 @@ namespace MovieReservation
             int Student = int.Parse(ticket2);
             int Senior = int.Parse(ticket4);
 
-            // if ticket is less then 0 or greather than 9 give a message you can't buy so much tickets
-            if (Normaal < 0 || Normaal > 9 || Student < 0 || Student > 9 || Senior < 0 || Senior > 9 )
+            int totalSeats = Normaal + Student + Senior;
+
+            if (Normaal < 0 || Normaal > 9 || Student < 0 || Student > 9 || Senior < 0 || Senior > 9 || totalSeats < 0 || totalSeats > 9)
             {
                 MessageBox.Show("Je mag niet meer tickets reserveren dan gewenst");
             }
             else
             {
-                int totalSeats = Normaal + Student + Senior;
-
                 Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
                 this.Hide();
                 room.ShowDialog();

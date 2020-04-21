@@ -67,6 +67,7 @@
             this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -87,6 +88,7 @@
             this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -107,6 +109,7 @@
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -191,7 +194,7 @@
             // FindSeat
             // 
             this.FindSeat.Location = new System.Drawing.Point(667, 402);
-            this.FindSeat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FindSeat.Margin = new System.Windows.Forms.Padding(2);
             this.FindSeat.Name = "FindSeat";
             this.FindSeat.Size = new System.Drawing.Size(122, 37);
             this.FindSeat.TabIndex = 38;
@@ -202,7 +205,7 @@
             // GoToBackScreen
             // 
             this.GoToBackScreen.Location = new System.Drawing.Point(26, 18);
-            this.GoToBackScreen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GoToBackScreen.Margin = new System.Windows.Forms.Padding(2);
             this.GoToBackScreen.Name = "GoToBackScreen";
             this.GoToBackScreen.Size = new System.Drawing.Size(122, 37);
             this.GoToBackScreen.TabIndex = 37;

@@ -38,7 +38,7 @@ namespace MovieReservation
             Image image3 = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
             this.pictureBox3.Image = image3;
 
-            label1.Text = Name;
+            label1.Text = Title;
         }
 
         private void button2_Click(object sender, EventArgs e)

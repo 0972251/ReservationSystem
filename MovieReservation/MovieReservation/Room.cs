@@ -267,6 +267,22 @@ namespace MovieReservation
             button11.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button11.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -274,6 +290,22 @@ namespace MovieReservation
             button12.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button12.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -281,6 +313,22 @@ namespace MovieReservation
             button13.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button13.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -288,6 +336,22 @@ namespace MovieReservation
             button14.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button14.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -295,6 +359,22 @@ namespace MovieReservation
             button15.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button15.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -302,6 +382,22 @@ namespace MovieReservation
             button16.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button16.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -309,20 +405,66 @@ namespace MovieReservation
             button17.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button17.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
             button18.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
-            button18.BackColor = Red;
+            button18.BackColor = Red; count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             button19.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
-            button19.BackColor = Red;
+            button19.BackColor = Red; count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -330,6 +472,22 @@ namespace MovieReservation
             button20.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button20.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -337,6 +495,22 @@ namespace MovieReservation
             button21.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button21.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button22_Click(object sender, EventArgs e)
@@ -344,6 +518,22 @@ namespace MovieReservation
             button22.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button22.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button23_Click(object sender, EventArgs e)
@@ -351,6 +541,22 @@ namespace MovieReservation
             button23.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button23.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -358,6 +564,22 @@ namespace MovieReservation
             button24.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button24.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button25_Click(object sender, EventArgs e)
@@ -365,6 +587,22 @@ namespace MovieReservation
             button25.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button25.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button26_Click(object sender, EventArgs e)
@@ -372,6 +610,22 @@ namespace MovieReservation
             button26.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button26.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button27_Click(object sender, EventArgs e)
@@ -379,6 +633,22 @@ namespace MovieReservation
             button27.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button27.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button28_Click(object sender, EventArgs e)
@@ -386,6 +656,22 @@ namespace MovieReservation
             button28.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button28.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button29_Click(object sender, EventArgs e)
@@ -393,6 +679,22 @@ namespace MovieReservation
             button29.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button29.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button30_Click(object sender, EventArgs e)
@@ -400,6 +702,22 @@ namespace MovieReservation
             button30.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button30.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button31_Click(object sender, EventArgs e)
@@ -407,6 +725,22 @@ namespace MovieReservation
             button31.Enabled = false;
             Color Red = Color.FromArgb(119, 136, 153);
             button31.BackColor = Red;
+            count += 1;
+            if (count == AmountSeats)
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = false;
+                    button57.Enabled = true;
+                }
+            }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    b.Enabled = true;
+                }
+            }
         }
 
         private void button32_Click(object sender, EventArgs e)

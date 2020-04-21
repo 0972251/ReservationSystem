@@ -53,12 +53,19 @@ namespace MovieReservation
             int Kind = int.Parse(ticket3);
             int Senior = int.Parse(ticket4);
 
-            int totalSeats = Normaal + Student + Kind + Senior;
+            if (Normaal < 0 || Normaal > 9 || Student < 0 || Student > 9 || Senior < 0 || Senior > 9 || Kind < 0 || Kind > 9)
+            {
+                MessageBox.Show("Je mag niet meer tickets reserveren dan gewenst");
+            }
+            else
+            {
+                int totalSeats = Normaal + Student + Senior;
 
-            Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
-            this.Hide();
-            room.ShowDialog();
-            this.Close();
+                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
+                this.Hide();
+                room.ShowDialog();
+                this.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -61,7 +61,7 @@ namespace MovieReservation
             }
             else
             {
-                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
+                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description);
                 this.Hide();
                 room.ShowDialog();
                 this.Close();

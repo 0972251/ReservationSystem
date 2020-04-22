@@ -88,6 +88,12 @@
     <Compile Include="Room.Designer.cs">
       <DependentUpon>Room.cs</DependentUpon>
     </Compile>
+    <Compile Include="Room3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room3D.Designer.cs">
+      <DependentUpon>Room3D.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ticket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="Room.resx">
       <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room3D.resx">
+      <DependentUpon>Room3D.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ticket.resx">
       <DependentUpon>Ticket.cs</DependentUpon>

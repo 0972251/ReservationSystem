@@ -44,5 +44,10 @@ namespace MovieReservation
         {
 
         }
+
+        private void button86_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

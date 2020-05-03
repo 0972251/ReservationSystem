@@ -49,5 +49,10 @@ namespace MovieReservation
         {
 
         }
+
+        private void Room3D_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

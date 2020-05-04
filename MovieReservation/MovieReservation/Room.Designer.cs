@@ -830,6 +830,7 @@
             this.A1.AutoSize = true;
             this.A1.BackColor = System.Drawing.Color.LimeGreen;
             this.A1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.A1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.A1.Location = new System.Drawing.Point(236, 65);
             this.A1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.A1.Name = "A1";
@@ -842,7 +843,7 @@
             // button57
             // 
             this.button57.Location = new System.Drawing.Point(16, 15);
-            this.button57.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button57.Margin = new System.Windows.Forms.Padding(4);
             this.button57.Name = "button57";
             this.button57.Size = new System.Drawing.Size(152, 57);
             this.button57.TabIndex = 170;
@@ -912,7 +913,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.A1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Room";
             this.Text = "Room";
             this.ResumeLayout(false);
@@ -977,7 +978,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button A1;
         private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button A1;
     }
 }

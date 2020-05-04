@@ -31,3 +31,4 @@ C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservatio
 C:\ReservationSystem\MovieReservation\MovieReservation\bin\Debug\Newtonsoft.Json.dll
 C:\ReservationSystem\MovieReservation\MovieReservation\bin\Debug\Newtonsoft.Json.xml
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.csproj.CopyComplete
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Room3D.resources

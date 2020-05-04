@@ -54,7 +54,7 @@
             // GoToBackScreen
             // 
             this.GoToBackScreen.Location = new System.Drawing.Point(35, 22);
-            this.GoToBackScreen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GoToBackScreen.Margin = new System.Windows.Forms.Padding(2);
             this.GoToBackScreen.Name = "GoToBackScreen";
             this.GoToBackScreen.Size = new System.Drawing.Size(162, 45);
             this.GoToBackScreen.TabIndex = 0;
@@ -65,7 +65,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(64, 92);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 183);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +75,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(64, 281);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(62, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -85,7 +85,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Location = new System.Drawing.Point(135, 281);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(62, 62);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -196,6 +196,7 @@
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -216,6 +217,7 @@
             this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -236,6 +238,7 @@
             this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -256,6 +259,7 @@
             this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -274,7 +278,7 @@
             // StoelKiezen
             // 
             this.StoelKiezen.Location = new System.Drawing.Point(626, 393);
-            this.StoelKiezen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StoelKiezen.Margin = new System.Windows.Forms.Padding(2);
             this.StoelKiezen.Name = "StoelKiezen";
             this.StoelKiezen.Size = new System.Drawing.Size(162, 45);
             this.StoelKiezen.TabIndex = 52;
@@ -305,7 +309,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.GoToBackScreen);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TicketIfNot16";
             this.Text = "Ticket";
             this.Load += new System.EventHandler(this.TicketIfNot16_Load);

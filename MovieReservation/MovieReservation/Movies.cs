@@ -55,6 +55,9 @@ namespace QuickType
 
         [JsonProperty("A4")]
         public A1 A4 { get; set; }
+
+        [JsonProperty("A5")]
+        public A1 A5 { get; set; }
     }
 
     public partial class A1

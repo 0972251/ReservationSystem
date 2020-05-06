@@ -40,6 +40,7 @@ namespace MovieReservation
                 {
                     b.Enabled = false;
                     button57.Enabled = true;
+                    Annuleren.Enabled = true;
                 }
             }
             else
@@ -48,6 +49,16 @@ namespace MovieReservation
                 {
                     b.Enabled = true;
                 }
+            }
+        }
+
+        public void Cancel()
+        {
+            foreach (var b in Controls.OfType<Button>())
+            {
+                b.Enabled = true;
+                b.BackColor = DefaultBackColor;
+                count = 0;
             }
         }
 
@@ -569,6 +580,11 @@ namespace MovieReservation
                 tk16.ShowDialog();
                 this.Close();
             }
+        }
+
+        private void Annuleren_Click(object sender, EventArgs e)
+        {
+            Cancel();
         }
     }
 }

@@ -85,6 +85,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.A1 = new System.Windows.Forms.Button();
             this.button57 = new System.Windows.Forms.Button();
+            this.Annuleren = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button8
@@ -851,11 +852,23 @@
             this.button57.UseVisualStyleBackColor = true;
             this.button57.Click += new System.EventHandler(this.button57_Click);
             // 
+            // Annuleren
+            // 
+            this.Annuleren.Location = new System.Drawing.Point(32, 352);
+            this.Annuleren.Margin = new System.Windows.Forms.Padding(4);
+            this.Annuleren.Name = "Annuleren";
+            this.Annuleren.Size = new System.Drawing.Size(152, 57);
+            this.Annuleren.TabIndex = 171;
+            this.Annuleren.Text = "Annuleren";
+            this.Annuleren.UseVisualStyleBackColor = true;
+            this.Annuleren.Click += new System.EventHandler(this.Annuleren_Click);
+            // 
             // Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.Annuleren);
             this.Controls.Add(this.button57);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button28);
@@ -980,5 +993,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button57;
         private System.Windows.Forms.Button A1;
+        private System.Windows.Forms.Button Annuleren;
     }
 }

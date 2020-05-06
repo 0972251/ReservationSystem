@@ -76,3 +76,5 @@ C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\obj\Debug\MovieR
 C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\obj\Debug\MovieReservation.csproj.CopyComplete
 C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\obj\Debug\MovieReservation.exe
 C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\obj\Debug\MovieReservation.pdb
+C:\ReservationSystem\MovieReservation\MovieReservation\bin\Debug\Database1.mdf
+C:\ReservationSystem\MovieReservation\MovieReservation\bin\Debug\Database1_log.ldf

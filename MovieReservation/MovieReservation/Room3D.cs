@@ -38,7 +38,6 @@ namespace MovieReservation
                 foreach (var b in Controls.OfType<Button>())
                 {
                     b.Enabled = false;
-                    button57.Enabled = true;
                     Annuleren.Enabled = true;
                 }
             }
@@ -68,16 +67,16 @@ namespace MovieReservation
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            button95.Enabled = false;
-            button95.BackColor = Red;
+            button1.Enabled = false;
+            button1.BackColor = Red;
             count += 1;
             seatDisable();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            button95.Enabled = false;
-            button95.BackColor = Red;
+            button13.Enabled = false;
+            button13.BackColor = Red;
             count += 1;
             seatDisable();
         }
@@ -573,8 +572,8 @@ namespace MovieReservation
 
         private void button25_Click(object sender, EventArgs e)
         {
-            button95.Enabled = false;
-            button95.BackColor = Red;
+            button25.Enabled = false;
+            button25.BackColor = Red;
             count += 1;
             seatDisable();
         }
@@ -599,6 +598,278 @@ namespace MovieReservation
         {
             button73.Enabled = false;
             button73.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            button24.Enabled = false;
+            button24.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button87_Click(object sender, EventArgs e)
+        {
+            button87.Enabled = false;
+            button87.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button89_Click(object sender, EventArgs e)
+        {
+            button89.Enabled = false;
+            button89.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button90_Click(object sender, EventArgs e)
+        {
+            button90.Enabled = false;
+            button90.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button79_Click(object sender, EventArgs e)
+        {
+            button79.Enabled = false;
+            button79.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button80_Click(object sender, EventArgs e)
+        {
+            button80.Enabled = false;
+            button80.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button81_Click(object sender, EventArgs e)
+        {
+            button81.Enabled = false;
+            button81.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button82_Click(object sender, EventArgs e)
+        {
+            button82.Enabled = false;
+            button82.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button83_Click(object sender, EventArgs e)
+        {
+            button83.Enabled = false;
+            button83.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button84_Click(object sender, EventArgs e)
+        {
+            button84.Enabled = false;
+            button84.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button67_Click(object sender, EventArgs e)
+        {
+            button67.Enabled = false;
+            button67.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button68_Click(object sender, EventArgs e)
+        {
+            button68.Enabled = false;
+            button68.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button69_Click(object sender, EventArgs e)
+        {
+            button69.Enabled = false;
+            button69.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button70_Click(object sender, EventArgs e)
+        {
+            button70.Enabled = false;
+            button70.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button71_Click(object sender, EventArgs e)
+        {
+            button71.Enabled = false;
+            button71.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button72_Click(object sender, EventArgs e)
+        {
+            button72.Enabled = false;
+            button72.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button61_Click(object sender, EventArgs e)
+        {
+            button61.Enabled = false;
+            button61.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            button62.Enabled = false;
+            button62.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button63_Click(object sender, EventArgs e)
+        {
+            button63.Enabled = false;
+            button63.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button64_Click(object sender, EventArgs e)
+        {
+            button64.Enabled = false;
+            button64.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button65_Click(object sender, EventArgs e)
+        {
+            button65.Enabled = false;
+            button65.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button66_Click(object sender, EventArgs e)
+        {
+            button66.Enabled = false;
+            button66.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            button31.Enabled = false;
+            button31.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            button32.Enabled = false;
+            button32.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            button33.Enabled = false;
+            button33.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            button34.Enabled = false;
+            button34.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            button35.Enabled = false;
+            button35.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            button36.Enabled = false;
+            button36.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            button19.Enabled = false;
+            button19.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            button20.Enabled = false;
+            button20.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            button21.Enabled = false;
+            button21.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            button22.Enabled = false;
+            button22.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            button23.Enabled = false;
+            button23.BackColor = Red;
+            count += 1;
+            seatDisable();
+        }
+
+        private void button85_Click(object sender, EventArgs e)
+        {
+            button85.Enabled = false;
+            button85.BackColor = Red;
             count += 1;
             seatDisable();
         }

@@ -54,12 +54,13 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(451, 374);
+            this.label2.Location = new System.Drawing.Point(512, 369);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(283, 31);
+            this.label2.Size = new System.Drawing.Size(222, 31);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Medewerkersnummer:";
+            this.label2.Text = "Gebruikersnaam:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnLogin
             // 
@@ -135,7 +136,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "collaboratorLogin";
             this.Text = "collaboratorLogin";
             this.ResumeLayout(false);

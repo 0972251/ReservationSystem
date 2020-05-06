@@ -39,6 +39,8 @@ namespace MovieReservation
                 {
                     b.Enabled = false;
                     Annuleren.Enabled = true;
+                    NextPage.Enabled = true;
+                    button99.Enabled = true;
                 }
             }
             else
@@ -872,6 +874,11 @@ namespace MovieReservation
             button85.BackColor = Red;
             count += 1;
             seatDisable();
+        }
+
+        private void NextPage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

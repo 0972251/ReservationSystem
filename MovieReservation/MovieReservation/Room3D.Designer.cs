@@ -1427,6 +1427,7 @@
             this.NextPage.TabIndex = 173;
             this.NextPage.Text = "Ga door";
             this.NextPage.UseVisualStyleBackColor = true;
+            this.NextPage.Click += new System.EventHandler(this.NextPage_Click);
             // 
             // button99
             // 

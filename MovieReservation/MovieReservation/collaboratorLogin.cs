@@ -28,27 +28,58 @@ namespace MovieReservation
         }
 
         private void button2_Click(object sender, EventArgs e)
+        { 
+            if (isValid())
+            {
+                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\Database1.mdf;Integrated Security=True"))
+                {
+                    string query = "SELECT * FROM Login WHERE Username = '" + txtUserName.Text.Trim() +
+                        "' AND Password = '" + txtPassword.Text.Trim() + "'";
+                    SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                    DataTable dta = new DataTable();
+                    sda.Fill(dta);
+                    if (dta.Rows.Count == 1)
+                        {
+                        movieChoice movie = new movieChoice();
+                        this.Hide();
+                        movie.ShowDialog();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Onjuiste inloggegevens!");
+                    }
+                }
+            }
+            
+        }
+
+        private bool isValid()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\almin\Documents\inlogData.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From Login where Medewerkersnummer= '" + textBox1.Text + "' Wachtwoord= '" + textBox2.Text + "'", con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1")
+            if (txtUserName.Text.TrimStart() == string.Empty)
             {
+                MessageBox.Show("Voer de juiste gebruikersnaam in a.u.b.", "Error");
+                return false;
 
-                this.Hide();
-
-                movieChoice mc = new movieChoice();
-                mc.Show();
-                this.Close();
-            }
-            else
+            } else if (txtPassword.Text.TrimStart() == string.Empty)
             {
-                MessageBox.Show("Verkeerde inloggegevens!");
+                MessageBox.Show("Voer de juiste wachtwoord in a.u.b.", "Error");
+                return false;
             }
+            return true;
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

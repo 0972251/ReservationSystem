@@ -39,19 +39,8 @@ namespace MovieReservation
             Image image3 = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
             this.pictureBox3.Image = image3;
 
-            label1.Text = Name;
-
-            if (Age == "16")
-            {
-                checkBox1.Enabled = true;
-                FindSeat.Enabled = false;
-            }
-            else
-            {
-                checkBox1.Enabled = false;
-                FindSeat.Enabled = true;
-            }
-           
+            label1.Text = Title;
+            FindSeat.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -66,10 +55,19 @@ namespace MovieReservation
 
             int totalSeats = Normaal + Student + Senior;
 
-            Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
-            this.Hide();
-            room.ShowDialog();
-            this.Close();
+            if (Normaal < 0 || Normaal > 9 || Student < 0 || Student > 9 || Senior < 0 || Senior > 9 || totalSeats < 0 || totalSeats > 9)
+            {
+                MessageBox.Show("Je mag niet meer tickets reserveren dan gewenst");
+            }
+            else
+            {
+                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description);
+                this.Hide();
+                room.ShowDialog();
+                this.Close();
+            }
+
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

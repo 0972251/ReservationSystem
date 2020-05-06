@@ -12,8 +12,8 @@ namespace MovieReservation
 {
     public partial class dateTime : Form
     {
-        public int count = 0;
-        public int count2 = 0;
+        public int countDate = 0;
+        public int countTime = 0;
         public string Title;
         public string Genre;
         public string Age;
@@ -32,21 +32,23 @@ namespace MovieReservation
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
             Image image1 = Image.FromFile(path + @"\MoviePictures\" + PictureName + ".png");
-            this.pictureBox1.Image = image1;
+            this.pictureBoxMovie.Image = image1;
 
             Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
-            this.pictureBox2.Image = image2;
+            this.pictureBoxAge.Image = image2;
 
             Image image3 = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
-            this.pictureBox3.Image = image3;
+            this.pictureBoxClassification.Image = image3;
 
-            label3.Text = Name;
-            label4.Text = Description;
+            labelTitle.Text = Title;
+            labelDescription.Text = Description;
+            dateTimePicker1.MinDate = DateTime.Today;
+            dateTimePicker1.MaxDate = new DateTime(2028, 6, 20);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (count >= 1 && count2 >= 1)
+            if (countDate >= 1 && countTime >= 1)
             {
                 if (Age == "16")
                 {
@@ -71,12 +73,13 @@ namespace MovieReservation
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            count += 1;
+            countDate += 1;
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            count2 += 1;
+            countTime += 1;
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -22,6 +22,8 @@ namespace MovieReservation
         public string Description;
         public string Date;
         public string Time;
+        public Color Gray = Color.FromArgb(119, 136, 153);
+        public Color White = Color.FromArgb(255,255,255);
 
         public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time)
         {
@@ -62,7 +64,7 @@ namespace MovieReservation
             foreach (var b in Controls.OfType<Button>())
             {
                 b.Enabled = true;
-                b.BackColor = DefaultBackColor;
+                b.BackColor = White;
                 count = 0;
             }
         }
@@ -70,8 +72,7 @@ namespace MovieReservation
         private void button1_Click(object sender, EventArgs e)
         {
             A1.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            A1.BackColor = Red;
+            A1.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -79,8 +80,7 @@ namespace MovieReservation
         private void button2_Click(object sender, EventArgs e)
         {
             button2.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button2.BackColor = Red;
+            button2.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -88,8 +88,7 @@ namespace MovieReservation
         private void button3_Click(object sender, EventArgs e)
         {
             button3.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button3.BackColor = Red;
+            button3.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -97,8 +96,7 @@ namespace MovieReservation
         private void button4_Click(object sender, EventArgs e)
         {
             button4.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button4.BackColor = Red;
+            button4.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -106,8 +104,7 @@ namespace MovieReservation
         private void button6_Click(object sender, EventArgs e)
         {
             button6.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button6.BackColor = Red;
+            button6.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -115,8 +112,7 @@ namespace MovieReservation
         private void button5_Click(object sender, EventArgs e)
         {
             button5.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button5.BackColor = Red;
+            button5.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -124,8 +120,7 @@ namespace MovieReservation
         private void button7_Click(object sender, EventArgs e)
         {
             button7.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button7.BackColor = Red;
+            button7.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -133,8 +128,7 @@ namespace MovieReservation
         private void button8_Click(object sender, EventArgs e)
         {
             button8.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button8.BackColor = Red;
+            button8.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -142,8 +136,7 @@ namespace MovieReservation
         private void button9_Click(object sender, EventArgs e)
         {
             button9.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button9.BackColor = Red;
+            button9.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -151,8 +144,7 @@ namespace MovieReservation
         private void button10_Click(object sender, EventArgs e)
         {
             button10.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button10.BackColor = Red;
+            button10.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -160,8 +152,7 @@ namespace MovieReservation
         private void button11_Click(object sender, EventArgs e)
         {
             button11.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button11.BackColor = Red;
+            button11.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -169,8 +160,7 @@ namespace MovieReservation
         private void button12_Click(object sender, EventArgs e)
         {
             button12.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button12.BackColor = Red;
+            button12.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -178,8 +168,7 @@ namespace MovieReservation
         private void button13_Click(object sender, EventArgs e)
         {
             button13.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button13.BackColor = Red;
+            button13.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -187,8 +176,7 @@ namespace MovieReservation
         private void button14_Click(object sender, EventArgs e)
         {
             button14.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button14.BackColor = Red;
+            button14.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -196,8 +184,7 @@ namespace MovieReservation
         private void button15_Click(object sender, EventArgs e)
         {
             button15.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button15.BackColor = Red;
+            button15.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -205,8 +192,7 @@ namespace MovieReservation
         private void button16_Click(object sender, EventArgs e)
         {
             button16.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button16.BackColor = Red;
+            button16.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -214,8 +200,7 @@ namespace MovieReservation
         private void button17_Click(object sender, EventArgs e)
         {
             button17.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button17.BackColor = Red;
+            button17.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -223,24 +208,21 @@ namespace MovieReservation
         private void button18_Click(object sender, EventArgs e)
         {
             button18.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button18.BackColor = Red; count += 1;
+            button18.BackColor = Gray; count += 1;
             seatDisable();
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             button19.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button19.BackColor = Red; count += 1;
+            button19.BackColor = Gray; count += 1;
             seatDisable();
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
             button20.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button20.BackColor = Red;
+            button20.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -248,8 +230,7 @@ namespace MovieReservation
         private void button21_Click(object sender, EventArgs e)
         {
             button21.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button21.BackColor = Red;
+            button21.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -257,8 +238,7 @@ namespace MovieReservation
         private void button22_Click(object sender, EventArgs e)
         {
             button22.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button22.BackColor = Red;
+            button22.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -266,8 +246,7 @@ namespace MovieReservation
         private void button23_Click(object sender, EventArgs e)
         {
             button23.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button23.BackColor = Red;
+            button23.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -275,8 +254,7 @@ namespace MovieReservation
         private void button24_Click(object sender, EventArgs e)
         {
             button24.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button24.BackColor = Red;
+            button24.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -284,8 +262,7 @@ namespace MovieReservation
         private void button25_Click(object sender, EventArgs e)
         {
             button25.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button25.BackColor = Red;
+            button25.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -293,8 +270,7 @@ namespace MovieReservation
         private void button26_Click(object sender, EventArgs e)
         {
             button26.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button26.BackColor = Red;
+            button26.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -302,8 +278,7 @@ namespace MovieReservation
         private void button27_Click(object sender, EventArgs e)
         {
             button27.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button27.BackColor = Red;
+            button27.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -311,8 +286,7 @@ namespace MovieReservation
         private void button28_Click(object sender, EventArgs e)
         {
             button28.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button28.BackColor = Red;
+            button28.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -320,8 +294,7 @@ namespace MovieReservation
         private void button29_Click(object sender, EventArgs e)
         {
             button29.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button29.BackColor = Red;
+            button29.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -329,8 +302,7 @@ namespace MovieReservation
         private void button30_Click(object sender, EventArgs e)
         {
             button30.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button30.BackColor = Red;
+            button30.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -338,8 +310,7 @@ namespace MovieReservation
         private void button31_Click(object sender, EventArgs e)
         {
             button31.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button31.BackColor = Red;
+            button31.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -347,8 +318,7 @@ namespace MovieReservation
         private void button32_Click(object sender, EventArgs e)
         {
             button32.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button32.BackColor = Red;
+            button32.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -356,8 +326,7 @@ namespace MovieReservation
         private void button33_Click(object sender, EventArgs e)
         {
             button33.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button33.BackColor = Red;
+            button33.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -365,8 +334,7 @@ namespace MovieReservation
         private void button34_Click(object sender, EventArgs e)
         {
             button34.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button34.BackColor = Red;
+            button34.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -374,8 +342,7 @@ namespace MovieReservation
         private void button35_Click(object sender, EventArgs e)
         {
             button35.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button35.BackColor = Red;
+            button35.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -383,8 +350,7 @@ namespace MovieReservation
         private void button36_Click(object sender, EventArgs e)
         {
             button36.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button36.BackColor = Red;
+            button36.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -392,8 +358,7 @@ namespace MovieReservation
         private void button37_Click(object sender, EventArgs e)
         {
             button37.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button37.BackColor = Red;
+            button37.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -401,8 +366,7 @@ namespace MovieReservation
         private void button38_Click(object sender, EventArgs e)
         {
             button38.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button38.BackColor = Red;
+            button38.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -410,8 +374,7 @@ namespace MovieReservation
         private void button39_Click(object sender, EventArgs e)
         {
             button39.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button39.BackColor = Red;
+            button39.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -419,8 +382,7 @@ namespace MovieReservation
         private void button40_Click(object sender, EventArgs e)
         {
             button40.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button40.BackColor = Red;
+            button40.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -428,8 +390,7 @@ namespace MovieReservation
         private void button41_Click(object sender, EventArgs e)
         {
             button41.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button41.BackColor = Red;
+            button41.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -437,8 +398,7 @@ namespace MovieReservation
         private void button42_Click(object sender, EventArgs e)
         {
             button42.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button42.BackColor = Red;
+            button42.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -446,8 +406,7 @@ namespace MovieReservation
         private void button43_Click(object sender, EventArgs e)
         {
             button43.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button43.BackColor = Red;
+            button43.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -455,8 +414,7 @@ namespace MovieReservation
         private void button44_Click(object sender, EventArgs e)
         {
             button44.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button44.BackColor = Red;
+            button44.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -464,8 +422,7 @@ namespace MovieReservation
         private void button45_Click(object sender, EventArgs e)
         {
             button45.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button45.BackColor = Red;
+            button45.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -473,8 +430,7 @@ namespace MovieReservation
         private void button46_Click(object sender, EventArgs e)
         {
             button46.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button46.BackColor = Red;
+            button46.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -482,8 +438,7 @@ namespace MovieReservation
         private void button47_Click(object sender, EventArgs e)
         {
             button47.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button47.BackColor = Red;
+            button47.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -491,8 +446,7 @@ namespace MovieReservation
         private void button48_Click(object sender, EventArgs e)
         {
             button48.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button48.BackColor = Red;
+            button48.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -500,8 +454,7 @@ namespace MovieReservation
         private void button49_Click(object sender, EventArgs e)
         {
             button49.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button49.BackColor = Red;
+            button49.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -509,8 +462,7 @@ namespace MovieReservation
         private void button50_Click(object sender, EventArgs e)
         {
             button50.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button50.BackColor = Red;
+            button50.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -518,8 +470,7 @@ namespace MovieReservation
         private void button51_Click(object sender, EventArgs e)
         {
             button51.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button51.BackColor = Red;
+            button51.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -527,8 +478,7 @@ namespace MovieReservation
         private void button52_Click(object sender, EventArgs e)
         {
             button52.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button52.BackColor = Red;
+            button52.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -536,8 +486,7 @@ namespace MovieReservation
         private void button53_Click(object sender, EventArgs e)
         {
             button53.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button53.BackColor = Red;
+            button53.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -545,8 +494,7 @@ namespace MovieReservation
         private void button54_Click(object sender, EventArgs e)
         {
             button54.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button54.BackColor = Red;
+            button54.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -554,8 +502,7 @@ namespace MovieReservation
         private void button55_Click(object sender, EventArgs e)
         {
             button55.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button55.BackColor = Red;
+            button55.BackColor = Gray;
             count += 1;
             seatDisable();
         }
@@ -563,8 +510,7 @@ namespace MovieReservation
         private void button56_Click(object sender, EventArgs e)
         {
             button56.Enabled = false;
-            Color Red = Color.FromArgb(119, 136, 153);
-            button56.BackColor = Red;
+            button56.BackColor = Gray;
             count += 1;
             seatDisable();
         }

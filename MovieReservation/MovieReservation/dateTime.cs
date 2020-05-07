@@ -21,7 +21,8 @@ namespace MovieReservation
         public string Description;
         public string Time;
         public string Date;
-        public dateTime(string title, string genre, string age, string pictureName, string description)
+        public string KindOfMovie;
+        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie)
         {
             InitializeComponent();
 
@@ -30,6 +31,8 @@ namespace MovieReservation
             Age = age;
             PictureName = pictureName;
             Description = description;
+            KindOfMovie = kindofmovie;
+            
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -57,14 +60,14 @@ namespace MovieReservation
             {
                 if (Age == "16")
                 {
-                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time);
+                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
                     this.Hide();
                     tk.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time);
+                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
                     this.Hide();
                     tk16.ShowDialog();
                     this.Close();
@@ -89,7 +92,7 @@ namespace MovieReservation
 
         private void button2_Click(object sender, EventArgs e)
         {
-            movieChoice mc = new movieChoice();
+            movieChoice mc = new movieChoice(KindOfMovie);
             this.Hide();
             mc.ShowDialog();
             this.Close();

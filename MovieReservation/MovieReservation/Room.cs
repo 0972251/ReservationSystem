@@ -25,8 +25,9 @@ namespace MovieReservation
         public Color Gray = Color.FromArgb(119, 136, 153);
         public Color White = Color.FromArgb(255,255,255);
         public string Seats;
+        public string KindOfMovie;
 
-        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time)
+        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie)
         {
             InitializeComponent();
             Title = title;
@@ -38,6 +39,7 @@ namespace MovieReservation
             Date = date;
             Time = time;
             Seats = "";
+            KindOfMovie = kindofmovie;
 
         }
 
@@ -579,14 +581,14 @@ namespace MovieReservation
         {
             if (Age == "16")
             {
-                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time);
+                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
             else
             {
-                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time);
+                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
                 this.Hide();
                 tk16.ShowDialog();
                 this.Close();

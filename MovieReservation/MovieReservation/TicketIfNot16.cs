@@ -61,7 +61,7 @@ namespace MovieReservation
 
             if (totalSeats > 9)
             {
-                MessageBox.Show("Je mag niet meer tickets reserveren dan het maximaal aantal (9)");
+                MessageBox.Show("Je mag niet meer dan 9 tickets reserveren");
             }
             else if (totalSeats < 1)
             {

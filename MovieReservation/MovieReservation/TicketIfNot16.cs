@@ -61,7 +61,7 @@ namespace MovieReservation
 
             if (Normaal < 1 || Normaal > 9 || Student < 1 || Student > 9 || Senior < 1 || Senior > 9 || Kind < 1 || Kind > 9 || totalSeats < 1 || totalSeats > 9)
             {
-                MessageBox.Show("Je mag niet meer tickets reserveren dan gewenst");
+                MessageBox.Show("Je mag niet meer tickets reserveren dan het maximaal aantal (9)");
             }
             else
             {

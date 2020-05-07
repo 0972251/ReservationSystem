@@ -33,14 +33,14 @@ namespace MovieReservation
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
-            Image image1 = Image.FromFile(path + @"\MoviePictures\" + PictureName + ".png");
-            this.pictureBoxMovie.Image = image1;
+            Image imagePicture = Image.FromFile(path + @"\MoviePictures\" + PictureName + ".png");
+            this.pictureBoxMovie.Image = imagePicture;
 
-            Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
-            this.pictureBoxAge.Image = image2;
+            Image imageGenre = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
+            this.pictureBoxAge.Image = imageGenre;
 
-            Image image3 = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
-            this.pictureBoxClassification.Image = image3;
+            Image imageAge = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
+            this.pictureBoxClassification.Image = imageAge;
 
             labelTitle.Text = Title;
             labelDescription.Text = Description;

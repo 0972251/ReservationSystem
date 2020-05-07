@@ -78,3 +78,4 @@ C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\obj\Debug\MovieR
 C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\obj\Debug\MovieReservation.pdb
 C:\ReservationSystem\MovieReservation\MovieReservation\bin\Debug\Database1.mdf
 C:\ReservationSystem\MovieReservation\MovieReservation\bin\Debug\Database1_log.ldf
+E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.TicketConfrim.resources

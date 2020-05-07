@@ -17,8 +17,10 @@ namespace MovieReservation
         public string Age;
         public string PictureName;
         public string Description;
+        public string Date;
+        public string Time;
 
-        public Ticket(string title, string genre, string age, string pictureName, string description)
+        public Ticket(string title, string genre, string age, string pictureName, string description, string date, string time)
         {
             InitializeComponent();
 
@@ -27,6 +29,8 @@ namespace MovieReservation
             Age = age;
             PictureName = pictureName;
             Description = description;
+            Date = date;
+            Time = time;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -61,7 +65,7 @@ namespace MovieReservation
             }
             else
             {
-                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description);
+                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time);
                 this.Hide();
                 room.ShowDialog();
                 this.Close();

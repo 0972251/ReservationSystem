@@ -17,7 +17,9 @@ namespace MovieReservation
         public string Age;
         public string PictureName;
         public string Description;
-        public TicketIfNot16(string title, string genre, string age, string pictureName, string description)
+        public string Date;
+        public string Time;
+        public TicketIfNot16(string title, string genre, string age, string pictureName, string description, string date, string time)
         {
             InitializeComponent();
 
@@ -26,6 +28,8 @@ namespace MovieReservation
             Age = age;
             PictureName = pictureName;
             Description = description;
+            Date = date;
+            Time = time;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -61,7 +65,7 @@ namespace MovieReservation
             }
             else
             {
-                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
+                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time);
                 this.Hide();
                 room.ShowDialog();
                 this.Close();

@@ -19,8 +19,10 @@ namespace MovieReservation
         public string Age;
         public string PictureName;
         public string Description;
+        public string Date;
+        public string Time;
         public Color Red = Color.FromArgb(119, 136, 153);
-        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description)
+        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time)
         {
             InitializeComponent();
             Title = title;
@@ -29,6 +31,8 @@ namespace MovieReservation
             PictureName = pictureName;
             Description = description;
             AmountSeats = amountSeats;
+            Date = date;
+            Time = time;
         }
 
         public void seatDisable()
@@ -102,14 +106,14 @@ namespace MovieReservation
         {
             if (Age == "16")
             {
-                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description);
+                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time);
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
             else
             {
-                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description);
+                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time);
                 this.Hide();
                 tk16.ShowDialog();
                 this.Close();
@@ -878,7 +882,10 @@ namespace MovieReservation
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-
+            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "3D", AmountSeats, "A1", PictureName);
+            this.Hide();
+            ticket.ShowDialog();
+            this.Close();
         }
     }
 }

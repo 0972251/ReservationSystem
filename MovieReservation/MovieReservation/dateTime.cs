@@ -19,6 +19,8 @@ namespace MovieReservation
         public string Age;
         public string PictureName;
         public string Description;
+        public string Time;
+        public string Date;
         public dateTime(string title, string genre, string age, string pictureName, string description)
         {
             InitializeComponent();
@@ -48,18 +50,21 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Date = dateTimePicker1.Text;
+            Time = comboBox2.Text;
+            
             if (countDate >= 1 && countTime >= 1)
             {
                 if (Age == "16")
                 {
-                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description);
+                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time);
                     this.Hide();
                     tk.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description);
+                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time);
                     this.Hide();
                     tk16.ShowDialog();
                     this.Close();

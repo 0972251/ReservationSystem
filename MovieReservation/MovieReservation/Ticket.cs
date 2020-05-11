@@ -71,7 +71,7 @@ namespace MovieReservation
             }
             else
             {
-                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
                 this.Hide();
                 room.ShowDialog();
                 this.Close();
@@ -103,6 +103,11 @@ namespace MovieReservation
         }
 
         private void Ticket_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

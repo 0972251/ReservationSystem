@@ -60,6 +60,7 @@ namespace MovieReservation
                 foreach (var b in Controls.OfType<Button>())
                 {
                     b.Enabled = true;
+                    NextPage.Enabled = false;
                 }
             }
         }
@@ -598,6 +599,7 @@ namespace MovieReservation
         private void Annuleren_Click(object sender, EventArgs e)
         {
             Cancel();
+            NextPage.Enabled = false;
         }
 
         private void Room_Load(object sender, EventArgs e)
@@ -609,7 +611,7 @@ namespace MovieReservation
         {
             TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "2D", AmountSeats, Seats, PictureName);
             ticket.ShowDialog();
-            this.Close();
+            
         }
     }
 }

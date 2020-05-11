@@ -48,5 +48,15 @@ namespace MovieReservation
         {
 
         }
+
+        private void labelTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Terug_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

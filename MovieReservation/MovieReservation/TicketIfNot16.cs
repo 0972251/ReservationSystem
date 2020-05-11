@@ -90,5 +90,10 @@ namespace MovieReservation
         {
 
         }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

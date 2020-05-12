@@ -26,18 +26,14 @@ namespace MovieReservation
             f1.ShowDialog();
             this.Close();
         }
-        
+
         private void button2_Click(object sender, EventArgs e)
         { 
             if (isValid())
             {
-                conn = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename= %CONTENTROOTPATH%/Database1.mdf;Integrated Security=True"
-                    Cqlconnection connect = new SqlConnection(conn);
-                    if conn.contains("%CONTENTROOTPATH%");
-{
-                    conn = conn.replace("%CONTENTROOTPATH%", "C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\")
-}
-                string query = "SELECT * FROM Login WHERE Username = '" + txtUserName.Text.Trim() +
+                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\Database1.mdf;Integrated Security=True"))
+                {
+                    string query = "SELECT * FROM Login WHERE Username = '" + txtUserName.Text.Trim() +
                         "' AND Password = '" + txtPassword.Text.Trim() + "'";
                     SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                     DataTable dta = new DataTable();

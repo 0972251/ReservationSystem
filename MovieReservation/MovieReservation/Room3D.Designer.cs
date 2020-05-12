@@ -1420,6 +1420,7 @@
             // NextPage
             // 
             this.NextPage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NextPage.Enabled = false;
             this.NextPage.Location = new System.Drawing.Point(732, 508);
             this.NextPage.Margin = new System.Windows.Forms.Padding(4);
             this.NextPage.Name = "NextPage";

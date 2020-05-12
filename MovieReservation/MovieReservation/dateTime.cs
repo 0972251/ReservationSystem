@@ -19,7 +19,10 @@ namespace MovieReservation
         public string Age;
         public string PictureName;
         public string Description;
-        public dateTime(string title, string genre, string age, string pictureName, string description)
+        public string Time;
+        public string Date;
+        public string KindOfMovie;
+        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie)
         {
             InitializeComponent();
 
@@ -28,17 +31,19 @@ namespace MovieReservation
             Age = age;
             PictureName = pictureName;
             Description = description;
+            KindOfMovie = kindofmovie;
+            
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
-            Image image1 = Image.FromFile(path + @"\MoviePictures\" + PictureName + ".png");
-            this.pictureBoxMovie.Image = image1;
+            Image imagePicture = Image.FromFile(path + @"\MoviePictures\" + PictureName + ".png");
+            this.pictureBoxMovie.Image = imagePicture;
 
-            Image image2 = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
-            this.pictureBoxAge.Image = image2;
+            Image imageGenre = Image.FromFile(path + @"\MoviePictures\" + Genre + ".png");
+            this.pictureBoxAge.Image = imageGenre;
 
-            Image image3 = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
-            this.pictureBoxClassification.Image = image3;
+            Image imageAge = Image.FromFile(path + @"\MoviePictures\" + Age + ".png");
+            this.pictureBoxClassification.Image = imageAge;
 
             labelTitle.Text = Title;
             labelDescription.Text = Description;
@@ -48,18 +53,21 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Date = dateTimePicker1.Text;
+            Time = comboBox2.Text;
+            
             if (countDate >= 1 && countTime >= 1)
             {
                 if (Age == "16")
                 {
-                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description);
+                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
                     this.Hide();
                     tk.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description);
+                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
                     this.Hide();
                     tk16.ShowDialog();
                     this.Close();
@@ -84,7 +92,7 @@ namespace MovieReservation
 
         private void button2_Click(object sender, EventArgs e)
         {
-            movieChoice mc = new movieChoice();
+            movieChoice mc = new movieChoice(KindOfMovie);
             this.Hide();
             mc.ShowDialog();
             this.Close();

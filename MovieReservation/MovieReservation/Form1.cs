@@ -12,6 +12,7 @@ namespace MovieReservation
 {
     public partial class Form1 : Form
     {
+        public string KindOfMovie = "";
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace MovieReservation
 
         private void Klant_Click(object sender, EventArgs e)
         {
-            movieChoice movie = new movieChoice();
+            movieChoice movie = new movieChoice(KindOfMovie);
             this.Hide();
             movie.ShowDialog();
             this.Close();

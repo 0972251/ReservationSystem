@@ -14,6 +14,7 @@ namespace MovieReservation
 {
     public partial class collaboratorLogin : Form
     {
+        public string KindOfMovie = "";
         public collaboratorLogin()
         {
             InitializeComponent();
@@ -44,7 +45,7 @@ namespace MovieReservation
                     sda.Fill(dta);
                     if (dta.Rows.Count == 1)
                         {
-                        movieChoice movie = new movieChoice();
+                        movieChoice movie = new movieChoice(KindOfMovie);
                         this.Hide();
                         movie.ShowDialog();
                         this.Close();

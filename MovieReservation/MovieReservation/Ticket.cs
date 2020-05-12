@@ -17,8 +17,15 @@ namespace MovieReservation
         public string Age;
         public string PictureName;
         public string Description;
+<<<<<<< HEAD
 
         public Ticket(string title, string genre, string age, string pictureName, string description)
+=======
+        public string Date;
+        public string Time;
+
+        public Ticket(string title, string genre, string age, string pictureName, string description, string date, string time)
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
         {
             InitializeComponent();
 
@@ -27,6 +34,11 @@ namespace MovieReservation
             Age = age;
             PictureName = pictureName;
             Description = description;
+<<<<<<< HEAD
+=======
+            Date = date;
+            Time = time;
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -61,7 +73,11 @@ namespace MovieReservation
             }
             else
             {
+<<<<<<< HEAD
                 Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description);
+=======
+                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time);
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
                 this.Hide();
                 room.ShowDialog();
                 this.Close();

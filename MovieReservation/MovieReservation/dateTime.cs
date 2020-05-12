@@ -19,6 +19,11 @@ namespace MovieReservation
         public string Age;
         public string PictureName;
         public string Description;
+<<<<<<< HEAD
+=======
+        public string Time;
+        public string Date;
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
         public dateTime(string title, string genre, string age, string pictureName, string description)
         {
             InitializeComponent();
@@ -52,14 +57,22 @@ namespace MovieReservation
             {
                 if (Age == "16")
                 {
+<<<<<<< HEAD
                     Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description);
+=======
+                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time);
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
                     this.Hide();
                     tk.ShowDialog();
                     this.Close();
                 }
                 else
                 {
+<<<<<<< HEAD
                     TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description);
+=======
+                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time);
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
                     this.Hide();
                     tk16.ShowDialog();
                     this.Close();

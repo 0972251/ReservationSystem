@@ -20,8 +20,18 @@ namespace MovieReservation
         public string Age;
         public string PictureName;
         public string Description;
+<<<<<<< HEAD
 
         public Room(int amountSeats, string title, string genre, string age, string pictureName, string description)
+=======
+        public string Date;
+        public string Time;
+        public Color Gray = Color.FromArgb(119, 136, 153);
+        public Color White = Color.FromArgb(255,255,255);
+        public string Seats;
+
+        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time)
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
         {
             InitializeComponent();
             Title = title;
@@ -30,6 +40,13 @@ namespace MovieReservation
             PictureName = pictureName;
             Description = description;
             AmountSeats = amountSeats;
+<<<<<<< HEAD
+=======
+            Date = date;
+            Time = time;
+            Seats = "";
+
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
         }
 
         public void seatDisable()
@@ -568,14 +585,22 @@ namespace MovieReservation
         {
             if (Age == "16")
             {
+<<<<<<< HEAD
                 Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description);
+=======
+                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time);
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
             else
             {
+<<<<<<< HEAD
                 TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description);
+=======
+                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time);
+>>>>>>> parent of 67cd503... Bij movieChoice blijft genre staan als je film annuleert en teruggaat naar dit scherm, interface iets veranderd
                 this.Hide();
                 tk16.ShowDialog();
                 this.Close();

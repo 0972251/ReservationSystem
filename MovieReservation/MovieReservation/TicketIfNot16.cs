@@ -17,10 +17,7 @@ namespace MovieReservation
         public string Age;
         public string PictureName;
         public string Description;
-        public string Date;
-        public string Time;
-        public string KindOfMovie;
-        public TicketIfNot16(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie)
+        public TicketIfNot16(string title, string genre, string age, string pictureName, string description)
         {
             InitializeComponent();
 
@@ -29,9 +26,6 @@ namespace MovieReservation
             Age = age;
             PictureName = pictureName;
             Description = description;
-            Date = date;
-            Time = time;
-            KindOfMovie = kindofmovie;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -59,19 +53,15 @@ namespace MovieReservation
             int Kind = int.Parse(ticket3);
             int Senior = int.Parse(ticket4);
 
-            int totalSeats = Normaal + Student + Senior + Kind;
+            int totalSeats = Normaal + Student + Senior;
 
-            if (totalSeats > 9)
+            if (Normaal < 0 || Normaal > 9 || Student < 0 || Student > 9 || Senior < 0 || Senior > 9 || Kind < 0 || Kind > 9 || totalSeats < 0 || totalSeats > 9)
             {
-                MessageBox.Show("Je mag niet meer dan 9 tickets reserveren");
-            }
-            else if (totalSeats < 1)
-            {
-                MessageBox.Show("Je moet minstens 1 ticket reserveren");
+                MessageBox.Show("Je mag niet meer tickets reserveren dan gewenst");
             }
             else
             {
-                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description);
                 this.Hide();
                 room.ShowDialog();
                 this.Close();
@@ -80,18 +70,13 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie);
+            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description);
             this.Hide();
             dt.ShowDialog();
             this.Close();
         }
 
         private void TicketIfNot16_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -55,6 +55,7 @@
             this.dolbyCinemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.halloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iMAXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -179,7 +180,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(17, 96);
+            this.label1.Location = new System.Drawing.Point(425, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(257, 29);
             this.label1.TabIndex = 35;
@@ -226,7 +227,7 @@
             // 
             this.actieToolStripMenuItem1.Font = new System.Drawing.Font("Arial", 11F);
             this.actieToolStripMenuItem1.Name = "actieToolStripMenuItem1";
-            this.actieToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.actieToolStripMenuItem1.Size = new System.Drawing.Size(183, 26);
             this.actieToolStripMenuItem1.Text = "Nieuw";
             this.actieToolStripMenuItem1.Click += new System.EventHandler(this.actieToolStripMenuItem1_Click);
             // 
@@ -234,7 +235,7 @@
             // 
             this.actieToolStripMenuItem2.Font = new System.Drawing.Font("Arial", 11F);
             this.actieToolStripMenuItem2.Name = "actieToolStripMenuItem2";
-            this.actieToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.actieToolStripMenuItem2.Size = new System.Drawing.Size(183, 26);
             this.actieToolStripMenuItem2.Text = "Actie";
             this.actieToolStripMenuItem2.Click += new System.EventHandler(this.actieToolStripMenuItem2_Click);
             // 
@@ -242,7 +243,7 @@
             // 
             this.comedyToolStripMenuItem2.Font = new System.Drawing.Font("Arial", 11F);
             this.comedyToolStripMenuItem2.Name = "comedyToolStripMenuItem2";
-            this.comedyToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.comedyToolStripMenuItem2.Size = new System.Drawing.Size(183, 26);
             this.comedyToolStripMenuItem2.Text = "Comedy";
             this.comedyToolStripMenuItem2.Click += new System.EventHandler(this.comedyToolStripMenuItem2_Click);
             // 
@@ -250,7 +251,7 @@
             // 
             this.turksToolStripMenuItem1.Font = new System.Drawing.Font("Arial", 11F);
             this.turksToolStripMenuItem1.Name = "turksToolStripMenuItem1";
-            this.turksToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.turksToolStripMenuItem1.Size = new System.Drawing.Size(183, 26);
             this.turksToolStripMenuItem1.Text = "Turks";
             this.turksToolStripMenuItem1.Click += new System.EventHandler(this.turksToolStripMenuItem1_Click);
             // 
@@ -258,7 +259,7 @@
             // 
             this.bollywoodToolStripMenuItem1.Font = new System.Drawing.Font("Arial", 11F);
             this.bollywoodToolStripMenuItem1.Name = "bollywoodToolStripMenuItem1";
-            this.bollywoodToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.bollywoodToolStripMenuItem1.Size = new System.Drawing.Size(183, 26);
             this.bollywoodToolStripMenuItem1.Text = "Bollywood";
             this.bollywoodToolStripMenuItem1.Click += new System.EventHandler(this.bollywoodToolStripMenuItem1_Click);
             // 
@@ -278,7 +279,7 @@
             // 
             this.kinderFilmToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.kinderFilmToolStripMenuItem.Name = "kinderFilmToolStripMenuItem";
-            this.kinderFilmToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.kinderFilmToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
             this.kinderFilmToolStripMenuItem.Text = "Kinder Film";
             this.kinderFilmToolStripMenuItem.Click += new System.EventHandler(this.kinderFilmToolStripMenuItem_Click);
             // 
@@ -286,7 +287,7 @@
             // 
             this.animatieFilmToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.animatieFilmToolStripMenuItem.Name = "animatieFilmToolStripMenuItem";
-            this.animatieFilmToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.animatieFilmToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
             this.animatieFilmToolStripMenuItem.Text = "Animatie Film";
             this.animatieFilmToolStripMenuItem.Click += new System.EventHandler(this.animatieFilmToolStripMenuItem_Click);
             // 
@@ -294,7 +295,7 @@
             // 
             this.familieFilmToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.familieFilmToolStripMenuItem.Name = "familieFilmToolStripMenuItem";
-            this.familieFilmToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.familieFilmToolStripMenuItem.Size = new System.Drawing.Size(210, 28);
             this.familieFilmToolStripMenuItem.Text = "Familie Film";
             this.familieFilmToolStripMenuItem.Click += new System.EventHandler(this.familieFilmToolStripMenuItem_Click);
             // 
@@ -332,11 +333,22 @@
             this.iMAXToolStripMenuItem.Size = new System.Drawing.Size(221, 34);
             this.iMAXToolStripMenuItem.Text = "Dolby Cinema";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(20, 134);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 24);
+            this.label7.TabIndex = 47;
+            this.label7.Text = "Soort film";
+            // 
             // movieChoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -349,7 +361,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "movieChoice";
             this.Text = "movieChoice";
             this.Load += new System.EventHandler(this.movieChoice_Load);
@@ -394,5 +406,6 @@
         private System.Windows.Forms.ToolStripMenuItem dolbyCinemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem halloToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iMAXToolStripMenuItem;
+        private System.Windows.Forms.Label label7;
     }
 }

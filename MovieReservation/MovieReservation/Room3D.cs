@@ -37,12 +37,10 @@ namespace MovieReservation
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-
         }
 
         private void button86_Click(object sender, EventArgs e)

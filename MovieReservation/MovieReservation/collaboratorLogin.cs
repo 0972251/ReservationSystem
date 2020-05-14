@@ -29,10 +29,12 @@ namespace MovieReservation
         }
 
         private void button2_Click(object sender, EventArgs e)
-        { 
+        {
+            string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+
             if (isValid())
             {
-                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\Database1.mdf;Integrated Security=True"))
+                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename= " + path + @"\Database1.mdf;Integrated Security=True"))
                 {
                     string query = "SELECT * FROM Login WHERE Username = '" + txtUserName.Text.Trim() +
                         "' AND Password = '" + txtPassword.Text.Trim() + "'";

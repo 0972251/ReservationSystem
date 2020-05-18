@@ -610,8 +610,9 @@ namespace MovieReservation
         private void NextPage_Click(object sender, EventArgs e)
         {
             TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "2D", AmountSeats, Seats, PictureName);
+            this.Hide();
             ticket.ShowDialog();
-            
+            this.Close();
         }
     }
 }

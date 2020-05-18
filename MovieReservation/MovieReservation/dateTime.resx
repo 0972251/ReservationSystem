@@ -117,6 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="labelDescription.Text" xml:space="preserve">
+    <value>Joker van regisseur Todd Phillips draait om de iconische aartsvijand en is een
+origineel op zichzelf staand verhaal dat nog niet eerder op het grote doek is
+vertoond. Phillips’ rauwe karakterstudie over Arthur Fleck, een rol van
+Joaquin Phoenix, gaat over een man die problemen heeft om zijn weg te 
+vinden in een ontwricht Gotham. Overdag te boeken als clown, ’s avonds probeert
+hij een voet aan de grond te krijgen als stand-up comedian, maar hij is zelf altijd de
+klos. Gevangen in een vicieuze cirkel vol apathie en wreedheid, neemt hij één
+verkeerde beslissing die een kettingreactie van escalerende gebeurtenissen
+tot gevolg heeft.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBoxClassification.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1171,17 +1182,6 @@
         Zkqfbv77v819OdoE0+ftFwOSKNnR/NumWutZ5n6vbR4Cp44BgCbQ1fX/ASSFjgNmpV5UAAAAAElFTkSu
         QmCC
 </value>
-  </data>
-  <data name="labelDescription.Text" xml:space="preserve">
-    <value>Joker van regisseur Todd Phillips draait om de iconische aartsvijand en is een
-origineel op zichzelf staand verhaal dat nog niet eerder op het grote doek is
-vertoond. Phillips’ rauwe karakterstudie over Arthur Fleck, een rol van
-Joaquin Phoenix, gaat over een man die problemen heeft om zijn weg te 
-vinden in een ontwricht Gotham. Overdag te boeken als clown, ’s avonds probeert
-hij een voet aan de grond te krijgen als stand-up comedian, maar hij is zelf altijd de
-klos. Gevangen in een vicieuze cirkel vol apathie en wreedheid, neemt hij één
-verkeerde beslissing die een kettingreactie van escalerende gebeurtenissen
-tot gevolg heeft.</value>
   </data>
   <data name="pictureBoxMovie.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

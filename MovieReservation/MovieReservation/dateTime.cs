@@ -22,7 +22,8 @@ namespace MovieReservation
         public string Time;
         public string Date;
         public string KindOfMovie;
-        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie)
+        public List<string> reservedSeats = new List<string>();
+        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
 
@@ -32,7 +33,8 @@ namespace MovieReservation
             PictureName = pictureName;
             Description = description;
             KindOfMovie = kindofmovie;
-            
+            reservedSeats = reserve;
+
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -55,19 +57,19 @@ namespace MovieReservation
         {
             Date = dateTimePicker1.Text;
             Time = comboBox2.Text;
-            
+
             if (countDate >= 1 && countTime >= 1)
             {
                 if (Age == "16")
                 {
-                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
                     this.Hide();
                     tk.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
                     this.Hide();
                     tk16.ShowDialog();
                     this.Close();
@@ -92,7 +94,7 @@ namespace MovieReservation
 
         private void button2_Click(object sender, EventArgs e)
         {
-            movieChoice mc = new movieChoice(KindOfMovie);
+            movieChoice mc = new movieChoice(KindOfMovie, reservedSeats);
             this.Hide();
             mc.ShowDialog();
             this.Close();
@@ -104,6 +106,11 @@ namespace MovieReservation
         }
 
         private void dateTime_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDescription_Click(object sender, EventArgs e)
         {
 
         }

@@ -20,8 +20,9 @@ namespace MovieReservation
         public string Date;
         public string Time;
         public string KindOfMovie;
+        public List<string> reservedSeats = new List<string>();
 
-        public Ticket(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie)
+        public Ticket(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
 
@@ -33,6 +34,8 @@ namespace MovieReservation
             Date = date;
             Time = time;
             KindOfMovie = kindofmovie;
+            reservedSeats = reserve;
+
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -71,22 +74,25 @@ namespace MovieReservation
             }
             else
             {
-                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
+                room.seatSaved();
                 this.Hide();
                 room.ShowDialog();
                 this.Close();
+
+
             }
 
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie);
+            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie, reservedSeats);
             this.Hide();
             dt.ShowDialog();
             this.Close();
-            
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -99,7 +105,7 @@ namespace MovieReservation
             {
                 FindSeat.Enabled = true;
             }
-            
+
         }
 
         private void Ticket_Load(object sender, EventArgs e)

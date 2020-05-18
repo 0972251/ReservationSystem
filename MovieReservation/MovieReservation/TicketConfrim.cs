@@ -19,7 +19,10 @@ namespace MovieReservation
         public int Amount;
         public string Seats;
         public string PictureName;
-        public TicketConfrim(string title, string date, string time, string room, int amount, string seats, string pictureName)
+        public List<string> reservedSeats = new List<string>();
+        public string test = "";
+        public string KindOfMovie;
+        public TicketConfrim(string title, string date, string time, string room, int amount, string seats, string pictureName, List<string> reserve, string movie)
         {
             Title = title;
             Date = date;
@@ -28,8 +31,15 @@ namespace MovieReservation
             Amount = amount;
             Seats = seats;
             PictureName = pictureName;
+            reservedSeats = reserve;
+            KindOfMovie = movie;
 
             InitializeComponent();
+
+            foreach (var b in reservedSeats)
+            {
+                test += b;
+            }
 
             labelTitle.Text = Title;
             labelDate.Text = Date;
@@ -37,6 +47,8 @@ namespace MovieReservation
             labelRoom.Text = Room;
             labelAmount.Text = Amount.ToString();
             labelSeats.Text = Seats;
+
+
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -56,7 +68,15 @@ namespace MovieReservation
 
         private void Terug_Click(object sender, EventArgs e)
         {
+            movieChoice movie = new movieChoice(KindOfMovie, reservedSeats);
+            this.Hide();
+            movie.ShowDialog();
             this.Close();
         }
+
+
+
+
     }
 }
+

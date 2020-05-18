@@ -25,7 +25,8 @@ namespace MovieReservation
         public Color White = Color.FromArgb(255, 255, 255);
         public string KindOfMovie;
         public string Seats;
-        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie)
+        public List<string> reservedSeats = new List<string>();
+        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
             Title = title;
@@ -38,6 +39,7 @@ namespace MovieReservation
             Time = time;
             KindOfMovie = kindofmovie;
             Seats = "";
+            reservedSeats = reserve;
         }
 
         public void seatDisable()
@@ -115,14 +117,14 @@ namespace MovieReservation
         {
             if (Age == "16")
             {
-                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
             else
             {
-                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
                 this.Hide();
                 tk16.ShowDialog();
                 this.Close();
@@ -959,7 +961,7 @@ namespace MovieReservation
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "3D", AmountSeats, Seats, PictureName);
+            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "3D", AmountSeats, Seats, PictureName, reservedSeats, KindOfMovie);
             ticket.ShowDialog();
         }
     }

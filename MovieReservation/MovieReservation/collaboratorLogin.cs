@@ -18,6 +18,9 @@ namespace MovieReservation
         public collaboratorLogin()
         {
             InitializeComponent();
+            txtPassword.PasswordChar = '*';
+            txtPassword.MaxLength = 15;
+
         }
 
         private void button1_Click(object sender, EventArgs e)

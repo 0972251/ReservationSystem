@@ -23,11 +23,17 @@ namespace MovieReservation
         public string Date;
         public string Time;
         public Color Gray = Color.FromArgb(119, 136, 153);
-        public Color White = Color.FromArgb(255,255,255);
+        public Color White = Color.FromArgb(255, 255, 255);
         public string Seats;
         public string KindOfMovie;
+        public List<string> reservedSeats = new List<string>();
+        public List<int> opgeslagen = new List<int>();
+        public List<string> Leeg = new List<string>();
+        public List<int> Leeg2 = new List<int>();
+        public List<int> opgeslagen2 = new List<int>();
+        public List<int> numberSeats = new List<int>();
 
-        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie)
+        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
         {
             InitializeComponent();
             Title = title;
@@ -40,11 +46,14 @@ namespace MovieReservation
             Time = time;
             Seats = "";
             KindOfMovie = kindofmovie;
+            opgeslagen = reserve;
+            seatSaved();
 
         }
 
         public void seatDisable()
         {
+            seatSaved();
             if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
@@ -54,35 +63,75 @@ namespace MovieReservation
                     Annuleren.Enabled = true;
                     NextPage.Enabled = true;
                 }
+                foreach (var s in reservedSeats)
+                {
+                    Seats = Seats + s;
+                }
+                foreach (var d in numberSeats)
+                {
+                    opgeslagen.Add(d);
+                }
             }
             else
             {
-                foreach (var b in Controls.OfType<Button>())
+                for (int i = 1; i <= 56; i++)
                 {
-                    b.Enabled = true;
-                    NextPage.Enabled = false;
+                    foreach (var t in opgeslagen)
+                    {
+                        if (i == t)
+                        {
+                            string buttonName = "button" + i;
+                            this.Controls[buttonName].Enabled = false;
+                            this.Controls[buttonName].BackColor = Gray;
+                            NextPage.Enabled = false;
+                        }
+                    }
                 }
+
             }
         }
 
         public void Cancel()
         {
+
+            foreach (var a in numberSeats)
+            {
+                opgeslagen.Remove(a);
+            }
+            for (int i = 1; i <= 56; i++)
+            {
+                foreach (var t in numberSeats)
+                {
+                    if (i == t)
+                    {
+                        string buttonName = "button" + i;
+                        this.Controls[buttonName].Enabled = true;
+                        this.Controls[buttonName].BackColor = White;
+                    }
+                }
+            }
             foreach (var b in Controls.OfType<Button>())
             {
                 b.Enabled = true;
-                b.BackColor = White;
-                count = 0;
-                Seats = "";
             }
+            seatSaved();
+            count = 0;
+            Seats = "";
+            reservedSeats = Leeg;
+            numberSeats = Leeg2;
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            A1.Enabled = false;
-            A1.BackColor = Gray;
+            button1.Enabled = false;
+            button1.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A1 ");
+            numberSeats.Add(1);
             seatDisable();
-            Seats += "A1 ";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -90,8 +139,9 @@ namespace MovieReservation
             button2.Enabled = false;
             button2.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A2 ");
+            numberSeats.Add(2);
             seatDisable();
-            Seats += "A2 ";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -99,8 +149,9 @@ namespace MovieReservation
             button3.Enabled = false;
             button3.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A3 ");
+            numberSeats.Add(3);
             seatDisable();
-            Seats += "A3 ";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -108,8 +159,9 @@ namespace MovieReservation
             button4.Enabled = false;
             button4.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A4 ");
+            numberSeats.Add(4);
             seatDisable();
-            Seats += "A4 ";
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -117,8 +169,9 @@ namespace MovieReservation
             button6.Enabled = false;
             button6.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A5 ");
+            numberSeats.Add(5);
             seatDisable();
-            Seats += "A5 ";
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -126,8 +179,10 @@ namespace MovieReservation
             button5.Enabled = false;
             button5.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A6 ");
+            numberSeats.Add(6);
             seatDisable();
-            Seats += "A6 ";
+
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -135,8 +190,9 @@ namespace MovieReservation
             button7.Enabled = false;
             button7.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A7 ");
+            numberSeats.Add(7);
             seatDisable();
-            Seats += "A7 ";
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -144,8 +200,9 @@ namespace MovieReservation
             button8.Enabled = false;
             button8.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A8 ");
+            numberSeats.Add(8);
             seatDisable();
-            Seats += "A8 ";
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -153,8 +210,9 @@ namespace MovieReservation
             button9.Enabled = false;
             button9.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A9 ");
+            numberSeats.Add(9);
             seatDisable();
-            Seats += "A9 ";
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -162,17 +220,21 @@ namespace MovieReservation
             button10.Enabled = false;
             button10.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("A10 ");
+            numberSeats.Add(10);
             seatDisable();
-            Seats += "A10 ";
         }
+
+
 
         private void button11_Click(object sender, EventArgs e)
         {
             button11.Enabled = false;
             button11.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("B1 ");
+            numberSeats.Add(11);
             seatDisable();
-            Seats += "B1 ";
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -180,8 +242,9 @@ namespace MovieReservation
             button12.Enabled = false;
             button12.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("B2 ");
+            numberSeats.Add(12);
             seatDisable();
-            Seats += "B2 ";
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -189,8 +252,9 @@ namespace MovieReservation
             button13.Enabled = false;
             button13.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("B3 ");
+            numberSeats.Add(13);
             seatDisable();
-            Seats += "B3 ";
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -198,8 +262,9 @@ namespace MovieReservation
             button14.Enabled = false;
             button14.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("B4 ");
+            numberSeats.Add(14);
             seatDisable();
-            Seats += "B4 ";
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -207,8 +272,9 @@ namespace MovieReservation
             button15.Enabled = false;
             button15.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("B5 ");
+            numberSeats.Add(15);
             seatDisable();
-            Seats += "B5 ";
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -216,8 +282,9 @@ namespace MovieReservation
             button16.Enabled = false;
             button16.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("B6 ");
+            numberSeats.Add(16);
             seatDisable();
-            Seats += "B6 ";
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -225,87 +292,97 @@ namespace MovieReservation
             button17.Enabled = false;
             button17.BackColor = Gray;
             count += 1;
+            reservedSeats.Add("B7 ");
+            numberSeats.Add(17);
             seatDisable();
-            Seats += "B7 ";
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
             button18.Enabled = false;
             button18.BackColor = Gray; count += 1;
+            reservedSeats.Add("B8 ");
+            numberSeats.Add(18);
             seatDisable();
-            Seats += "B8 ";
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             button19.Enabled = false;
             button19.BackColor = Gray; count += 1;
+            reservedSeats.Add("B9 ");
+            numberSeats.Add(19);
             seatDisable();
-            Seats += "B9 ";
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
             button20.Enabled = false;
             button20.BackColor = Gray;
+            reservedSeats.Add("B10 ");
             count += 1;
+            numberSeats.Add(20);
             seatDisable();
-            Seats += "B10 ";
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
             button21.Enabled = false;
             button21.BackColor = Gray;
+            reservedSeats.Add("C1 ");
             count += 1;
+            numberSeats.Add(21);
             seatDisable();
-            Seats += "C1 ";
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
             button22.Enabled = false;
             button22.BackColor = Gray;
+            reservedSeats.Add("C2 ");
             count += 1;
+            numberSeats.Add(22);
             seatDisable();
-            Seats += "C2 ";
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
             button23.Enabled = false;
             button23.BackColor = Gray;
+            reservedSeats.Add("C3 ");
             count += 1;
+            numberSeats.Add(23);
             seatDisable();
-            Seats += "C3 ";
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
             button24.Enabled = false;
             button24.BackColor = Gray;
+            reservedSeats.Add("C4 ");
             count += 1;
+            numberSeats.Add(24);
             seatDisable();
-            Seats += "C4 ";
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
             button25.Enabled = false;
             button25.BackColor = Gray;
+            reservedSeats.Add("C5 ");
             count += 1;
+            numberSeats.Add(25);
             seatDisable();
-            Seats += "C5 ";
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
             button26.Enabled = false;
             button26.BackColor = Gray;
+            reservedSeats.Add("C6 ");
             count += 1;
+            numberSeats.Add(26);
             seatDisable();
-            Seats += "C6 ";
         }
 
         private void button27_Click(object sender, EventArgs e)
@@ -313,8 +390,9 @@ namespace MovieReservation
             button27.Enabled = false;
             button27.BackColor = Gray;
             count += 1;
+            numberSeats.Add(27);
+            reservedSeats.Add("C7 ");
             seatDisable();
-            Seats += "C7 ";
         }
 
         private void button28_Click(object sender, EventArgs e)
@@ -322,8 +400,9 @@ namespace MovieReservation
             button28.Enabled = false;
             button28.BackColor = Gray;
             count += 1;
+            numberSeats.Add(28);
+            reservedSeats.Add("C8 ");
             seatDisable();
-            Seats += "C8 ";
         }
 
         private void button29_Click(object sender, EventArgs e)
@@ -331,8 +410,9 @@ namespace MovieReservation
             button29.Enabled = false;
             button29.BackColor = Gray;
             count += 1;
+            numberSeats.Add(29);
+            reservedSeats.Add("C9 ");
             seatDisable();
-            Seats += "C9 ";
         }
 
         private void button30_Click(object sender, EventArgs e)
@@ -340,8 +420,9 @@ namespace MovieReservation
             button30.Enabled = false;
             button30.BackColor = Gray;
             count += 1;
+            numberSeats.Add(30);
+            reservedSeats.Add("C10 ");
             seatDisable();
-            Seats += "C10 ";
         }
 
         private void button31_Click(object sender, EventArgs e)
@@ -349,8 +430,9 @@ namespace MovieReservation
             button31.Enabled = false;
             button31.BackColor = Gray;
             count += 1;
+            numberSeats.Add(31);
+            reservedSeats.Add("D2 ");
             seatDisable();
-            Seats += "D2 ";
         }
 
         private void button32_Click(object sender, EventArgs e)
@@ -358,8 +440,9 @@ namespace MovieReservation
             button32.Enabled = false;
             button32.BackColor = Gray;
             count += 1;
+            numberSeats.Add(32);
+            reservedSeats.Add("D3 ");
             seatDisable();
-            Seats += "D3 ";
         }
 
         private void button33_Click(object sender, EventArgs e)
@@ -367,8 +450,9 @@ namespace MovieReservation
             button33.Enabled = false;
             button33.BackColor = Gray;
             count += 1;
+            numberSeats.Add(33);
+            reservedSeats.Add("D4 ");
             seatDisable();
-            Seats += "D4 ";
         }
 
         private void button34_Click(object sender, EventArgs e)
@@ -376,8 +460,9 @@ namespace MovieReservation
             button34.Enabled = false;
             button34.BackColor = Gray;
             count += 1;
+            numberSeats.Add(34);
+            reservedSeats.Add("D5 ");
             seatDisable();
-            Seats += "D5 ";
         }
 
         private void button35_Click(object sender, EventArgs e)
@@ -385,8 +470,9 @@ namespace MovieReservation
             button35.Enabled = false;
             button35.BackColor = Gray;
             count += 1;
+            numberSeats.Add(35);
+            reservedSeats.Add("D6 ");
             seatDisable();
-            Seats += "D6 ";
         }
 
         private void button36_Click(object sender, EventArgs e)
@@ -394,8 +480,9 @@ namespace MovieReservation
             button36.Enabled = false;
             button36.BackColor = Gray;
             count += 1;
+            numberSeats.Add(36);
+            reservedSeats.Add("D7 ");
             seatDisable();
-            Seats += "D7 ";
         }
 
         private void button37_Click(object sender, EventArgs e)
@@ -403,8 +490,9 @@ namespace MovieReservation
             button37.Enabled = false;
             button37.BackColor = Gray;
             count += 1;
+            numberSeats.Add(37);
+            reservedSeats.Add("D8 ");
             seatDisable();
-            Seats += "D8 ";
         }
 
         private void button38_Click(object sender, EventArgs e)
@@ -412,8 +500,9 @@ namespace MovieReservation
             button38.Enabled = false;
             button38.BackColor = Gray;
             count += 1;
+            numberSeats.Add(38);
+            reservedSeats.Add("D9 ");
             seatDisable();
-            Seats += "D9 ";
         }
 
         private void button39_Click(object sender, EventArgs e)
@@ -421,8 +510,9 @@ namespace MovieReservation
             button39.Enabled = false;
             button39.BackColor = Gray;
             count += 1;
+            numberSeats.Add(39);
+            reservedSeats.Add("E2 ");
             seatDisable();
-            Seats += "E2 ";
         }
 
         private void button40_Click(object sender, EventArgs e)
@@ -430,8 +520,9 @@ namespace MovieReservation
             button40.Enabled = false;
             button40.BackColor = Gray;
             count += 1;
+            numberSeats.Add(40);
+            reservedSeats.Add("E3 ");
             seatDisable();
-            Seats += "E3 ";
         }
 
         private void button41_Click(object sender, EventArgs e)
@@ -439,8 +530,9 @@ namespace MovieReservation
             button41.Enabled = false;
             button41.BackColor = Gray;
             count += 1;
+            numberSeats.Add(41);
+            reservedSeats.Add("E4 ");
             seatDisable();
-            Seats += "E4 ";
         }
 
         private void button42_Click(object sender, EventArgs e)
@@ -448,8 +540,9 @@ namespace MovieReservation
             button42.Enabled = false;
             button42.BackColor = Gray;
             count += 1;
+            numberSeats.Add(42);
+            reservedSeats.Add("E5 ");
             seatDisable();
-            Seats += "E5 ";
         }
 
         private void button43_Click(object sender, EventArgs e)
@@ -457,8 +550,9 @@ namespace MovieReservation
             button43.Enabled = false;
             button43.BackColor = Gray;
             count += 1;
+            numberSeats.Add(43);
+            reservedSeats.Add("E6 ");
             seatDisable();
-            Seats += "E6";
         }
 
         private void button44_Click(object sender, EventArgs e)
@@ -466,8 +560,9 @@ namespace MovieReservation
             button44.Enabled = false;
             button44.BackColor = Gray;
             count += 1;
+            numberSeats.Add(44);
+            reservedSeats.Add("E7 ");
             seatDisable();
-            Seats += "E7 ";
         }
 
         private void button45_Click(object sender, EventArgs e)
@@ -475,8 +570,9 @@ namespace MovieReservation
             button45.Enabled = false;
             button45.BackColor = Gray;
             count += 1;
+            numberSeats.Add(45);
+            reservedSeats.Add("E8 ");
             seatDisable();
-            Seats += "E8 ";
         }
 
         private void button46_Click(object sender, EventArgs e)
@@ -484,8 +580,9 @@ namespace MovieReservation
             button46.Enabled = false;
             button46.BackColor = Gray;
             count += 1;
+            numberSeats.Add(46);
+            reservedSeats.Add("E9 ");
             seatDisable();
-            Seats += "E9 ";
         }
 
         private void button47_Click(object sender, EventArgs e)
@@ -493,8 +590,9 @@ namespace MovieReservation
             button47.Enabled = false;
             button47.BackColor = Gray;
             count += 1;
+            numberSeats.Add(47);
+            reservedSeats.Add("F1 ");
             seatDisable();
-            Seats += "F1 ";
         }
 
         private void button48_Click(object sender, EventArgs e)
@@ -502,8 +600,9 @@ namespace MovieReservation
             button48.Enabled = false;
             button48.BackColor = Gray;
             count += 1;
+            numberSeats.Add(48);
+            reservedSeats.Add("F2 ");
             seatDisable();
-            Seats += "F2 ";
         }
 
         private void button49_Click(object sender, EventArgs e)
@@ -511,8 +610,9 @@ namespace MovieReservation
             button49.Enabled = false;
             button49.BackColor = Gray;
             count += 1;
+            numberSeats.Add(49);
+            reservedSeats.Add("F3 ");
             seatDisable();
-            Seats += "F3 ";
         }
 
         private void button50_Click(object sender, EventArgs e)
@@ -520,8 +620,9 @@ namespace MovieReservation
             button50.Enabled = false;
             button50.BackColor = Gray;
             count += 1;
+            numberSeats.Add(50);
+            reservedSeats.Add("F4 ");
             seatDisable();
-            Seats += "F4 ";
         }
 
         private void button51_Click(object sender, EventArgs e)
@@ -529,8 +630,9 @@ namespace MovieReservation
             button51.Enabled = false;
             button51.BackColor = Gray;
             count += 1;
+            numberSeats.Add(51);
+            reservedSeats.Add("F5 ");
             seatDisable();
-            Seats += "F5 ";
         }
 
         private void button52_Click(object sender, EventArgs e)
@@ -538,8 +640,9 @@ namespace MovieReservation
             button52.Enabled = false;
             button52.BackColor = Gray;
             count += 1;
+            numberSeats.Add(52);
+            reservedSeats.Add("F6 ");
             seatDisable();
-            Seats += "F6 ";
         }
 
         private void button53_Click(object sender, EventArgs e)
@@ -547,8 +650,9 @@ namespace MovieReservation
             button53.Enabled = false;
             button53.BackColor = Gray;
             count += 1;
+            numberSeats.Add(53);
+            reservedSeats.Add("F7 ");
             seatDisable();
-            Seats += "F7 ";
         }
 
         private void button54_Click(object sender, EventArgs e)
@@ -556,8 +660,9 @@ namespace MovieReservation
             button54.Enabled = false;
             button54.BackColor = Gray;
             count += 1;
+            numberSeats.Add(54);
+            reservedSeats.Add("F8 ");
             seatDisable();
-            Seats += "F8 ";
         }
 
         private void button55_Click(object sender, EventArgs e)
@@ -565,8 +670,9 @@ namespace MovieReservation
             button55.Enabled = false;
             button55.BackColor = Gray;
             count += 1;
+            numberSeats.Add(55);
+            reservedSeats.Add("F9 ");
             seatDisable();
-            Seats += "F9 ";
         }
 
         private void button56_Click(object sender, EventArgs e)
@@ -574,22 +680,23 @@ namespace MovieReservation
             button56.Enabled = false;
             button56.BackColor = Gray;
             count += 1;
+            numberSeats.Add(56);
+            reservedSeats.Add("F10 ");
             seatDisable();
-            Seats += "F10 ";
         }
 
         private void button57_Click(object sender, EventArgs e)
         {
             if (Age == "16")
             {
-                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, opgeslagen);
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
             else
             {
-                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, opgeslagen);
                 this.Hide();
                 tk16.ShowDialog();
                 this.Close();
@@ -609,10 +716,28 @@ namespace MovieReservation
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "2D", AmountSeats, Seats, PictureName);
+            opgeslagen2 = opgeslagen;
+            reservedSeats = Leeg;
+            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "2D", AmountSeats, Seats, PictureName, opgeslagen2, KindOfMovie);
             this.Hide();
             ticket.ShowDialog();
             this.Close();
+        }
+
+        public void seatSaved()
+        {
+            for (int i = 1; i <= 56; i++)
+            {
+                foreach (var t in opgeslagen)
+                {
+                    if (i == t)
+                    {
+                        string buttonName = "button" + i;
+                        this.Controls[buttonName].Enabled = false;
+                        this.Controls[buttonName].BackColor = Gray;
+                    }
+                }
+            }
         }
     }
 }

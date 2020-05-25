@@ -20,7 +20,8 @@ namespace MovieReservation
         public string Date;
         public string Time;
         public string KindOfMovie;
-        public TicketIfNot16(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie)
+        public List<int> reservedSeats = new List<int>();
+        public TicketIfNot16(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
         {
             InitializeComponent();
 
@@ -32,6 +33,7 @@ namespace MovieReservation
             Date = date;
             Time = time;
             KindOfMovie = kindofmovie;
+            reservedSeats = reserve;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -71,7 +73,7 @@ namespace MovieReservation
             }
             else
             {
-                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
                 this.Hide();
                 room.ShowDialog();
                 this.Close();
@@ -80,7 +82,7 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie);
+            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie, reservedSeats);
             this.Hide();
             dt.ShowDialog();
             this.Close();
@@ -92,6 +94,21 @@ namespace MovieReservation
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

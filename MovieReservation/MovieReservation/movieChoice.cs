@@ -23,10 +23,12 @@ namespace MovieReservation
         public string Description;
         public string PictureName;
         public string KindOfMovie;
+        public List<int> reservedSeats = new List<int>();
 
-        public movieChoice(string kindofmovie)
+        public movieChoice(string kindofmovie, List<int> reserve)
         {
             InitializeComponent();
+            reservedSeats = reserve;
             KindOfMovie = kindofmovie;
             Movies movies = JsonConvert.DeserializeObject<Movies>(File.ReadAllText("Movies.json"));
             label2.Text = movies.Nieuw.N1.Title;
@@ -213,7 +215,7 @@ namespace MovieReservation
                 PictureName = Movies.Actie.A1.PictureName;
                 Description = Movies.Actie.A1.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -227,7 +229,7 @@ namespace MovieReservation
                 PictureName = Movies.Comedy.C1.PictureName;
                 Description = Movies.Comedy.C1.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -241,7 +243,7 @@ namespace MovieReservation
                 PictureName = Movies.Turks.T1.PictureName;
                 Description = Movies.Turks.T1.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -255,7 +257,7 @@ namespace MovieReservation
                 PictureName = Movies.Bollywood.B1.PictureName;
                 Description = Movies.Bollywood.B1.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -269,7 +271,7 @@ namespace MovieReservation
                 PictureName = Movies.Kinderfilm.K1.PictureName;
                 Description = Movies.Kinderfilm.K1.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -283,7 +285,7 @@ namespace MovieReservation
                 PictureName = Movies.Animatie.Q1.PictureName;
                 Description = Movies.Animatie.Q1.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -297,7 +299,7 @@ namespace MovieReservation
                 PictureName = Movies.Familie.F1.PictureName;
                 Description = Movies.Familie.F1.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -311,7 +313,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N1.PictureName;
                 Description = Movies.Nieuw.N1.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -325,7 +327,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N1.PictureName;
                 Description = Movies.Nieuw.N1.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -343,7 +345,7 @@ namespace MovieReservation
                 PictureName = Movies.Actie.A2.PictureName;
                 Description = Movies.Actie.A2.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -357,7 +359,7 @@ namespace MovieReservation
                 PictureName = Movies.Comedy.C2.PictureName;
                 Description = Movies.Comedy.C2.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -371,7 +373,7 @@ namespace MovieReservation
                 PictureName = Movies.Turks.T2.PictureName;
                 Description = Movies.Turks.T2.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -385,7 +387,7 @@ namespace MovieReservation
                 PictureName = Movies.Bollywood.B2.PictureName;
                 Description = Movies.Bollywood.B2.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -399,7 +401,7 @@ namespace MovieReservation
                 PictureName = Movies.Kinderfilm.K2.PictureName;
                 Description = Movies.Kinderfilm.K2.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -413,7 +415,7 @@ namespace MovieReservation
                 PictureName = Movies.Animatie.Q2.PictureName;
                 Description = Movies.Animatie.Q2.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -427,7 +429,7 @@ namespace MovieReservation
                 PictureName = Movies.Familie.F2.PictureName;
                 Description = Movies.Familie.F2.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -441,7 +443,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N2.PictureName;
                 Description = Movies.Nieuw.N2.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -455,7 +457,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N2.PictureName;
                 Description = Movies.Nieuw.N2.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -473,7 +475,7 @@ namespace MovieReservation
                 PictureName = Movies.Actie.A3.PictureName;
                 Description = Movies.Actie.A3.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -487,7 +489,7 @@ namespace MovieReservation
                 PictureName = Movies.Comedy.C3.PictureName;
                 Description = Movies.Comedy.C3.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -501,7 +503,7 @@ namespace MovieReservation
                 PictureName = Movies.Turks.T3.PictureName;
                 Description = Movies.Turks.T3.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -515,7 +517,7 @@ namespace MovieReservation
                 PictureName = Movies.Bollywood.B3.PictureName;
                 Description = Movies.Bollywood.B3.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -529,7 +531,7 @@ namespace MovieReservation
                 PictureName = Movies.Kinderfilm.K3.PictureName;
                 Description = Movies.Kinderfilm.K3.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -543,7 +545,7 @@ namespace MovieReservation
                 PictureName = Movies.Animatie.Q3.PictureName;
                 Description = Movies.Animatie.Q3.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -557,7 +559,7 @@ namespace MovieReservation
                 PictureName = Movies.Familie.F3.PictureName;
                 Description = Movies.Familie.F3.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -571,7 +573,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N3.PictureName;
                 Description = Movies.Nieuw.N3.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -585,7 +587,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N3.PictureName;
                 Description = Movies.Nieuw.N3.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -603,7 +605,7 @@ namespace MovieReservation
                 PictureName = Movies.Actie.A4.PictureName;
                 Description = Movies.Actie.A4.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -617,7 +619,7 @@ namespace MovieReservation
                 PictureName = Movies.Comedy.C4.PictureName;
                 Description = Movies.Comedy.C4.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -631,7 +633,7 @@ namespace MovieReservation
                 PictureName = Movies.Turks.T4.PictureName;
                 Description = Movies.Turks.T4.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -645,7 +647,7 @@ namespace MovieReservation
                 PictureName = Movies.Bollywood.B4.PictureName;
                 Description = Movies.Bollywood.B4.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -659,7 +661,7 @@ namespace MovieReservation
                 PictureName = Movies.Kinderfilm.K4.PictureName;
                 Description = Movies.Kinderfilm.K4.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -673,7 +675,7 @@ namespace MovieReservation
                 PictureName = Movies.Animatie.Q4.PictureName;
                 Description = Movies.Animatie.Q4.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -687,7 +689,7 @@ namespace MovieReservation
                 PictureName = Movies.Familie.F4.PictureName;
                 Description = Movies.Familie.F4.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -701,7 +703,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N4.PictureName;
                 Description = Movies.Nieuw.N4.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -715,7 +717,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N4.PictureName;
                 Description = Movies.Nieuw.N4.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -733,7 +735,7 @@ namespace MovieReservation
                 PictureName = Movies.Actie.A5.PictureName;
                 Description = Movies.Actie.A5.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -747,7 +749,7 @@ namespace MovieReservation
                 PictureName = Movies.Comedy.C5.PictureName;
                 Description = Movies.Comedy.C5.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -761,7 +763,7 @@ namespace MovieReservation
                 PictureName = Movies.Turks.T5.PictureName;
                 Description = Movies.Turks.T5.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -775,7 +777,7 @@ namespace MovieReservation
                 PictureName = Movies.Bollywood.B5.PictureName;
                 Description = Movies.Bollywood.B5.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -789,7 +791,7 @@ namespace MovieReservation
                 PictureName = Movies.Kinderfilm.K5.PictureName;
                 Description = Movies.Kinderfilm.K5.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -803,7 +805,7 @@ namespace MovieReservation
                 PictureName = Movies.Animatie.Q5.PictureName;
                 Description = Movies.Animatie.Q5.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -817,7 +819,7 @@ namespace MovieReservation
                 PictureName = Movies.Familie.F5.PictureName;
                 Description = Movies.Familie.F5.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();
@@ -831,8 +833,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N5.PictureName;
                 Description = Movies.Nieuw.N5.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
-                this.Hide();
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 dt.ShowDialog();
                 this.Close();
             }
@@ -845,7 +846,7 @@ namespace MovieReservation
                 PictureName = Movies.Nieuw.N5.PictureName;
                 Description = Movies.Nieuw.N5.Description;
 
-                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie);
+                dateTime dt = new dateTime(Title, Genre, Age.ToString(), PictureName, Description, KindOfMovie, reservedSeats);
                 this.Hide();
                 dt.ShowDialog();
                 this.Close();

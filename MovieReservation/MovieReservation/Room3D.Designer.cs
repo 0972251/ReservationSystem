@@ -144,7 +144,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "B2";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button2
             // 
@@ -158,7 +158,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "B3";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button1_Click_1);
+            this.button2.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button3
             // 
@@ -172,7 +172,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "B4";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button1_Click_1);
+            this.button3.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button4
             // 
@@ -186,7 +186,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "B5";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button1_Click_1);
+            this.button4.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button5
             // 
@@ -200,7 +200,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "B6";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button1_Click_1);
+            this.button5.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button6
             // 
@@ -214,7 +214,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "B7";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button1_Click_1);
+            this.button6.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button7
             // 
@@ -228,7 +228,7 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "B13";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button1_Click_1);
+            this.button7.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button8
             // 
@@ -242,7 +242,7 @@
             this.button8.TabIndex = 10;
             this.button8.Text = "B12";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button1_Click_1);
+            this.button8.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button9
             // 
@@ -256,7 +256,7 @@
             this.button9.TabIndex = 9;
             this.button9.Text = "B11";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button1_Click_1);
+            this.button9.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button10
             // 
@@ -270,7 +270,7 @@
             this.button10.TabIndex = 8;
             this.button10.Text = "B10";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button1_Click_1);
+            this.button10.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button11
             // 
@@ -284,7 +284,7 @@
             this.button11.TabIndex = 7;
             this.button11.Text = "B9";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button1_Click_1);
+            this.button11.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button12
             // 
@@ -298,7 +298,7 @@
             this.button12.TabIndex = 6;
             this.button12.Text = "B8";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button1_Click_1);
+            this.button12.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button13
             // 
@@ -312,7 +312,7 @@
             this.button13.TabIndex = 17;
             this.button13.Text = "C7";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button1_Click_1);
+            this.button13.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button14
             // 
@@ -326,7 +326,7 @@
             this.button14.TabIndex = 16;
             this.button14.Text = "C6";
             this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button1_Click_1);
+            this.button14.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button15
             // 
@@ -340,7 +340,7 @@
             this.button15.TabIndex = 15;
             this.button15.Text = "C5";
             this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button1_Click_1);
+            this.button15.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button16
             // 
@@ -354,7 +354,7 @@
             this.button16.TabIndex = 14;
             this.button16.Text = "C4";
             this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button1_Click_1);
+            this.button16.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button17
             // 
@@ -368,7 +368,7 @@
             this.button17.TabIndex = 13;
             this.button17.Text = "C3";
             this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button1_Click_1);
+            this.button17.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button18
             // 
@@ -382,7 +382,7 @@
             this.button18.TabIndex = 12;
             this.button18.Text = "C2";
             this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button1_Click_1);
+            this.button18.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button19
             // 
@@ -396,7 +396,7 @@
             this.button19.TabIndex = 23;
             this.button19.Text = "C13";
             this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.button1_Click_1);
+            this.button19.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button20
             // 
@@ -410,7 +410,7 @@
             this.button20.TabIndex = 22;
             this.button20.Text = "C12";
             this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.button1_Click_1);
+            this.button20.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button21
             // 
@@ -424,7 +424,7 @@
             this.button21.TabIndex = 21;
             this.button21.Text = "C11";
             this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button1_Click_1);
+            this.button21.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button22
             // 
@@ -438,7 +438,7 @@
             this.button22.TabIndex = 20;
             this.button22.Text = "C10";
             this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button1_Click_1);
+            this.button22.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button23
             // 
@@ -452,7 +452,7 @@
             this.button23.TabIndex = 19;
             this.button23.Text = "C9";
             this.button23.UseVisualStyleBackColor = false;
-            this.button23.Click += new System.EventHandler(this.button1_Click_1);
+            this.button23.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button24
             // 
@@ -466,7 +466,7 @@
             this.button24.TabIndex = 18;
             this.button24.Text = "C8";
             this.button24.UseVisualStyleBackColor = false;
-            this.button24.Click += new System.EventHandler(this.button1_Click_1);
+            this.button24.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button25
             // 
@@ -480,7 +480,7 @@
             this.button25.TabIndex = 29;
             this.button25.Text = "D7";
             this.button25.UseVisualStyleBackColor = false;
-            this.button25.Click += new System.EventHandler(this.button1_Click_1);
+            this.button25.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button26
             // 
@@ -494,7 +494,7 @@
             this.button26.TabIndex = 28;
             this.button26.Text = "D6";
             this.button26.UseVisualStyleBackColor = false;
-            this.button26.Click += new System.EventHandler(this.button1_Click_1);
+            this.button26.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button27
             // 
@@ -508,7 +508,7 @@
             this.button27.TabIndex = 27;
             this.button27.Text = "D5";
             this.button27.UseVisualStyleBackColor = false;
-            this.button27.Click += new System.EventHandler(this.button1_Click_1);
+            this.button27.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button28
             // 
@@ -522,7 +522,7 @@
             this.button28.TabIndex = 26;
             this.button28.Text = "D4";
             this.button28.UseVisualStyleBackColor = false;
-            this.button28.Click += new System.EventHandler(this.button1_Click_1);
+            this.button28.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button29
             // 
@@ -536,7 +536,7 @@
             this.button29.TabIndex = 25;
             this.button29.Text = "D3";
             this.button29.UseVisualStyleBackColor = false;
-            this.button29.Click += new System.EventHandler(this.button1_Click_1);
+            this.button29.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button30
             // 
@@ -550,7 +550,7 @@
             this.button30.TabIndex = 24;
             this.button30.Text = "D2";
             this.button30.UseVisualStyleBackColor = false;
-            this.button30.Click += new System.EventHandler(this.button1_Click_1);
+            this.button30.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button31
             // 
@@ -564,7 +564,7 @@
             this.button31.TabIndex = 35;
             this.button31.Text = "D13";
             this.button31.UseVisualStyleBackColor = false;
-            this.button31.Click += new System.EventHandler(this.button1_Click_1);
+            this.button31.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button32
             // 
@@ -578,7 +578,7 @@
             this.button32.TabIndex = 34;
             this.button32.Text = "D12";
             this.button32.UseVisualStyleBackColor = false;
-            this.button32.Click += new System.EventHandler(this.button1_Click_1);
+            this.button32.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button33
             // 
@@ -592,7 +592,7 @@
             this.button33.TabIndex = 33;
             this.button33.Text = "D11";
             this.button33.UseVisualStyleBackColor = false;
-            this.button33.Click += new System.EventHandler(this.button1_Click_1);
+            this.button33.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button34
             // 
@@ -606,7 +606,7 @@
             this.button34.TabIndex = 32;
             this.button34.Text = "D10";
             this.button34.UseVisualStyleBackColor = false;
-            this.button34.Click += new System.EventHandler(this.button1_Click_1);
+            this.button34.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button35
             // 
@@ -620,7 +620,7 @@
             this.button35.TabIndex = 31;
             this.button35.Text = "D9";
             this.button35.UseVisualStyleBackColor = false;
-            this.button35.Click += new System.EventHandler(this.button1_Click_1);
+            this.button35.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button36
             // 
@@ -634,187 +634,187 @@
             this.button36.TabIndex = 30;
             this.button36.Text = "D8";
             this.button36.UseVisualStyleBackColor = false;
-            this.button36.Click += new System.EventHandler(this.button1_Click_1);
+            this.button36.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button37
             // 
             this.button37.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button37.BackColor = System.Drawing.Color.White;
             this.button37.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button37.Location = new System.Drawing.Point(401, 134);
             this.button37.Margin = new System.Windows.Forms.Padding(2);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(36, 35);
             this.button37.TabIndex = 41;
-            this.button37.Text = "♿";
+            this.button37.Text = "A7";
             this.button37.UseVisualStyleBackColor = false;
-            this.button37.Click += new System.EventHandler(this.button1_Click_1);
+            this.button37.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button38
             // 
             this.button38.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button38.BackColor = System.Drawing.Color.White;
             this.button38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button38.Location = new System.Drawing.Point(361, 134);
             this.button38.Margin = new System.Windows.Forms.Padding(2);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(36, 35);
             this.button38.TabIndex = 40;
-            this.button38.Text = "♿";
+            this.button38.Text = "A6";
             this.button38.UseVisualStyleBackColor = false;
-            this.button38.Click += new System.EventHandler(this.button1_Click_1);
+            this.button38.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button39
             // 
             this.button39.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button39.BackColor = System.Drawing.Color.White;
             this.button39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button39.Location = new System.Drawing.Point(320, 134);
             this.button39.Margin = new System.Windows.Forms.Padding(2);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(36, 35);
             this.button39.TabIndex = 39;
-            this.button39.Text = "♿";
+            this.button39.Text = "A5";
             this.button39.UseVisualStyleBackColor = false;
-            this.button39.Click += new System.EventHandler(this.button1_Click_1);
+            this.button39.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button40
             // 
             this.button40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button40.BackColor = System.Drawing.Color.White;
             this.button40.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button40.Location = new System.Drawing.Point(279, 134);
             this.button40.Margin = new System.Windows.Forms.Padding(2);
             this.button40.Name = "button40";
             this.button40.Size = new System.Drawing.Size(36, 35);
             this.button40.TabIndex = 38;
-            this.button40.Text = "♿";
+            this.button40.Text = "A4";
             this.button40.UseVisualStyleBackColor = false;
-            this.button40.Click += new System.EventHandler(this.button1_Click_1);
+            this.button40.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button41
             // 
             this.button41.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button41.BackColor = System.Drawing.Color.White;
             this.button41.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button41.Location = new System.Drawing.Point(239, 134);
             this.button41.Margin = new System.Windows.Forms.Padding(2);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(36, 35);
             this.button41.TabIndex = 37;
-            this.button41.Text = "♿";
+            this.button41.Text = "A3";
             this.button41.UseVisualStyleBackColor = false;
-            this.button41.Click += new System.EventHandler(this.button1_Click_1);
+            this.button41.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button42
             // 
             this.button42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button42.BackColor = System.Drawing.Color.White;
             this.button42.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button42.Location = new System.Drawing.Point(199, 134);
             this.button42.Margin = new System.Windows.Forms.Padding(2);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(36, 35);
             this.button42.TabIndex = 36;
-            this.button42.Text = "♿";
+            this.button42.Text = "A2";
             this.button42.UseVisualStyleBackColor = false;
-            this.button42.Click += new System.EventHandler(this.button1_Click_1);
+            this.button42.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button43
             // 
             this.button43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button43.BackColor = System.Drawing.Color.White;
             this.button43.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button43.Location = new System.Drawing.Point(679, 134);
             this.button43.Margin = new System.Windows.Forms.Padding(2);
             this.button43.Name = "button43";
             this.button43.Size = new System.Drawing.Size(36, 35);
             this.button43.TabIndex = 47;
-            this.button43.Text = "♿";
+            this.button43.Text = "A13";
             this.button43.UseVisualStyleBackColor = false;
-            this.button43.Click += new System.EventHandler(this.button1_Click_1);
+            this.button43.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button44
             // 
             this.button44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button44.BackColor = System.Drawing.Color.White;
             this.button44.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button44.Location = new System.Drawing.Point(638, 134);
             this.button44.Margin = new System.Windows.Forms.Padding(2);
             this.button44.Name = "button44";
             this.button44.Size = new System.Drawing.Size(36, 35);
             this.button44.TabIndex = 46;
-            this.button44.Text = "♿";
+            this.button44.Text = "A12";
             this.button44.UseVisualStyleBackColor = false;
-            this.button44.Click += new System.EventHandler(this.button1_Click_1);
+            this.button44.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button45
             // 
             this.button45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button45.BackColor = System.Drawing.Color.White;
             this.button45.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button45.Location = new System.Drawing.Point(597, 134);
             this.button45.Margin = new System.Windows.Forms.Padding(2);
             this.button45.Name = "button45";
             this.button45.Size = new System.Drawing.Size(36, 35);
             this.button45.TabIndex = 45;
-            this.button45.Text = "♿";
+            this.button45.Text = "A11";
             this.button45.UseVisualStyleBackColor = false;
-            this.button45.Click += new System.EventHandler(this.button1_Click_1);
+            this.button45.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button46
             // 
             this.button46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button46.BackColor = System.Drawing.Color.White;
             this.button46.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button46.Location = new System.Drawing.Point(557, 134);
             this.button46.Margin = new System.Windows.Forms.Padding(2);
             this.button46.Name = "button46";
             this.button46.Size = new System.Drawing.Size(36, 35);
             this.button46.TabIndex = 44;
-            this.button46.Text = "♿";
+            this.button46.Text = "A10";
             this.button46.UseVisualStyleBackColor = false;
-            this.button46.Click += new System.EventHandler(this.button1_Click_1);
+            this.button46.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button47
             // 
             this.button47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button47.BackColor = System.Drawing.Color.White;
             this.button47.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button47.Location = new System.Drawing.Point(517, 134);
             this.button47.Margin = new System.Windows.Forms.Padding(2);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(36, 35);
             this.button47.TabIndex = 43;
-            this.button47.Text = "♿";
+            this.button47.Text = "A9";
             this.button47.UseVisualStyleBackColor = false;
-            this.button47.Click += new System.EventHandler(this.button1_Click_1);
+            this.button47.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button48
             // 
             this.button48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button48.BackColor = System.Drawing.Color.White;
             this.button48.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button48.Location = new System.Drawing.Point(476, 134);
             this.button48.Margin = new System.Windows.Forms.Padding(2);
             this.button48.Name = "button48";
             this.button48.Size = new System.Drawing.Size(36, 35);
             this.button48.TabIndex = 42;
-            this.button48.Text = "♿";
+            this.button48.Text = "A8";
             this.button48.UseVisualStyleBackColor = false;
-            this.button48.Click += new System.EventHandler(this.button1_Click_1);
+            this.button48.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button49
             // 
@@ -828,7 +828,7 @@
             this.button49.TabIndex = 53;
             this.button49.Text = "E7";
             this.button49.UseVisualStyleBackColor = false;
-            this.button49.Click += new System.EventHandler(this.button1_Click_1);
+            this.button49.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button50
             // 
@@ -842,7 +842,7 @@
             this.button50.TabIndex = 52;
             this.button50.Text = "E6";
             this.button50.UseVisualStyleBackColor = false;
-            this.button50.Click += new System.EventHandler(this.button1_Click_1);
+            this.button50.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button51
             // 
@@ -856,7 +856,7 @@
             this.button51.TabIndex = 51;
             this.button51.Text = "E5";
             this.button51.UseVisualStyleBackColor = false;
-            this.button51.Click += new System.EventHandler(this.button1_Click_1);
+            this.button51.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button52
             // 
@@ -870,7 +870,7 @@
             this.button52.TabIndex = 50;
             this.button52.Text = "E4";
             this.button52.UseVisualStyleBackColor = false;
-            this.button52.Click += new System.EventHandler(this.button1_Click_1);
+            this.button52.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button53
             // 
@@ -884,7 +884,7 @@
             this.button53.TabIndex = 49;
             this.button53.Text = "E3";
             this.button53.UseVisualStyleBackColor = false;
-            this.button53.Click += new System.EventHandler(this.button1_Click_1);
+            this.button53.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button54
             // 
@@ -898,7 +898,7 @@
             this.button54.TabIndex = 48;
             this.button54.Text = "E2";
             this.button54.UseVisualStyleBackColor = false;
-            this.button54.Click += new System.EventHandler(this.button1_Click_1);
+            this.button54.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button55
             // 
@@ -912,7 +912,7 @@
             this.button55.TabIndex = 59;
             this.button55.Text = "F7";
             this.button55.UseVisualStyleBackColor = false;
-            this.button55.Click += new System.EventHandler(this.button1_Click_1);
+            this.button55.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button56
             // 
@@ -926,7 +926,7 @@
             this.button56.TabIndex = 58;
             this.button56.Text = "F6";
             this.button56.UseVisualStyleBackColor = false;
-            this.button56.Click += new System.EventHandler(this.button1_Click_1);
+            this.button56.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button57
             // 
@@ -940,7 +940,7 @@
             this.button57.TabIndex = 57;
             this.button57.Text = "F5";
             this.button57.UseVisualStyleBackColor = false;
-            this.button57.Click += new System.EventHandler(this.button1_Click_1);
+            this.button57.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button58
             // 
@@ -954,7 +954,7 @@
             this.button58.TabIndex = 56;
             this.button58.Text = "F4";
             this.button58.UseVisualStyleBackColor = false;
-            this.button58.Click += new System.EventHandler(this.button1_Click_1);
+            this.button58.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button59
             // 
@@ -968,7 +968,7 @@
             this.button59.TabIndex = 55;
             this.button59.Text = "F3";
             this.button59.UseVisualStyleBackColor = false;
-            this.button59.Click += new System.EventHandler(this.button1_Click_1);
+            this.button59.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button60
             // 
@@ -982,7 +982,7 @@
             this.button60.TabIndex = 54;
             this.button60.Text = "F2";
             this.button60.UseVisualStyleBackColor = false;
-            this.button60.Click += new System.EventHandler(this.button1_Click_1);
+            this.button60.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button61
             // 
@@ -996,7 +996,7 @@
             this.button61.TabIndex = 65;
             this.button61.Text = "E13";
             this.button61.UseVisualStyleBackColor = false;
-            this.button61.Click += new System.EventHandler(this.button1_Click_1);
+            this.button61.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button62
             // 
@@ -1010,7 +1010,7 @@
             this.button62.TabIndex = 64;
             this.button62.Text = "E12";
             this.button62.UseVisualStyleBackColor = false;
-            this.button62.Click += new System.EventHandler(this.button1_Click_1);
+            this.button62.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button63
             // 
@@ -1024,7 +1024,7 @@
             this.button63.TabIndex = 63;
             this.button63.Text = "E11";
             this.button63.UseVisualStyleBackColor = false;
-            this.button63.Click += new System.EventHandler(this.button1_Click_1);
+            this.button63.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button64
             // 
@@ -1038,7 +1038,7 @@
             this.button64.TabIndex = 62;
             this.button64.Text = "E10";
             this.button64.UseVisualStyleBackColor = false;
-            this.button64.Click += new System.EventHandler(this.button1_Click_1);
+            this.button64.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button65
             // 
@@ -1052,7 +1052,7 @@
             this.button65.TabIndex = 61;
             this.button65.Text = "E9";
             this.button65.UseVisualStyleBackColor = false;
-            this.button65.Click += new System.EventHandler(this.button1_Click_1);
+            this.button65.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button66
             // 
@@ -1066,7 +1066,7 @@
             this.button66.TabIndex = 60;
             this.button66.Text = "E8";
             this.button66.UseVisualStyleBackColor = false;
-            this.button66.Click += new System.EventHandler(this.button1_Click_1);
+            this.button66.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button67
             // 
@@ -1080,7 +1080,7 @@
             this.button67.TabIndex = 71;
             this.button67.Text = "F13";
             this.button67.UseVisualStyleBackColor = false;
-            this.button67.Click += new System.EventHandler(this.button1_Click_1);
+            this.button67.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button68
             // 
@@ -1094,7 +1094,7 @@
             this.button68.TabIndex = 70;
             this.button68.Text = "F12";
             this.button68.UseVisualStyleBackColor = false;
-            this.button68.Click += new System.EventHandler(this.button1_Click_1);
+            this.button68.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button69
             // 
@@ -1108,7 +1108,7 @@
             this.button69.TabIndex = 69;
             this.button69.Text = "F11";
             this.button69.UseVisualStyleBackColor = false;
-            this.button69.Click += new System.EventHandler(this.button1_Click_1);
+            this.button69.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button70
             // 
@@ -1122,7 +1122,7 @@
             this.button70.TabIndex = 68;
             this.button70.Text = "F10";
             this.button70.UseVisualStyleBackColor = false;
-            this.button70.Click += new System.EventHandler(this.button1_Click_1);
+            this.button70.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button71
             // 
@@ -1136,7 +1136,7 @@
             this.button71.TabIndex = 67;
             this.button71.Text = "F9";
             this.button71.UseVisualStyleBackColor = false;
-            this.button71.Click += new System.EventHandler(this.button1_Click_1);
+            this.button71.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button72
             // 
@@ -1150,189 +1150,202 @@
             this.button72.TabIndex = 66;
             this.button72.Text = "F8";
             this.button72.UseVisualStyleBackColor = false;
-            this.button72.Click += new System.EventHandler(this.button1_Click_1);
+            this.button72.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button73
             // 
             this.button73.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button73.BackColor = System.Drawing.Color.White;
             this.button73.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button73.Location = new System.Drawing.Point(401, 393);
+            this.button73.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button73.Location = new System.Drawing.Point(401, 407);
             this.button73.Margin = new System.Windows.Forms.Padding(2);
             this.button73.Name = "button73";
             this.button73.Size = new System.Drawing.Size(36, 35);
             this.button73.TabIndex = 77;
-            this.button73.Text = "G7";
+            this.button73.Text = "♿";
             this.button73.UseVisualStyleBackColor = false;
-            this.button73.Click += new System.EventHandler(this.button1_Click_1);
+            this.button73.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button74
             // 
             this.button74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button74.BackColor = System.Drawing.Color.White;
             this.button74.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button74.Location = new System.Drawing.Point(361, 393);
+            this.button74.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button74.Location = new System.Drawing.Point(361, 407);
             this.button74.Margin = new System.Windows.Forms.Padding(2);
             this.button74.Name = "button74";
             this.button74.Size = new System.Drawing.Size(36, 35);
             this.button74.TabIndex = 76;
-            this.button74.Text = "G6";
+            this.button74.Text = "♿";
             this.button74.UseVisualStyleBackColor = false;
-            this.button74.Click += new System.EventHandler(this.button1_Click_1);
+            this.button74.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button75
             // 
             this.button75.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button75.BackColor = System.Drawing.Color.White;
             this.button75.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button75.Location = new System.Drawing.Point(320, 393);
+            this.button75.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button75.Location = new System.Drawing.Point(320, 407);
             this.button75.Margin = new System.Windows.Forms.Padding(2);
             this.button75.Name = "button75";
             this.button75.Size = new System.Drawing.Size(36, 35);
             this.button75.TabIndex = 75;
-            this.button75.Text = "G5";
+            this.button75.Text = "♿";
             this.button75.UseVisualStyleBackColor = false;
-            this.button75.Click += new System.EventHandler(this.button1_Click_1);
+            this.button75.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button76
             // 
             this.button76.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button76.BackColor = System.Drawing.Color.White;
             this.button76.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button76.Location = new System.Drawing.Point(279, 393);
+            this.button76.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button76.Location = new System.Drawing.Point(279, 407);
             this.button76.Margin = new System.Windows.Forms.Padding(2);
             this.button76.Name = "button76";
             this.button76.Size = new System.Drawing.Size(36, 35);
             this.button76.TabIndex = 74;
-            this.button76.Text = "G4";
+            this.button76.Text = "♿";
             this.button76.UseVisualStyleBackColor = false;
-            this.button76.Click += new System.EventHandler(this.button1_Click_1);
+            this.button76.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button77
             // 
             this.button77.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button77.BackColor = System.Drawing.Color.White;
             this.button77.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button77.Location = new System.Drawing.Point(239, 393);
+            this.button77.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button77.Location = new System.Drawing.Point(239, 407);
             this.button77.Margin = new System.Windows.Forms.Padding(2);
             this.button77.Name = "button77";
             this.button77.Size = new System.Drawing.Size(36, 35);
             this.button77.TabIndex = 73;
-            this.button77.Text = "G3";
+            this.button77.Text = "♿";
             this.button77.UseVisualStyleBackColor = false;
-            this.button77.Click += new System.EventHandler(this.button1_Click_1);
+            this.button77.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button78
             // 
             this.button78.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button78.BackColor = System.Drawing.Color.White;
             this.button78.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button78.Location = new System.Drawing.Point(199, 393);
+            this.button78.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button78.Location = new System.Drawing.Point(199, 407);
             this.button78.Margin = new System.Windows.Forms.Padding(2);
             this.button78.Name = "button78";
             this.button78.Size = new System.Drawing.Size(36, 35);
             this.button78.TabIndex = 72;
-            this.button78.Text = "G2";
+            this.button78.Text = "♿";
             this.button78.UseVisualStyleBackColor = false;
-            this.button78.Click += new System.EventHandler(this.button1_Click_1);
+            this.button78.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button79
             // 
             this.button79.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button79.BackColor = System.Drawing.Color.White;
             this.button79.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button79.Location = new System.Drawing.Point(679, 393);
+            this.button79.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button79.Location = new System.Drawing.Point(679, 407);
             this.button79.Margin = new System.Windows.Forms.Padding(2);
             this.button79.Name = "button79";
             this.button79.Size = new System.Drawing.Size(36, 35);
             this.button79.TabIndex = 83;
-            this.button79.Text = "G13";
+            this.button79.Text = "♿";
             this.button79.UseVisualStyleBackColor = false;
-            this.button79.Click += new System.EventHandler(this.button1_Click_1);
+            this.button79.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button80
             // 
             this.button80.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button80.BackColor = System.Drawing.Color.White;
             this.button80.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button80.Location = new System.Drawing.Point(638, 393);
+            this.button80.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button80.Location = new System.Drawing.Point(638, 407);
             this.button80.Margin = new System.Windows.Forms.Padding(2);
             this.button80.Name = "button80";
             this.button80.Size = new System.Drawing.Size(36, 35);
             this.button80.TabIndex = 82;
-            this.button80.Text = "G12";
+            this.button80.Text = "♿";
             this.button80.UseVisualStyleBackColor = false;
-            this.button80.Click += new System.EventHandler(this.button1_Click_1);
+            this.button80.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button81
             // 
             this.button81.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button81.BackColor = System.Drawing.Color.White;
             this.button81.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button81.Location = new System.Drawing.Point(597, 393);
+            this.button81.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button81.Location = new System.Drawing.Point(597, 407);
             this.button81.Margin = new System.Windows.Forms.Padding(2);
             this.button81.Name = "button81";
             this.button81.Size = new System.Drawing.Size(36, 35);
             this.button81.TabIndex = 81;
-            this.button81.Text = "G11";
+            this.button81.Text = "♿";
             this.button81.UseVisualStyleBackColor = false;
-            this.button81.Click += new System.EventHandler(this.button1_Click_1);
+            this.button81.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button82
             // 
             this.button82.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button82.BackColor = System.Drawing.Color.White;
             this.button82.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button82.Location = new System.Drawing.Point(557, 393);
+            this.button82.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button82.Location = new System.Drawing.Point(557, 407);
             this.button82.Margin = new System.Windows.Forms.Padding(2);
             this.button82.Name = "button82";
             this.button82.Size = new System.Drawing.Size(36, 35);
             this.button82.TabIndex = 80;
-            this.button82.Text = "G10";
+            this.button82.Text = "♿";
             this.button82.UseVisualStyleBackColor = false;
-            this.button82.Click += new System.EventHandler(this.button1_Click_1);
+            this.button82.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button83
             // 
             this.button83.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button83.BackColor = System.Drawing.Color.White;
             this.button83.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button83.Location = new System.Drawing.Point(517, 393);
+            this.button83.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button83.Location = new System.Drawing.Point(517, 407);
             this.button83.Margin = new System.Windows.Forms.Padding(2);
             this.button83.Name = "button83";
             this.button83.Size = new System.Drawing.Size(36, 35);
             this.button83.TabIndex = 79;
-            this.button83.Text = "G9";
+            this.button83.Text = "♿";
             this.button83.UseVisualStyleBackColor = false;
-            this.button83.Click += new System.EventHandler(this.button1_Click_1);
+            this.button83.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button84
             // 
             this.button84.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button84.BackColor = System.Drawing.Color.White;
             this.button84.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button84.Location = new System.Drawing.Point(476, 393);
+            this.button84.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button84.Location = new System.Drawing.Point(476, 407);
             this.button84.Margin = new System.Windows.Forms.Padding(2);
             this.button84.Name = "button84";
             this.button84.Size = new System.Drawing.Size(36, 35);
             this.button84.TabIndex = 78;
-            this.button84.Text = "G8";
+            this.button84.Text = "♿";
             this.button84.UseVisualStyleBackColor = false;
-            this.button84.Click += new System.EventHandler(this.button1_Click_1);
+            this.button84.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button85
             // 
             this.button85.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button85.BackColor = System.Drawing.Color.White;
             this.button85.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button85.Location = new System.Drawing.Point(719, 393);
+            this.button85.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button85.Location = new System.Drawing.Point(719, 407);
             this.button85.Margin = new System.Windows.Forms.Padding(2);
             this.button85.Name = "button85";
             this.button85.Size = new System.Drawing.Size(36, 35);
             this.button85.TabIndex = 90;
-            this.button85.Text = "G14";
+            this.button85.Text = "♿";
             this.button85.UseVisualStyleBackColor = false;
-            this.button85.Click += new System.EventHandler(this.button1_Click_1);
+            this.button85.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button86
             // 
@@ -1346,7 +1359,7 @@
             this.button86.TabIndex = 89;
             this.button86.Text = "F14";
             this.button86.UseVisualStyleBackColor = false;
-            this.button86.Click += new System.EventHandler(this.button1_Click_1);
+            this.button86.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button87
             // 
@@ -1360,22 +1373,22 @@
             this.button87.TabIndex = 88;
             this.button87.Text = "E14";
             this.button87.UseVisualStyleBackColor = false;
-            this.button87.Click += new System.EventHandler(this.button1_Click_1);
+            this.button87.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button88
             // 
             this.button88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button88.BackColor = System.Drawing.Color.White;
             this.button88.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button88.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button88.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button88.Location = new System.Drawing.Point(719, 134);
             this.button88.Margin = new System.Windows.Forms.Padding(2);
             this.button88.Name = "button88";
             this.button88.Size = new System.Drawing.Size(36, 35);
             this.button88.TabIndex = 87;
-            this.button88.Text = "♿";
+            this.button88.Text = "A14";
             this.button88.UseVisualStyleBackColor = false;
-            this.button88.Click += new System.EventHandler(this.button1_Click_1);
+            this.button88.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button89
             // 
@@ -1389,7 +1402,7 @@
             this.button89.TabIndex = 86;
             this.button89.Text = "D14";
             this.button89.UseVisualStyleBackColor = false;
-            this.button89.Click += new System.EventHandler(this.button1_Click_1);
+            this.button89.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button90
             // 
@@ -1403,7 +1416,7 @@
             this.button90.TabIndex = 85;
             this.button90.Text = "C14";
             this.button90.UseVisualStyleBackColor = false;
-            this.button90.Click += new System.EventHandler(this.button1_Click_1);
+            this.button90.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button91
             // 
@@ -1417,21 +1430,22 @@
             this.button91.TabIndex = 84;
             this.button91.Text = "B14";
             this.button91.UseVisualStyleBackColor = false;
-            this.button91.Click += new System.EventHandler(this.button1_Click_1);
+            this.button91.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button92
             // 
             this.button92.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button92.BackColor = System.Drawing.Color.White;
             this.button92.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button92.Location = new System.Drawing.Point(158, 393);
+            this.button92.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button92.Location = new System.Drawing.Point(158, 407);
             this.button92.Margin = new System.Windows.Forms.Padding(2);
             this.button92.Name = "button92";
             this.button92.Size = new System.Drawing.Size(36, 35);
             this.button92.TabIndex = 97;
-            this.button92.Text = "G1";
+            this.button92.Text = "♿";
             this.button92.UseVisualStyleBackColor = false;
-            this.button92.Click += new System.EventHandler(this.button1_Click_1);
+            this.button92.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button93
             // 
@@ -1445,7 +1459,7 @@
             this.button93.TabIndex = 96;
             this.button93.Text = "F1";
             this.button93.UseVisualStyleBackColor = false;
-            this.button93.Click += new System.EventHandler(this.button1_Click_1);
+            this.button93.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button94
             // 
@@ -1459,22 +1473,22 @@
             this.button94.TabIndex = 95;
             this.button94.Text = "E1";
             this.button94.UseVisualStyleBackColor = false;
-            this.button94.Click += new System.EventHandler(this.button1_Click_1);
+            this.button94.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button95
             // 
             this.button95.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button95.BackColor = System.Drawing.Color.White;
             this.button95.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button95.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button95.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button95.Location = new System.Drawing.Point(158, 134);
             this.button95.Margin = new System.Windows.Forms.Padding(2);
             this.button95.Name = "button95";
             this.button95.Size = new System.Drawing.Size(36, 35);
             this.button95.TabIndex = 94;
-            this.button95.Text = "♿";
+            this.button95.Text = "A1";
             this.button95.UseVisualStyleBackColor = false;
-            this.button95.Click += new System.EventHandler(this.button1_Click_1);
+            this.button95.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button96
             // 
@@ -1488,7 +1502,7 @@
             this.button96.TabIndex = 93;
             this.button96.Text = "D1";
             this.button96.UseVisualStyleBackColor = false;
-            this.button96.Click += new System.EventHandler(this.button1_Click_1);
+            this.button96.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button97
             // 
@@ -1502,7 +1516,7 @@
             this.button97.TabIndex = 92;
             this.button97.Text = "C1";
             this.button97.UseVisualStyleBackColor = false;
-            this.button97.Click += new System.EventHandler(this.button1_Click_1);
+            this.button97.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button98
             // 
@@ -1516,7 +1530,7 @@
             this.button98.TabIndex = 91;
             this.button98.Text = "B1";
             this.button98.UseVisualStyleBackColor = false;
-            this.button98.Click += new System.EventHandler(this.button1_Click_1);
+            this.button98.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // Annuleren
             // 
@@ -1553,7 +1567,7 @@
             this.button99.TabIndex = 174;
             this.button99.Text = "Terug";
             this.button99.UseVisualStyleBackColor = false;
-            this.button99.Click += new System.EventHandler(this.button99_Click);
+            this.button99.Click += new System.EventHandler(this.previousPage_Click);
             // 
             // label1
             // 

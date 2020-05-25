@@ -22,7 +22,7 @@ namespace MovieReservation
         public List<int> reservedSeats = new List<int>();
         public string test = "";
         public string KindOfMovie;
-        public TicketConfrim(string title, string date, string time, string room, int amount, string seats, string pictureName, List<int> reserve, string movie)
+        public TicketConfrim(string title, string date, string time, string room, int amount, string seats, string pictureName, List<int> reserve, string kindOfMovie)
         {
             Title = title;
             Date = date;
@@ -32,7 +32,7 @@ namespace MovieReservation
             Seats = seats;
             PictureName = pictureName;
             reservedSeats = reserve;
-            KindOfMovie = movie;
+            KindOfMovie = kindOfMovie;
 
             InitializeComponent();
 

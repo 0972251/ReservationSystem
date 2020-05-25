@@ -20,8 +20,9 @@ namespace MovieReservation
         public string Date;
         public string Time;
         public string KindOfMovie;
+        public List<int> reservedSeats = new List<int>();
 
-        public Ticket(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie)
+        public Ticket(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
         {
             InitializeComponent();
 
@@ -33,6 +34,7 @@ namespace MovieReservation
             Date = date;
             Time = time;
             KindOfMovie = kindofmovie;
+            reservedSeats = reserve;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -71,7 +73,7 @@ namespace MovieReservation
             }
             else
             {
-                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats, KindOfMovie);
                 this.Hide();
                 room.ShowDialog();
                 this.Close();
@@ -82,7 +84,7 @@ namespace MovieReservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie);
+            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie, reservedSeats);
             this.Hide();
             dt.ShowDialog();
             this.Close();

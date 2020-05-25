@@ -25,7 +25,8 @@ namespace MovieReservation
         public Color White = Color.FromArgb(255, 255, 255);
         public string KindOfMovie;
         public string Seats;
-        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie)
+        public List<int> reservedSeats = new List<int>();
+        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve, string kindOfMovie)
         {
             InitializeComponent();
             Title = title;
@@ -38,13 +39,11 @@ namespace MovieReservation
             Time = time;
             KindOfMovie = kindofmovie;
             Seats = "";
+            reservedSeats = reserve;
         }
 
         public void seatDisable()
         {
-            // 2 arrays van seats numbers en button numbers
-            // loopen en daarin controleren of de button is geklikt
-            // onder die if een button met enabled = false zetten
 
             if (count == AmountSeats)
             {
@@ -56,22 +55,10 @@ namespace MovieReservation
                     button99.Enabled = true;
                 }
             }
-            else
-            {
-                foreach (var b in Controls.OfType<Button>())
-                {
-                    b.Enabled = true;
-                    NextPage.Enabled = false;
-                }
-            }
-
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void allButtons_Click(object sender, EventArgs e)
         {
-            
-            //button1.Enabled = false;
-            //button1.BackColor = Gray;
             count += 1;
             seatDisable();
             Button seatButton = (Button)sender;
@@ -82,7 +69,7 @@ namespace MovieReservation
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "3D", AmountSeats, Seats, PictureName);
+            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "3D", AmountSeats, Seats, PictureName, reservedSeats, KindOfMovie);
             ticket.ShowDialog();
         }
 
@@ -97,9 +84,9 @@ namespace MovieReservation
             }
         }
 
-        private void button99_Click(object sender, EventArgs e)
+        private void previousPage_Click(object sender, EventArgs e)
         {
-            Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie);
+            Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
             tk.ShowDialog();
         }
     }

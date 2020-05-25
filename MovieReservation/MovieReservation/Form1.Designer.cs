@@ -55,7 +55,7 @@
             this.Medewerker.Font = new System.Drawing.Font("Arial", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Medewerker.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Medewerker.Location = new System.Drawing.Point(413, 225);
-            this.Medewerker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Medewerker.Margin = new System.Windows.Forms.Padding(2);
             this.Medewerker.Name = "Medewerker";
             this.Medewerker.Size = new System.Drawing.Size(172, 64);
             this.Medewerker.TabIndex = 8;
@@ -71,7 +71,7 @@
             this.Klant.Font = new System.Drawing.Font("Arial", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Klant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Klant.Location = new System.Drawing.Point(215, 225);
-            this.Klant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Klant.Margin = new System.Windows.Forms.Padding(2);
             this.Klant.Name = "Klant";
             this.Klant.Size = new System.Drawing.Size(172, 64);
             this.Klant.TabIndex = 7;
@@ -89,6 +89,7 @@
             this.Controls.Add(this.Medewerker);
             this.Controls.Add(this.Klant);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

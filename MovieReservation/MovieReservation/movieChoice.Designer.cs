@@ -387,6 +387,7 @@
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "movieChoice";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "movieChoice";
             this.Load += new System.EventHandler(this.movieChoice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

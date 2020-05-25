@@ -158,7 +158,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "B3";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button3
             // 
@@ -172,7 +172,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "B4";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button4
             // 
@@ -186,7 +186,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "B5";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button5
             // 
@@ -200,7 +200,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "B6";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button6
             // 
@@ -214,7 +214,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "B7";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button7
             // 
@@ -228,7 +228,7 @@
             this.button7.TabIndex = 11;
             this.button7.Text = "B13";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button8
             // 
@@ -242,7 +242,7 @@
             this.button8.TabIndex = 10;
             this.button8.Text = "B12";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button9
             // 
@@ -256,7 +256,7 @@
             this.button9.TabIndex = 9;
             this.button9.Text = "B11";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button10
             // 
@@ -270,7 +270,7 @@
             this.button10.TabIndex = 8;
             this.button10.Text = "B10";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button11
             // 
@@ -284,7 +284,7 @@
             this.button11.TabIndex = 7;
             this.button11.Text = "B9";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button12
             // 
@@ -298,7 +298,7 @@
             this.button12.TabIndex = 6;
             this.button12.Text = "B8";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button13
             // 
@@ -312,7 +312,7 @@
             this.button13.TabIndex = 17;
             this.button13.Text = "C7";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button13.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button14
             // 
@@ -326,7 +326,7 @@
             this.button14.TabIndex = 16;
             this.button14.Text = "C6";
             this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.button14.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button15
             // 
@@ -340,7 +340,7 @@
             this.button15.TabIndex = 15;
             this.button15.Text = "C5";
             this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.button15.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button16
             // 
@@ -354,7 +354,7 @@
             this.button16.TabIndex = 14;
             this.button16.Text = "C4";
             this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.button16.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button17
             // 
@@ -368,7 +368,7 @@
             this.button17.TabIndex = 13;
             this.button17.Text = "C3";
             this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.button17.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button18
             // 
@@ -382,7 +382,7 @@
             this.button18.TabIndex = 12;
             this.button18.Text = "C2";
             this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.button18.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button19
             // 
@@ -396,7 +396,7 @@
             this.button19.TabIndex = 23;
             this.button19.Text = "C13";
             this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.button19.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button20
             // 
@@ -410,7 +410,7 @@
             this.button20.TabIndex = 22;
             this.button20.Text = "C12";
             this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+            this.button20.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button21
             // 
@@ -424,7 +424,7 @@
             this.button21.TabIndex = 21;
             this.button21.Text = "C11";
             this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
+            this.button21.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button22
             // 
@@ -438,7 +438,7 @@
             this.button22.TabIndex = 20;
             this.button22.Text = "C10";
             this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.button22.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button23
             // 
@@ -452,7 +452,7 @@
             this.button23.TabIndex = 19;
             this.button23.Text = "C9";
             this.button23.UseVisualStyleBackColor = false;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
+            this.button23.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button24
             // 
@@ -466,7 +466,7 @@
             this.button24.TabIndex = 18;
             this.button24.Text = "C8";
             this.button24.UseVisualStyleBackColor = false;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
+            this.button24.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button25
             // 
@@ -480,7 +480,7 @@
             this.button25.TabIndex = 29;
             this.button25.Text = "D7";
             this.button25.UseVisualStyleBackColor = false;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
+            this.button25.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button26
             // 
@@ -494,7 +494,7 @@
             this.button26.TabIndex = 28;
             this.button26.Text = "D6";
             this.button26.UseVisualStyleBackColor = false;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
+            this.button26.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button27
             // 
@@ -508,7 +508,7 @@
             this.button27.TabIndex = 27;
             this.button27.Text = "D5";
             this.button27.UseVisualStyleBackColor = false;
-            this.button27.Click += new System.EventHandler(this.button27_Click);
+            this.button27.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button28
             // 
@@ -522,7 +522,7 @@
             this.button28.TabIndex = 26;
             this.button28.Text = "D4";
             this.button28.UseVisualStyleBackColor = false;
-            this.button28.Click += new System.EventHandler(this.button28_Click);
+            this.button28.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button29
             // 
@@ -536,7 +536,7 @@
             this.button29.TabIndex = 25;
             this.button29.Text = "D3";
             this.button29.UseVisualStyleBackColor = false;
-            this.button29.Click += new System.EventHandler(this.button29_Click);
+            this.button29.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button30
             // 
@@ -550,7 +550,7 @@
             this.button30.TabIndex = 24;
             this.button30.Text = "D2";
             this.button30.UseVisualStyleBackColor = false;
-            this.button30.Click += new System.EventHandler(this.button30_Click);
+            this.button30.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button31
             // 
@@ -564,7 +564,7 @@
             this.button31.TabIndex = 35;
             this.button31.Text = "D13";
             this.button31.UseVisualStyleBackColor = false;
-            this.button31.Click += new System.EventHandler(this.button31_Click);
+            this.button31.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button32
             // 
@@ -578,7 +578,7 @@
             this.button32.TabIndex = 34;
             this.button32.Text = "D12";
             this.button32.UseVisualStyleBackColor = false;
-            this.button32.Click += new System.EventHandler(this.button32_Click);
+            this.button32.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button33
             // 
@@ -592,7 +592,7 @@
             this.button33.TabIndex = 33;
             this.button33.Text = "D11";
             this.button33.UseVisualStyleBackColor = false;
-            this.button33.Click += new System.EventHandler(this.button33_Click);
+            this.button33.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button34
             // 
@@ -606,7 +606,7 @@
             this.button34.TabIndex = 32;
             this.button34.Text = "D10";
             this.button34.UseVisualStyleBackColor = false;
-            this.button34.Click += new System.EventHandler(this.button34_Click);
+            this.button34.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button35
             // 
@@ -620,7 +620,7 @@
             this.button35.TabIndex = 31;
             this.button35.Text = "D9";
             this.button35.UseVisualStyleBackColor = false;
-            this.button35.Click += new System.EventHandler(this.button35_Click);
+            this.button35.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button36
             // 
@@ -634,13 +634,14 @@
             this.button36.TabIndex = 30;
             this.button36.Text = "D8";
             this.button36.UseVisualStyleBackColor = false;
-            this.button36.Click += new System.EventHandler(this.button36_Click);
+            this.button36.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button37
             // 
             this.button37.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button37.BackColor = System.Drawing.Color.White;
             this.button37.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button37.Location = new System.Drawing.Point(401, 134);
             this.button37.Margin = new System.Windows.Forms.Padding(2);
             this.button37.Name = "button37";
@@ -648,13 +649,14 @@
             this.button37.TabIndex = 41;
             this.button37.Text = "♿";
             this.button37.UseVisualStyleBackColor = false;
-            this.button37.Click += new System.EventHandler(this.button37_Click);
+            this.button37.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button38
             // 
             this.button38.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button38.BackColor = System.Drawing.Color.White;
             this.button38.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button38.Location = new System.Drawing.Point(361, 134);
             this.button38.Margin = new System.Windows.Forms.Padding(2);
             this.button38.Name = "button38";
@@ -662,13 +664,14 @@
             this.button38.TabIndex = 40;
             this.button38.Text = "♿";
             this.button38.UseVisualStyleBackColor = false;
-            this.button38.Click += new System.EventHandler(this.button38_Click);
+            this.button38.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button39
             // 
             this.button39.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button39.BackColor = System.Drawing.Color.White;
             this.button39.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button39.Location = new System.Drawing.Point(320, 134);
             this.button39.Margin = new System.Windows.Forms.Padding(2);
             this.button39.Name = "button39";
@@ -676,13 +679,14 @@
             this.button39.TabIndex = 39;
             this.button39.Text = "♿";
             this.button39.UseVisualStyleBackColor = false;
-            this.button39.Click += new System.EventHandler(this.button39_Click);
+            this.button39.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button40
             // 
             this.button40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button40.BackColor = System.Drawing.Color.White;
             this.button40.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button40.Location = new System.Drawing.Point(279, 134);
             this.button40.Margin = new System.Windows.Forms.Padding(2);
             this.button40.Name = "button40";
@@ -690,13 +694,14 @@
             this.button40.TabIndex = 38;
             this.button40.Text = "♿";
             this.button40.UseVisualStyleBackColor = false;
-            this.button40.Click += new System.EventHandler(this.button40_Click);
+            this.button40.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button41
             // 
             this.button41.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button41.BackColor = System.Drawing.Color.White;
             this.button41.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button41.Location = new System.Drawing.Point(239, 134);
             this.button41.Margin = new System.Windows.Forms.Padding(2);
             this.button41.Name = "button41";
@@ -704,13 +709,14 @@
             this.button41.TabIndex = 37;
             this.button41.Text = "♿";
             this.button41.UseVisualStyleBackColor = false;
-            this.button41.Click += new System.EventHandler(this.button41_Click);
+            this.button41.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button42
             // 
             this.button42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button42.BackColor = System.Drawing.Color.White;
             this.button42.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button42.Location = new System.Drawing.Point(199, 134);
             this.button42.Margin = new System.Windows.Forms.Padding(2);
             this.button42.Name = "button42";
@@ -718,13 +724,14 @@
             this.button42.TabIndex = 36;
             this.button42.Text = "♿";
             this.button42.UseVisualStyleBackColor = false;
-            this.button42.Click += new System.EventHandler(this.button42_Click);
+            this.button42.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button43
             // 
             this.button43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button43.BackColor = System.Drawing.Color.White;
             this.button43.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button43.Location = new System.Drawing.Point(679, 134);
             this.button43.Margin = new System.Windows.Forms.Padding(2);
             this.button43.Name = "button43";
@@ -732,13 +739,14 @@
             this.button43.TabIndex = 47;
             this.button43.Text = "♿";
             this.button43.UseVisualStyleBackColor = false;
-            this.button43.Click += new System.EventHandler(this.button43_Click);
+            this.button43.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button44
             // 
             this.button44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button44.BackColor = System.Drawing.Color.White;
             this.button44.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button44.Location = new System.Drawing.Point(638, 134);
             this.button44.Margin = new System.Windows.Forms.Padding(2);
             this.button44.Name = "button44";
@@ -746,13 +754,14 @@
             this.button44.TabIndex = 46;
             this.button44.Text = "♿";
             this.button44.UseVisualStyleBackColor = false;
-            this.button44.Click += new System.EventHandler(this.button44_Click);
+            this.button44.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button45
             // 
             this.button45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button45.BackColor = System.Drawing.Color.White;
             this.button45.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button45.Location = new System.Drawing.Point(597, 134);
             this.button45.Margin = new System.Windows.Forms.Padding(2);
             this.button45.Name = "button45";
@@ -760,13 +769,14 @@
             this.button45.TabIndex = 45;
             this.button45.Text = "♿";
             this.button45.UseVisualStyleBackColor = false;
-            this.button45.Click += new System.EventHandler(this.button45_Click);
+            this.button45.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button46
             // 
             this.button46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button46.BackColor = System.Drawing.Color.White;
             this.button46.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button46.Location = new System.Drawing.Point(557, 134);
             this.button46.Margin = new System.Windows.Forms.Padding(2);
             this.button46.Name = "button46";
@@ -774,13 +784,14 @@
             this.button46.TabIndex = 44;
             this.button46.Text = "♿";
             this.button46.UseVisualStyleBackColor = false;
-            this.button46.Click += new System.EventHandler(this.button46_Click);
+            this.button46.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button47
             // 
             this.button47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button47.BackColor = System.Drawing.Color.White;
             this.button47.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button47.Location = new System.Drawing.Point(517, 134);
             this.button47.Margin = new System.Windows.Forms.Padding(2);
             this.button47.Name = "button47";
@@ -788,13 +799,14 @@
             this.button47.TabIndex = 43;
             this.button47.Text = "♿";
             this.button47.UseVisualStyleBackColor = false;
-            this.button47.Click += new System.EventHandler(this.button47_Click);
+            this.button47.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button48
             // 
             this.button48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button48.BackColor = System.Drawing.Color.White;
             this.button48.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button48.Location = new System.Drawing.Point(476, 134);
             this.button48.Margin = new System.Windows.Forms.Padding(2);
             this.button48.Name = "button48";
@@ -802,7 +814,7 @@
             this.button48.TabIndex = 42;
             this.button48.Text = "♿";
             this.button48.UseVisualStyleBackColor = false;
-            this.button48.Click += new System.EventHandler(this.button48_Click);
+            this.button48.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button49
             // 
@@ -816,7 +828,7 @@
             this.button49.TabIndex = 53;
             this.button49.Text = "E7";
             this.button49.UseVisualStyleBackColor = false;
-            this.button49.Click += new System.EventHandler(this.button49_Click);
+            this.button49.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button50
             // 
@@ -830,7 +842,7 @@
             this.button50.TabIndex = 52;
             this.button50.Text = "E6";
             this.button50.UseVisualStyleBackColor = false;
-            this.button50.Click += new System.EventHandler(this.button50_Click);
+            this.button50.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button51
             // 
@@ -844,7 +856,7 @@
             this.button51.TabIndex = 51;
             this.button51.Text = "E5";
             this.button51.UseVisualStyleBackColor = false;
-            this.button51.Click += new System.EventHandler(this.button51_Click);
+            this.button51.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button52
             // 
@@ -858,7 +870,7 @@
             this.button52.TabIndex = 50;
             this.button52.Text = "E4";
             this.button52.UseVisualStyleBackColor = false;
-            this.button52.Click += new System.EventHandler(this.button52_Click);
+            this.button52.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button53
             // 
@@ -872,7 +884,7 @@
             this.button53.TabIndex = 49;
             this.button53.Text = "E3";
             this.button53.UseVisualStyleBackColor = false;
-            this.button53.Click += new System.EventHandler(this.button53_Click);
+            this.button53.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button54
             // 
@@ -886,7 +898,7 @@
             this.button54.TabIndex = 48;
             this.button54.Text = "E2";
             this.button54.UseVisualStyleBackColor = false;
-            this.button54.Click += new System.EventHandler(this.button54_Click);
+            this.button54.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button55
             // 
@@ -900,7 +912,7 @@
             this.button55.TabIndex = 59;
             this.button55.Text = "F7";
             this.button55.UseVisualStyleBackColor = false;
-            this.button55.Click += new System.EventHandler(this.button55_Click);
+            this.button55.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button56
             // 
@@ -914,7 +926,7 @@
             this.button56.TabIndex = 58;
             this.button56.Text = "F6";
             this.button56.UseVisualStyleBackColor = false;
-            this.button56.Click += new System.EventHandler(this.button56_Click);
+            this.button56.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button57
             // 
@@ -928,7 +940,7 @@
             this.button57.TabIndex = 57;
             this.button57.Text = "F5";
             this.button57.UseVisualStyleBackColor = false;
-            this.button57.Click += new System.EventHandler(this.button57_Click);
+            this.button57.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button58
             // 
@@ -942,7 +954,7 @@
             this.button58.TabIndex = 56;
             this.button58.Text = "F4";
             this.button58.UseVisualStyleBackColor = false;
-            this.button58.Click += new System.EventHandler(this.button58_Click);
+            this.button58.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button59
             // 
@@ -956,7 +968,7 @@
             this.button59.TabIndex = 55;
             this.button59.Text = "F3";
             this.button59.UseVisualStyleBackColor = false;
-            this.button59.Click += new System.EventHandler(this.button59_Click);
+            this.button59.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button60
             // 
@@ -970,7 +982,7 @@
             this.button60.TabIndex = 54;
             this.button60.Text = "F2";
             this.button60.UseVisualStyleBackColor = false;
-            this.button60.Click += new System.EventHandler(this.button60_Click);
+            this.button60.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button61
             // 
@@ -984,7 +996,7 @@
             this.button61.TabIndex = 65;
             this.button61.Text = "E13";
             this.button61.UseVisualStyleBackColor = false;
-            this.button61.Click += new System.EventHandler(this.button61_Click);
+            this.button61.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button62
             // 
@@ -998,7 +1010,7 @@
             this.button62.TabIndex = 64;
             this.button62.Text = "E12";
             this.button62.UseVisualStyleBackColor = false;
-            this.button62.Click += new System.EventHandler(this.button62_Click);
+            this.button62.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button63
             // 
@@ -1012,7 +1024,7 @@
             this.button63.TabIndex = 63;
             this.button63.Text = "E11";
             this.button63.UseVisualStyleBackColor = false;
-            this.button63.Click += new System.EventHandler(this.button63_Click);
+            this.button63.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button64
             // 
@@ -1026,7 +1038,7 @@
             this.button64.TabIndex = 62;
             this.button64.Text = "E10";
             this.button64.UseVisualStyleBackColor = false;
-            this.button64.Click += new System.EventHandler(this.button64_Click);
+            this.button64.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button65
             // 
@@ -1040,7 +1052,7 @@
             this.button65.TabIndex = 61;
             this.button65.Text = "E9";
             this.button65.UseVisualStyleBackColor = false;
-            this.button65.Click += new System.EventHandler(this.button65_Click);
+            this.button65.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button66
             // 
@@ -1054,7 +1066,7 @@
             this.button66.TabIndex = 60;
             this.button66.Text = "E8";
             this.button66.UseVisualStyleBackColor = false;
-            this.button66.Click += new System.EventHandler(this.button66_Click);
+            this.button66.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button67
             // 
@@ -1068,7 +1080,7 @@
             this.button67.TabIndex = 71;
             this.button67.Text = "F13";
             this.button67.UseVisualStyleBackColor = false;
-            this.button67.Click += new System.EventHandler(this.button67_Click);
+            this.button67.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button68
             // 
@@ -1082,7 +1094,7 @@
             this.button68.TabIndex = 70;
             this.button68.Text = "F12";
             this.button68.UseVisualStyleBackColor = false;
-            this.button68.Click += new System.EventHandler(this.button68_Click);
+            this.button68.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button69
             // 
@@ -1096,7 +1108,7 @@
             this.button69.TabIndex = 69;
             this.button69.Text = "F11";
             this.button69.UseVisualStyleBackColor = false;
-            this.button69.Click += new System.EventHandler(this.button69_Click);
+            this.button69.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button70
             // 
@@ -1110,7 +1122,7 @@
             this.button70.TabIndex = 68;
             this.button70.Text = "F10";
             this.button70.UseVisualStyleBackColor = false;
-            this.button70.Click += new System.EventHandler(this.button70_Click);
+            this.button70.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button71
             // 
@@ -1124,7 +1136,7 @@
             this.button71.TabIndex = 67;
             this.button71.Text = "F9";
             this.button71.UseVisualStyleBackColor = false;
-            this.button71.Click += new System.EventHandler(this.button71_Click);
+            this.button71.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button72
             // 
@@ -1138,7 +1150,7 @@
             this.button72.TabIndex = 66;
             this.button72.Text = "F8";
             this.button72.UseVisualStyleBackColor = false;
-            this.button72.Click += new System.EventHandler(this.button72_Click);
+            this.button72.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button73
             // 
@@ -1152,7 +1164,7 @@
             this.button73.TabIndex = 77;
             this.button73.Text = "G7";
             this.button73.UseVisualStyleBackColor = false;
-            this.button73.Click += new System.EventHandler(this.button73_Click);
+            this.button73.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button74
             // 
@@ -1166,7 +1178,7 @@
             this.button74.TabIndex = 76;
             this.button74.Text = "G6";
             this.button74.UseVisualStyleBackColor = false;
-            this.button74.Click += new System.EventHandler(this.button74_Click);
+            this.button74.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button75
             // 
@@ -1180,7 +1192,7 @@
             this.button75.TabIndex = 75;
             this.button75.Text = "G5";
             this.button75.UseVisualStyleBackColor = false;
-            this.button75.Click += new System.EventHandler(this.button75_Click);
+            this.button75.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button76
             // 
@@ -1194,7 +1206,7 @@
             this.button76.TabIndex = 74;
             this.button76.Text = "G4";
             this.button76.UseVisualStyleBackColor = false;
-            this.button76.Click += new System.EventHandler(this.button76_Click);
+            this.button76.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button77
             // 
@@ -1208,7 +1220,7 @@
             this.button77.TabIndex = 73;
             this.button77.Text = "G3";
             this.button77.UseVisualStyleBackColor = false;
-            this.button77.Click += new System.EventHandler(this.button77_Click);
+            this.button77.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button78
             // 
@@ -1222,7 +1234,7 @@
             this.button78.TabIndex = 72;
             this.button78.Text = "G2";
             this.button78.UseVisualStyleBackColor = false;
-            this.button78.Click += new System.EventHandler(this.button78_Click);
+            this.button78.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button79
             // 
@@ -1236,7 +1248,7 @@
             this.button79.TabIndex = 83;
             this.button79.Text = "G13";
             this.button79.UseVisualStyleBackColor = false;
-            this.button79.Click += new System.EventHandler(this.button79_Click);
+            this.button79.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button80
             // 
@@ -1250,7 +1262,7 @@
             this.button80.TabIndex = 82;
             this.button80.Text = "G12";
             this.button80.UseVisualStyleBackColor = false;
-            this.button80.Click += new System.EventHandler(this.button80_Click);
+            this.button80.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button81
             // 
@@ -1264,7 +1276,7 @@
             this.button81.TabIndex = 81;
             this.button81.Text = "G11";
             this.button81.UseVisualStyleBackColor = false;
-            this.button81.Click += new System.EventHandler(this.button81_Click);
+            this.button81.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button82
             // 
@@ -1278,7 +1290,7 @@
             this.button82.TabIndex = 80;
             this.button82.Text = "G10";
             this.button82.UseVisualStyleBackColor = false;
-            this.button82.Click += new System.EventHandler(this.button82_Click);
+            this.button82.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button83
             // 
@@ -1292,7 +1304,7 @@
             this.button83.TabIndex = 79;
             this.button83.Text = "G9";
             this.button83.UseVisualStyleBackColor = false;
-            this.button83.Click += new System.EventHandler(this.button83_Click);
+            this.button83.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button84
             // 
@@ -1306,7 +1318,7 @@
             this.button84.TabIndex = 78;
             this.button84.Text = "G8";
             this.button84.UseVisualStyleBackColor = false;
-            this.button84.Click += new System.EventHandler(this.button84_Click);
+            this.button84.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button85
             // 
@@ -1320,7 +1332,7 @@
             this.button85.TabIndex = 90;
             this.button85.Text = "G14";
             this.button85.UseVisualStyleBackColor = false;
-            this.button85.Click += new System.EventHandler(this.button85_Click);
+            this.button85.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button86
             // 
@@ -1334,7 +1346,7 @@
             this.button86.TabIndex = 89;
             this.button86.Text = "F14";
             this.button86.UseVisualStyleBackColor = false;
-            this.button86.Click += new System.EventHandler(this.button86_Click);
+            this.button86.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button87
             // 
@@ -1348,13 +1360,14 @@
             this.button87.TabIndex = 88;
             this.button87.Text = "E14";
             this.button87.UseVisualStyleBackColor = false;
-            this.button87.Click += new System.EventHandler(this.button87_Click);
+            this.button87.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button88
             // 
             this.button88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button88.BackColor = System.Drawing.Color.White;
             this.button88.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button88.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button88.Location = new System.Drawing.Point(719, 134);
             this.button88.Margin = new System.Windows.Forms.Padding(2);
             this.button88.Name = "button88";
@@ -1362,7 +1375,7 @@
             this.button88.TabIndex = 87;
             this.button88.Text = "♿";
             this.button88.UseVisualStyleBackColor = false;
-            this.button88.Click += new System.EventHandler(this.button88_Click);
+            this.button88.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button89
             // 
@@ -1376,7 +1389,7 @@
             this.button89.TabIndex = 86;
             this.button89.Text = "D14";
             this.button89.UseVisualStyleBackColor = false;
-            this.button89.Click += new System.EventHandler(this.button89_Click);
+            this.button89.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button90
             // 
@@ -1390,7 +1403,7 @@
             this.button90.TabIndex = 85;
             this.button90.Text = "C14";
             this.button90.UseVisualStyleBackColor = false;
-            this.button90.Click += new System.EventHandler(this.button90_Click);
+            this.button90.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button91
             // 
@@ -1404,7 +1417,7 @@
             this.button91.TabIndex = 84;
             this.button91.Text = "B14";
             this.button91.UseVisualStyleBackColor = false;
-            this.button91.Click += new System.EventHandler(this.button91_Click);
+            this.button91.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button92
             // 
@@ -1418,7 +1431,7 @@
             this.button92.TabIndex = 97;
             this.button92.Text = "G1";
             this.button92.UseVisualStyleBackColor = false;
-            this.button92.Click += new System.EventHandler(this.button92_Click);
+            this.button92.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button93
             // 
@@ -1432,7 +1445,7 @@
             this.button93.TabIndex = 96;
             this.button93.Text = "F1";
             this.button93.UseVisualStyleBackColor = false;
-            this.button93.Click += new System.EventHandler(this.button93_Click);
+            this.button93.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button94
             // 
@@ -1446,13 +1459,14 @@
             this.button94.TabIndex = 95;
             this.button94.Text = "E1";
             this.button94.UseVisualStyleBackColor = false;
-            this.button94.Click += new System.EventHandler(this.button94_Click);
+            this.button94.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button95
             // 
             this.button95.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button95.BackColor = System.Drawing.Color.White;
             this.button95.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button95.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button95.Location = new System.Drawing.Point(158, 134);
             this.button95.Margin = new System.Windows.Forms.Padding(2);
             this.button95.Name = "button95";
@@ -1460,7 +1474,7 @@
             this.button95.TabIndex = 94;
             this.button95.Text = "♿";
             this.button95.UseVisualStyleBackColor = false;
-            this.button95.Click += new System.EventHandler(this.button95_Click);
+            this.button95.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button96
             // 
@@ -1474,7 +1488,7 @@
             this.button96.TabIndex = 93;
             this.button96.Text = "D1";
             this.button96.UseVisualStyleBackColor = false;
-            this.button96.Click += new System.EventHandler(this.button96_Click);
+            this.button96.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button97
             // 
@@ -1488,7 +1502,7 @@
             this.button97.TabIndex = 92;
             this.button97.Text = "C1";
             this.button97.UseVisualStyleBackColor = false;
-            this.button97.Click += new System.EventHandler(this.button97_Click);
+            this.button97.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button98
             // 
@@ -1502,7 +1516,7 @@
             this.button98.TabIndex = 91;
             this.button98.Text = "B1";
             this.button98.UseVisualStyleBackColor = false;
-            this.button98.Click += new System.EventHandler(this.button98_Click);
+            this.button98.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Annuleren
             // 
@@ -1665,8 +1679,8 @@
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Room3D";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Room3D";
-            this.Load += new System.EventHandler(this.Room3D_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

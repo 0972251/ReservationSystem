@@ -995,6 +995,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.A1);
             this.Name = "Room";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Room";
             this.Load += new System.EventHandler(this.Room_Load);
             this.ResumeLayout(false);

@@ -22,8 +22,8 @@ namespace MovieReservation
         public string Time;
         public string Date;
         public string KindOfMovie;
-        public List<string> reservedSeats = new List<string>();
-        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<string> reserve)
+        public List<int> reservedSeats = new List<int>();
+        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<int> reserve)
         {
             InitializeComponent();
 

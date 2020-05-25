@@ -27,11 +27,13 @@ namespace MovieReservation
         public string Seats;
         public string KindOfMovie;
         public List<string> reservedSeats = new List<string>();
-        public List<string> opgeslagen = new List<string>();
+        public List<int> opgeslagen = new List<int>();
         public List<string> Leeg = new List<string>();
-        public List<string> opgeslagen2 = new List<string>();
+        public List<int> Leeg2 = new List<int>();
+        public List<int> opgeslagen2 = new List<int>();
+        public List<int> numberSeats = new List<int>();
 
-        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
+        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
         {
             InitializeComponent();
             Title = title;
@@ -51,6 +53,7 @@ namespace MovieReservation
 
         public void seatDisable()
         {
+            seatSaved();
             if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
@@ -62,16 +65,27 @@ namespace MovieReservation
                 }
                 foreach (var s in reservedSeats)
                 {
-                    opgeslagen.Add(s);
                     Seats = Seats + s;
+                }
+                foreach (var d in numberSeats)
+                {
+                    opgeslagen.Add(d);
                 }
             }
             else
             {
-                foreach (var b in Controls.OfType<Button>())
+                for (int i = 1; i <= 56; i++)
                 {
-                    b.Enabled = true;
-                    NextPage.Enabled = false;
+                    foreach (var t in opgeslagen)
+                    {
+                        if (i == t)
+                        {
+                            string buttonName = "button" + i;
+                            this.Controls[buttonName].Enabled = false;
+                            this.Controls[buttonName].BackColor = Gray;
+                            NextPage.Enabled = false;
+                        }
+                    }
                 }
 
             }
@@ -79,538 +93,44 @@ namespace MovieReservation
 
         public void Cancel()
         {
+
+            foreach (var a in numberSeats)
+            {
+                opgeslagen.Remove(a);
+            }
+            for (int i = 1; i <= 56; i++)
+            {
+                foreach (var t in numberSeats)
+                {
+                    if (i == t)
+                    {
+                        string buttonName = "button" + i;
+                        this.Controls[buttonName].Enabled = true;
+                        this.Controls[buttonName].BackColor = White;
+                    }
+                }
+            }
             foreach (var b in Controls.OfType<Button>())
             {
-                foreach (var a in reservedSeats)
-                {
-                    if (a == "A1 ")
-                    {
-                        A1.Enabled = true;
-                        A1.BackColor = White;
-                    }
-                    if (a == "A2 ")
-                    {
-                        button2.Enabled = true;
-                        button2.BackColor = White;
-                    }
-                    if (a == "A3 ")
-                    {
-                        button3.Enabled = true;
-                        button3.BackColor = White;
-                    }
-                    if (a == "A4 ")
-                    {
-                        button4.Enabled = true;
-                        button4.BackColor = White;
-                    }
-                    if (a == "A5 ")
-                    {
-                        button5.Enabled = true;
-                        button5.BackColor = Gray;
-                    }
-                    if (a == "A6 ")
-                    {
-                        button6.Enabled = false;
-                        button6.BackColor = White;
-                    }
-                    if (a == "A7 ")
-                    {
-                        button7.Enabled = true;
-                        button7.BackColor = White;
-                    }
-                    if (a == "A8 ")
-                    {
-                        button8.Enabled = true;
-                        button8.BackColor = White;
-                    }
-                    if (a == "A9 ")
-                    {
-                        button9.Enabled = true;
-                        button9.BackColor = White;
-                    }
-                    if (a == "A10 ")
-                    {
-                        button10.Enabled = true;
-                        button10.BackColor = White;
-                    }
-                    if (a == "B1 ")
-                    {
-                        button11.Enabled = true;
-                        button11.BackColor = White;
-                    }
-                    if (a == "B2 ")
-                    {
-                        button12.Enabled = true;
-                        button12.BackColor = White;
-                    }
-                    if (a == "B3 ")
-                    {
-                        button13.Enabled = true;
-                        button13.BackColor = White;
-                    }
-                    if (a == "B4 ")
-                    {
-                        button14.Enabled = true;
-                        button14.BackColor = White;
-                    }
-                    if (a == "B5 ")
-                    {
-                        button15.Enabled = true;
-                        button15.BackColor = White;
-                    }
-                    if (a == "B6 ")
-                    {
-                        button16.Enabled = true;
-                        button16.BackColor = White;
-                    }
-                    if (a == "B7 ")
-                    {
-                        button17.Enabled = true;
-                        button17.BackColor = White;
-                    }
-                    if (a == "B8 ")
-                    {
-                        button18.Enabled = true;
-                        button18.BackColor = White;
-                    }
-                    if (a == "B9 ")
-                    {
-                        button19.Enabled = true;
-                        button19.BackColor = White;
-                    }
-                    if (a == "B10 ")
-                    {
-                        button20.Enabled = true;
-                        button20.BackColor = White;
-                    }
-                    if (a == "C1 ")
-                    {
-                        button21.Enabled = true;
-                        button21.BackColor = White;
-                    }
-                    if (a == "C2 ")
-                    {
-                        button22.Enabled = true;
-                        button22.BackColor = White;
-                    }
-                    if (a == "C3 ")
-                    {
-                        button23.Enabled = true;
-                        button23.BackColor = White;
-                    }
-                    if (a == "C4 ")
-                    {
-                        button24.Enabled = true;
-                        button24.BackColor = White;
-                    }
-                    if (a == "C5 ")
-                    {
-                        button25.Enabled = true;
-                        button25.BackColor = White;
-                    }
-                    if (a == "C6 ")
-                    {
-                        button26.Enabled = true;
-                        button26.BackColor = White;
-                    }
-                    if (a == "C7 ")
-                    {
-                        button27.Enabled = true;
-                        button27.BackColor = White;
-                    }
-                    if (a == "C8 ")
-                    {
-                        button28.Enabled = true;
-                        button28.BackColor = White;
-                    }
-                    if (a == "C9 ")
-                    {
-                        button29.Enabled = true;
-                        button29.BackColor = White;
-                    }
-                    if (a == "C10 ")
-                    {
-                        button30.Enabled = true;
-                        button30.BackColor = White;
-                    }
-                    if (a == "D2 ")
-                    {
-                        button31.Enabled = true;
-                        button31.BackColor = White;
-                    }
-                    if (a == "D3 ")
-                    {
-                        button32.Enabled = true;
-                        button32.BackColor = White;
-                    }
-                    if (a == "D4 ")
-                    {
-                        button33.Enabled = true;
-                        button33.BackColor = White;
-                    }
-                    if (a == "D5 ")
-                    {
-                        button34.Enabled = true;
-                        button34.BackColor = White;
-                    }
-                    if (a == "D6 ")
-                    {
-                        button35.Enabled = true;
-                        button35.BackColor = White;
-                    }
-                    if (a == "D7 ")
-                    {
-                        button36.Enabled = true;
-                        button36.BackColor = White;
-                    }
-                    if (a == "D8 ")
-                    {
-                        button37.Enabled = true;
-                        button37.BackColor = White;
-                    }
-                    if (a == "D9 ")
-                    {
-                        button38.Enabled = true;
-                        button38.BackColor = White;
-                    }
-                    if (a == "E2 ")
-                    {
-                        button39.Enabled = true;
-                        button39.BackColor = White;
-                    }
-                    if (a == "E3 ")
-                    {
-                        button40.Enabled = true;
-                        button40.BackColor = White;
-                    }
-                    if (a == "E4 ")
-                    {
-                        button41.Enabled = true;
-                        button41.BackColor = White;
-                    }
-                    if (a == "E5 ")
-                    {
-                        button42.Enabled = true;
-                        button42.BackColor = White;
-                    }
-                    if (a == "E6 ")
-                    {
-                        button43.Enabled = true;
-                        button43.BackColor = White;
-                    }
-                    if (a == "E7 ")
-                    {
-                        button44.Enabled = true;
-                        button44.BackColor = White;
-                    }
-                    if (a == "E8 ")
-                    {
-                        button45.Enabled = true;
-                        button45.BackColor = White;
-                    }
-                    if (a == "E9 ")
-                    {
-                        button46.Enabled = true;
-                        button46.BackColor = White;
-                    }
-                    if (a == "F1 ")
-                    {
-                        button47.Enabled = true;
-                        button47.BackColor = White;
-                    }
-                    if (a == "F2 ")
-                    {
-                        button48.Enabled = true;
-                        button48.BackColor = White;
-                    }
-                    if (a == "F3 ")
-                    {
-                        button49.Enabled = true;
-                        button49.BackColor = White;
-                    }
-                    if (a == "F4 ")
-                    {
-                        button50.Enabled = true;
-                        button50.BackColor = White;
-                    }
-                    if (a == "F5 ")
-                    {
-                        button51.Enabled = true;
-                        button51.BackColor = White;
-                    }
-                    if (a == "F6 ")
-                    {
-                        button52.Enabled = true;
-                        button52.BackColor = White;
-                    }
-                    if (a == "F7 ")
-                    {
-                        button53.Enabled = true;
-                        button53.BackColor = White;
-                    }
-                    if (a == "F8 ")
-                    {
-                        button54.Enabled = true;
-                        button54.BackColor = White;
-                    }
-                    if (a == "F9 ")
-                    {
-                        button55.Enabled = true;
-                        button55.BackColor = White;
-                    }
-                    if (a == "F10 ")
-                    {
-                        button56.Enabled = true;
-                        button56.BackColor = White;
-                    }
-
-
-                }
-                foreach (var a in reservedSeats)
-                {
-                    if (a == "A1 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "A2 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "A3 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "A4 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "A5 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "A6 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "A7 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "A8 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "A9 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "A10 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B1 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B2 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B3 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B4 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B5 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B6 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B7 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B8 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B9 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "B10 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C1 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C2 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C3 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C4 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C5 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C6 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C7 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C8 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C9 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "C10 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "D2 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "D3 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "D4 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "D5 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "D6 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "D7 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "D8 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "D9 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "E1 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "E2 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "E3 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "E4 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "E5 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "E6 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "E7 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "E8 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "E9 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F1 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F2 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F3 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F4 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F5 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F6 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F7 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F8 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F9 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                    if (a == "F10 ")
-                    {
-                        opgeslagen.Remove(a);
-                    }
-                }
                 b.Enabled = true;
-                count = 0;
-                Seats = "";
-                reservedSeats = Leeg;
             }
+            seatSaved();
+            count = 0;
+            Seats = "";
+            reservedSeats = Leeg;
+            numberSeats = Leeg2;
+
+
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            A1.Enabled = false;
-            A1.BackColor = Gray;
+            button1.Enabled = false;
+            button1.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A1 ");
+            numberSeats.Add(1);
             seatDisable();
         }
 
@@ -620,6 +140,7 @@ namespace MovieReservation
             button2.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A2 ");
+            numberSeats.Add(2);
             seatDisable();
         }
 
@@ -629,6 +150,7 @@ namespace MovieReservation
             button3.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A3 ");
+            numberSeats.Add(3);
             seatDisable();
         }
 
@@ -638,6 +160,7 @@ namespace MovieReservation
             button4.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A4 ");
+            numberSeats.Add(4);
             seatDisable();
         }
 
@@ -647,6 +170,7 @@ namespace MovieReservation
             button6.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A5 ");
+            numberSeats.Add(5);
             seatDisable();
         }
 
@@ -656,6 +180,7 @@ namespace MovieReservation
             button5.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A6 ");
+            numberSeats.Add(6);
             seatDisable();
 
         }
@@ -666,6 +191,7 @@ namespace MovieReservation
             button7.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A7 ");
+            numberSeats.Add(7);
             seatDisable();
         }
 
@@ -675,6 +201,7 @@ namespace MovieReservation
             button8.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A8 ");
+            numberSeats.Add(8);
             seatDisable();
         }
 
@@ -684,6 +211,7 @@ namespace MovieReservation
             button9.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A9 ");
+            numberSeats.Add(9);
             seatDisable();
         }
 
@@ -693,6 +221,7 @@ namespace MovieReservation
             button10.BackColor = Gray;
             count += 1;
             reservedSeats.Add("A10 ");
+            numberSeats.Add(10);
             seatDisable();
         }
 
@@ -704,6 +233,7 @@ namespace MovieReservation
             button11.BackColor = Gray;
             count += 1;
             reservedSeats.Add("B1 ");
+            numberSeats.Add(11);
             seatDisable();
         }
 
@@ -713,6 +243,7 @@ namespace MovieReservation
             button12.BackColor = Gray;
             count += 1;
             reservedSeats.Add("B2 ");
+            numberSeats.Add(12);
             seatDisable();
         }
 
@@ -722,6 +253,7 @@ namespace MovieReservation
             button13.BackColor = Gray;
             count += 1;
             reservedSeats.Add("B3 ");
+            numberSeats.Add(13);
             seatDisable();
         }
 
@@ -731,6 +263,7 @@ namespace MovieReservation
             button14.BackColor = Gray;
             count += 1;
             reservedSeats.Add("B4 ");
+            numberSeats.Add(14);
             seatDisable();
         }
 
@@ -740,6 +273,7 @@ namespace MovieReservation
             button15.BackColor = Gray;
             count += 1;
             reservedSeats.Add("B5 ");
+            numberSeats.Add(15);
             seatDisable();
         }
 
@@ -749,6 +283,7 @@ namespace MovieReservation
             button16.BackColor = Gray;
             count += 1;
             reservedSeats.Add("B6 ");
+            numberSeats.Add(16);
             seatDisable();
         }
 
@@ -758,6 +293,7 @@ namespace MovieReservation
             button17.BackColor = Gray;
             count += 1;
             reservedSeats.Add("B7 ");
+            numberSeats.Add(17);
             seatDisable();
         }
 
@@ -766,6 +302,7 @@ namespace MovieReservation
             button18.Enabled = false;
             button18.BackColor = Gray; count += 1;
             reservedSeats.Add("B8 ");
+            numberSeats.Add(18);
             seatDisable();
         }
 
@@ -774,6 +311,7 @@ namespace MovieReservation
             button19.Enabled = false;
             button19.BackColor = Gray; count += 1;
             reservedSeats.Add("B9 ");
+            numberSeats.Add(19);
             seatDisable();
         }
 
@@ -783,6 +321,7 @@ namespace MovieReservation
             button20.BackColor = Gray;
             reservedSeats.Add("B10 ");
             count += 1;
+            numberSeats.Add(20);
             seatDisable();
         }
 
@@ -792,6 +331,7 @@ namespace MovieReservation
             button21.BackColor = Gray;
             reservedSeats.Add("C1 ");
             count += 1;
+            numberSeats.Add(21);
             seatDisable();
         }
 
@@ -801,6 +341,7 @@ namespace MovieReservation
             button22.BackColor = Gray;
             reservedSeats.Add("C2 ");
             count += 1;
+            numberSeats.Add(22);
             seatDisable();
         }
 
@@ -810,6 +351,7 @@ namespace MovieReservation
             button23.BackColor = Gray;
             reservedSeats.Add("C3 ");
             count += 1;
+            numberSeats.Add(23);
             seatDisable();
         }
 
@@ -819,6 +361,7 @@ namespace MovieReservation
             button24.BackColor = Gray;
             reservedSeats.Add("C4 ");
             count += 1;
+            numberSeats.Add(24);
             seatDisable();
         }
 
@@ -828,6 +371,7 @@ namespace MovieReservation
             button25.BackColor = Gray;
             reservedSeats.Add("C5 ");
             count += 1;
+            numberSeats.Add(25);
             seatDisable();
         }
 
@@ -837,6 +381,7 @@ namespace MovieReservation
             button26.BackColor = Gray;
             reservedSeats.Add("C6 ");
             count += 1;
+            numberSeats.Add(26);
             seatDisable();
         }
 
@@ -845,6 +390,7 @@ namespace MovieReservation
             button27.Enabled = false;
             button27.BackColor = Gray;
             count += 1;
+            numberSeats.Add(27);
             reservedSeats.Add("C7 ");
             seatDisable();
         }
@@ -854,6 +400,7 @@ namespace MovieReservation
             button28.Enabled = false;
             button28.BackColor = Gray;
             count += 1;
+            numberSeats.Add(28);
             reservedSeats.Add("C8 ");
             seatDisable();
         }
@@ -863,6 +410,7 @@ namespace MovieReservation
             button29.Enabled = false;
             button29.BackColor = Gray;
             count += 1;
+            numberSeats.Add(29);
             reservedSeats.Add("C9 ");
             seatDisable();
         }
@@ -872,6 +420,7 @@ namespace MovieReservation
             button30.Enabled = false;
             button30.BackColor = Gray;
             count += 1;
+            numberSeats.Add(30);
             reservedSeats.Add("C10 ");
             seatDisable();
         }
@@ -881,6 +430,7 @@ namespace MovieReservation
             button31.Enabled = false;
             button31.BackColor = Gray;
             count += 1;
+            numberSeats.Add(31);
             reservedSeats.Add("D2 ");
             seatDisable();
         }
@@ -890,6 +440,7 @@ namespace MovieReservation
             button32.Enabled = false;
             button32.BackColor = Gray;
             count += 1;
+            numberSeats.Add(32);
             reservedSeats.Add("D3 ");
             seatDisable();
         }
@@ -899,6 +450,7 @@ namespace MovieReservation
             button33.Enabled = false;
             button33.BackColor = Gray;
             count += 1;
+            numberSeats.Add(33);
             reservedSeats.Add("D4 ");
             seatDisable();
         }
@@ -908,6 +460,7 @@ namespace MovieReservation
             button34.Enabled = false;
             button34.BackColor = Gray;
             count += 1;
+            numberSeats.Add(34);
             reservedSeats.Add("D5 ");
             seatDisable();
         }
@@ -917,6 +470,7 @@ namespace MovieReservation
             button35.Enabled = false;
             button35.BackColor = Gray;
             count += 1;
+            numberSeats.Add(35);
             reservedSeats.Add("D6 ");
             seatDisable();
         }
@@ -926,6 +480,7 @@ namespace MovieReservation
             button36.Enabled = false;
             button36.BackColor = Gray;
             count += 1;
+            numberSeats.Add(36);
             reservedSeats.Add("D7 ");
             seatDisable();
         }
@@ -935,6 +490,7 @@ namespace MovieReservation
             button37.Enabled = false;
             button37.BackColor = Gray;
             count += 1;
+            numberSeats.Add(37);
             reservedSeats.Add("D8 ");
             seatDisable();
         }
@@ -944,6 +500,7 @@ namespace MovieReservation
             button38.Enabled = false;
             button38.BackColor = Gray;
             count += 1;
+            numberSeats.Add(38);
             reservedSeats.Add("D9 ");
             seatDisable();
         }
@@ -953,6 +510,7 @@ namespace MovieReservation
             button39.Enabled = false;
             button39.BackColor = Gray;
             count += 1;
+            numberSeats.Add(39);
             reservedSeats.Add("E2 ");
             seatDisable();
         }
@@ -962,6 +520,7 @@ namespace MovieReservation
             button40.Enabled = false;
             button40.BackColor = Gray;
             count += 1;
+            numberSeats.Add(40);
             reservedSeats.Add("E3 ");
             seatDisable();
         }
@@ -971,6 +530,7 @@ namespace MovieReservation
             button41.Enabled = false;
             button41.BackColor = Gray;
             count += 1;
+            numberSeats.Add(41);
             reservedSeats.Add("E4 ");
             seatDisable();
         }
@@ -980,6 +540,7 @@ namespace MovieReservation
             button42.Enabled = false;
             button42.BackColor = Gray;
             count += 1;
+            numberSeats.Add(42);
             reservedSeats.Add("E5 ");
             seatDisable();
         }
@@ -989,6 +550,7 @@ namespace MovieReservation
             button43.Enabled = false;
             button43.BackColor = Gray;
             count += 1;
+            numberSeats.Add(43);
             reservedSeats.Add("E6 ");
             seatDisable();
         }
@@ -998,6 +560,7 @@ namespace MovieReservation
             button44.Enabled = false;
             button44.BackColor = Gray;
             count += 1;
+            numberSeats.Add(44);
             reservedSeats.Add("E7 ");
             seatDisable();
         }
@@ -1007,6 +570,7 @@ namespace MovieReservation
             button45.Enabled = false;
             button45.BackColor = Gray;
             count += 1;
+            numberSeats.Add(45);
             reservedSeats.Add("E8 ");
             seatDisable();
         }
@@ -1016,6 +580,7 @@ namespace MovieReservation
             button46.Enabled = false;
             button46.BackColor = Gray;
             count += 1;
+            numberSeats.Add(46);
             reservedSeats.Add("E9 ");
             seatDisable();
         }
@@ -1025,6 +590,7 @@ namespace MovieReservation
             button47.Enabled = false;
             button47.BackColor = Gray;
             count += 1;
+            numberSeats.Add(47);
             reservedSeats.Add("F1 ");
             seatDisable();
         }
@@ -1034,6 +600,7 @@ namespace MovieReservation
             button48.Enabled = false;
             button48.BackColor = Gray;
             count += 1;
+            numberSeats.Add(48);
             reservedSeats.Add("F2 ");
             seatDisable();
         }
@@ -1043,6 +610,7 @@ namespace MovieReservation
             button49.Enabled = false;
             button49.BackColor = Gray;
             count += 1;
+            numberSeats.Add(49);
             reservedSeats.Add("F3 ");
             seatDisable();
         }
@@ -1052,6 +620,7 @@ namespace MovieReservation
             button50.Enabled = false;
             button50.BackColor = Gray;
             count += 1;
+            numberSeats.Add(50);
             reservedSeats.Add("F4 ");
             seatDisable();
         }
@@ -1061,6 +630,7 @@ namespace MovieReservation
             button51.Enabled = false;
             button51.BackColor = Gray;
             count += 1;
+            numberSeats.Add(51);
             reservedSeats.Add("F5 ");
             seatDisable();
         }
@@ -1070,6 +640,7 @@ namespace MovieReservation
             button52.Enabled = false;
             button52.BackColor = Gray;
             count += 1;
+            numberSeats.Add(52);
             reservedSeats.Add("F6 ");
             seatDisable();
         }
@@ -1079,6 +650,7 @@ namespace MovieReservation
             button53.Enabled = false;
             button53.BackColor = Gray;
             count += 1;
+            numberSeats.Add(53);
             reservedSeats.Add("F7 ");
             seatDisable();
         }
@@ -1088,6 +660,7 @@ namespace MovieReservation
             button54.Enabled = false;
             button54.BackColor = Gray;
             count += 1;
+            numberSeats.Add(54);
             reservedSeats.Add("F8 ");
             seatDisable();
         }
@@ -1097,6 +670,7 @@ namespace MovieReservation
             button55.Enabled = false;
             button55.BackColor = Gray;
             count += 1;
+            numberSeats.Add(55);
             reservedSeats.Add("F9 ");
             seatDisable();
         }
@@ -1106,6 +680,7 @@ namespace MovieReservation
             button56.Enabled = false;
             button56.BackColor = Gray;
             count += 1;
+            numberSeats.Add(56);
             reservedSeats.Add("F10 ");
             seatDisable();
         }
@@ -1151,290 +726,18 @@ namespace MovieReservation
 
         public void seatSaved()
         {
-            foreach (var a in opgeslagen)
+            for (int i = 1; i <= 56; i++)
             {
-                if (a == "A1 ")
+                foreach (var t in opgeslagen)
                 {
-                    A1.Enabled = false;
-                    A1.BackColor = Gray;
-                }
-                if (a == "A2 ")
-                {
-                    button2.Enabled = false;
-                    button2.BackColor = Gray;
-                }
-                if (a == "A3 ")
-                {
-                    button3.Enabled = false;
-                    button3.BackColor = Gray;
-                }
-                if (a == "A4 ")
-                {
-                    button4.Enabled = false;
-                    button4.BackColor = Gray;
-                }
-                if (a == "A5 ")
-                {
-                    button5.Enabled = false;
-                    button5.BackColor = Gray;
-                }
-                if (a == "A6 ")
-                {
-                    button6.Enabled = false;
-                    button6.BackColor = Gray;
-                }
-                if (a == "A7 ")
-                {
-                    button7.Enabled = false;
-                    button7.BackColor = Gray;
-                }
-                if (a == "A8 ")
-                {
-                    button8.Enabled = false;
-                    button8.BackColor = Gray;
-                }
-                if (a == "A9 ")
-                {
-                    button9.Enabled = false;
-                    button9.BackColor = Gray;
-                }
-                if (a == "A10 ")
-                {
-                    button10.Enabled = false;
-                    button10.BackColor = Gray;
-                }
-                if (a == "B1 ")
-                {
-                    button11.Enabled = false;
-                    button11.BackColor = Gray;
-                }
-                if (a == "B2 ")
-                {
-                    button12.Enabled = false;
-                    button12.BackColor = Gray;
-                }
-                if (a == "B3 ")
-                {
-                    button13.Enabled = false;
-                    button13.BackColor = Gray;
-                }
-                if (a == "B4 ")
-                {
-                    button14.Enabled = false;
-                    button14.BackColor = Gray;
-                }
-                if (a == "B5 ")
-                {
-                    button15.Enabled = false;
-                    button15.BackColor = Gray;
-                }
-                if (a == "B6 ")
-                {
-                    button16.Enabled = false;
-                    button16.BackColor = Gray;
-                }
-                if (a == "B7 ")
-                {
-                    button17.Enabled = false;
-                    button17.BackColor = Gray;
-                }
-                if (a == "B8 ")
-                {
-                    button18.Enabled = false;
-                    button18.BackColor = Gray;
-                }
-                if (a == "B9 ")
-                {
-                    button19.Enabled = false;
-                    button19.BackColor = Gray;
-                }
-                if (a == "B10 ")
-                {
-                    button20.Enabled = false;
-                    button20.BackColor = Gray;
-                }
-                if (a == "C1 ")
-                {
-                    button21.Enabled = false;
-                    button21.BackColor = Gray;
-                }
-                if (a == "C2 ")
-                {
-                    button22.Enabled = false;
-                    button22.BackColor = Gray;
-                }
-                if (a == "C3 ")
-                {
-                    button23.Enabled = false;
-                    button23.BackColor = Gray;
-                }
-                if (a == "C4 ")
-                {
-                    button24.Enabled = false;
-                    button24.BackColor = Gray;
-                }
-                if (a == "C5 ")
-                {
-                    button25.Enabled = false;
-                    button25.BackColor = Gray;
-                }
-                if (a == "C6 ")
-                {
-                    button26.Enabled = false;
-                    button26.BackColor = Gray;
-                }
-                if (a == "C7 ")
-                {
-                    button27.Enabled = false;
-                    button27.BackColor = Gray;
-                }
-                if (a == "C8 ")
-                {
-                    button28.Enabled = false;
-                    button28.BackColor = Gray;
-                }
-                if (a == "C9 ")
-                {
-                    button29.Enabled = false;
-                    button29.BackColor = Gray;
-                }
-                if (a == "C10 ")
-                {
-                    button30.Enabled = false;
-                    button30.BackColor = Gray;
-                }
-                if (a == "D2 ")
-                {
-                    button31.Enabled = false;
-                    button31.BackColor = Gray;
-                }
-                if (a == "D3 ")
-                {
-                    button32.Enabled = false;
-                    button32.BackColor = Gray;
-                }
-                if (a == "D4 ")
-                {
-                    button33.Enabled = false;
-                    button33.BackColor = Gray;
-                }
-                if (a == "D5 ")
-                {
-                    button34.Enabled = false;
-                    button34.BackColor = Gray;
-                }
-                if (a == "D6 ")
-                {
-                    button35.Enabled = false;
-                    button35.BackColor = Gray;
-                }
-                if (a == "D7 ")
-                {
-                    button36.Enabled = false;
-                    button36.BackColor = Gray;
-                }
-                if (a == "D8 ")
-                {
-                    button37.Enabled = false;
-                    button37.BackColor = Gray;
-                }
-                if (a == "D9 ")
-                {
-                    button38.Enabled = false;
-                    button38.BackColor = Gray;
-                }
-                if (a == "E2 ")
-                {
-                    button39.Enabled = false;
-                    button39.BackColor = Gray;
-                }
-                if (a == "E3 ")
-                {
-                    button40.Enabled = false;
-                    button40.BackColor = Gray;
-                }
-                if (a == "E4 ")
-                {
-                    button41.Enabled = false;
-                    button41.BackColor = Gray;
-                }
-                if (a == "E5 ")
-                {
-                    button42.Enabled = false;
-                    button42.BackColor = Gray;
-                }
-                if (a == "E6 ")
-                {
-                    button43.Enabled = false;
-                    button43.BackColor = Gray;
-                }
-                if (a == "E7 ")
-                {
-                    button44.Enabled = false;
-                    button44.BackColor = Gray;
-                }
-                if (a == "E8 ")
-                {
-                    button45.Enabled = false;
-                    button45.BackColor = Gray;
-                }
-                if (a == "E9 ")
-                {
-                    button46.Enabled = false;
-                    button46.BackColor = Gray;
-                }
-                if (a == "F1 ")
-                {
-                    button47.Enabled = false;
-                    button47.BackColor = Gray;
-                }
-                if (a == "F2 ")
-                {
-                    button48.Enabled = false;
-                    button48.BackColor = Gray;
-                }
-                if (a == "F3 ")
-                {
-                    button49.Enabled = false;
-                    button49.BackColor = Gray;
-                }
-                if (a == "F4 ")
-                {
-                    button50.Enabled = false;
-                    button50.BackColor = Gray;
-                }
-                if (a == "F5 ")
-                {
-                    button51.Enabled = false;
-                    button51.BackColor = Gray;
-                }
-                if (a == "F6 ")
-                {
-                    button52.Enabled = false;
-                    button52.BackColor = Gray;
-                }
-                if (a == "F7 ")
-                {
-                    button53.Enabled = false;
-                    button53.BackColor = Gray;
-                }
-                if (a == "F8 ")
-                {
-                    button54.Enabled = false;
-                    button54.BackColor = Gray;
-                }
-                if (a == "F9 ")
-                {
-                    button55.Enabled = false;
-                    button55.BackColor = Gray;
-                }
-                if (a == "F10 ")
-                {
-                    button56.Enabled = false;
-                    button56.BackColor = Gray;
+                    if (i == t)
+                    {
+                        string buttonName = "button" + i;
+                        this.Controls[buttonName].Enabled = false;
+                        this.Controls[buttonName].BackColor = Gray;
+                    }
                 }
             }
-
         }
     }
 }

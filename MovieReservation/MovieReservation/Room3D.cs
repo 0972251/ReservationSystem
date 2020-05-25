@@ -25,8 +25,8 @@ namespace MovieReservation
         public Color White = Color.FromArgb(255, 255, 255);
         public string KindOfMovie;
         public string Seats;
-        public List<string> reservedSeats = new List<string>();
-        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
+        public List<int> reservedSeats = new List<int>();
+        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
         {
             InitializeComponent();
             Title = title;

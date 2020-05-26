@@ -159,6 +159,7 @@ namespace MovieReservation
         {
             Cancel();
             NextPage.Enabled = false;
+            Seats = "";
         }
 
         private void Room_Load(object sender, EventArgs e)

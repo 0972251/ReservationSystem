@@ -12,6 +12,9 @@ namespace MovieReservation
 {
     public partial class Room3D : Form
     {
+        public Color Gray = Color.FromArgb(119, 136, 153);
+        public Color White = Color.FromArgb(255, 255, 255);
+
         public int AmountSeats;
         public int count = 0;
         public string Title;
@@ -21,12 +24,11 @@ namespace MovieReservation
         public string Description;
         public string Date;
         public string Time;
-        public Color Gray = Color.FromArgb(119, 136, 153);
-        public Color White = Color.FromArgb(255, 255, 255);
         public string KindOfMovie;
-        public string Seats;
+        public string Seats = "";
         public List<int> reservedSeats = new List<int>();
-        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve, string kindOfMovie)
+
+        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
         {
             InitializeComponent();
             Title = title;
@@ -38,23 +40,35 @@ namespace MovieReservation
             Date = date;
             Time = time;
             KindOfMovie = kindofmovie;
-            Seats = "";
             reservedSeats = reserve;
         }
 
         public void seatDisable()
         {
-
             if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
                     b.Enabled = false;
-                    Annuleren.Enabled = true;
                     NextPage.Enabled = true;
-                    button99.Enabled = true;
+                    Annuleren.Enabled = true;
                 }
             }
+/*            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    foreach (var t in reservedSeats)
+                    {
+                        if (b.Name == t)
+                        {
+                            Controls[t].Enabled = false;
+                            Controls[t].BackColor = Gray;
+                        }
+                    }
+                }
+            }*/
+
         }
 
         private void allButtons_Click(object sender, EventArgs e)
@@ -64,13 +78,16 @@ namespace MovieReservation
             Button seatButton = (Button)sender;
             seatButton.Enabled = false;
             seatButton.BackColor = Gray;
-            Seats += seatButton.Text + ", ";
+            Seats += seatButton.Text + " ";
+/*            reservedSeats.Add(seatButton.Name);*/
         }
 
         private void NextPage_Click(object sender, EventArgs e)
         {
             TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "3D", AmountSeats, Seats, PictureName, reservedSeats, KindOfMovie);
+            this.Hide();
             ticket.ShowDialog();
+            this.Close();
         }
 
         private void Annuleren_Click(object sender, EventArgs e)
@@ -87,7 +104,9 @@ namespace MovieReservation
         private void previousPage_Click(object sender, EventArgs e)
         {
             Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
+            this.Hide();
             tk.ShowDialog();
+            this.Close();
         }
     }
 }

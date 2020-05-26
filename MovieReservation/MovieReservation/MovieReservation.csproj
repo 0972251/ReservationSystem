@@ -73,6 +73,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Roomcontrole.cs" />
     <Compile Include="TicketConfrim.cs">
       <SubType>Form</SubType>
     </Compile>

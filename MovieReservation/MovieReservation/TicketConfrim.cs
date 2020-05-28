@@ -56,16 +56,6 @@ namespace MovieReservation
             this.pictureBox1.Image = image1;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Terug_Click(object sender, EventArgs e)
         {
             movieChoice movie = new movieChoice(KindOfMovie, reservedSeats);

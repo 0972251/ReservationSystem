@@ -149,7 +149,6 @@
             this.labelTitle.Size = new System.Drawing.Size(59, 20);
             this.labelTitle.TabIndex = 8;
             this.labelTitle.Text = "label8";
-            this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
             // 
             // labelDate
             // 
@@ -239,7 +238,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // TicketConfrim
             // 

@@ -19,10 +19,10 @@ namespace MovieReservation
         public int Amount;
         public string Seats;
         public string PictureName;
-        public List<int> reservedSeats = new List<int>();
+        public List<string> reservedSeats = new List<string>();
         public string test = "";
         public string KindOfMovie;
-        public TicketConfrim(string title, string date, string time, string room, int amount, string seats, string pictureName, List<int> reserve, string kindOfMovie)
+        public TicketConfrim(string title, string date, string time, string room, int amount, string seats, string pictureName, List<string> reserve, string kindOfMovie)
         {
             Title = title;
             Date = date;

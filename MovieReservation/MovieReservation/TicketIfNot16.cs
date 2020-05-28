@@ -20,8 +20,8 @@ namespace MovieReservation
         public string Date;
         public string Time;
         public string KindOfMovie;
-        public List<int> reservedSeats = new List<int>();
-        public TicketIfNot16(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
+        public List<string> reservedSeats = new List<string>();
+        public TicketIfNot16(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
 

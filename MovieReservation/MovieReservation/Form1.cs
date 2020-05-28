@@ -13,7 +13,7 @@ namespace MovieReservation
     public partial class Form1 : Form
     {
         public string KindOfMovie = "";
-        public List<int> reservedMovie = new List<int>();
+        public List<string> reservedMovie = new List<string>();
         public Form1()
         {
             InitializeComponent();

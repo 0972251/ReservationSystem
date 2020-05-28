@@ -76,3 +76,4 @@ C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\obj\Debug\MovieR
 C:\Users\almin\Desktop\GitHub\MovieReservation\MovieReservation\obj\Debug\MovieReservation.pdb
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.TicketConfrim.resources
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.TicketConfrim.resources
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.csproj.CoreCompileInputs.cache

@@ -70,7 +70,9 @@ namespace MovieReservation
         private void NextPage_Click(object sender, EventArgs e)
         {
             TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "3D", AmountSeats, Seats, PictureName, reservedSeats, KindOfMovie);
+            this.Hide();
             ticket.ShowDialog();
+            this.Close();
         }
 
         private void Annuleren_Click(object sender, EventArgs e)
@@ -87,7 +89,9 @@ namespace MovieReservation
         private void previousPage_Click(object sender, EventArgs e)
         {
             Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
+            this.Hide();
             tk.ShowDialog();
+            this.Close();
         }
     }
 }

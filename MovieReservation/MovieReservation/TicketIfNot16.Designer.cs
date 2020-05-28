@@ -62,7 +62,7 @@
             this.GoToBackScreen.TabIndex = 0;
             this.GoToBackScreen.Text = "Terug";
             this.GoToBackScreen.UseVisualStyleBackColor = false;
-            this.GoToBackScreen.Click += new System.EventHandler(this.button1_Click);
+            this.GoToBackScreen.Click += new System.EventHandler(this.previousPage_Click);
             // 
             // pictureBox1
             // 
@@ -292,7 +292,6 @@
             this.comboBox4.Size = new System.Drawing.Size(37, 24);
             this.comboBox4.TabIndex = 51;
             this.comboBox4.Text = "0";
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // StoelKiezen
             // 
@@ -304,7 +303,7 @@
             this.StoelKiezen.TabIndex = 52;
             this.StoelKiezen.Text = "Stoel Kiezen";
             this.StoelKiezen.UseVisualStyleBackColor = false;
-            this.StoelKiezen.Click += new System.EventHandler(this.button2_Click);
+            this.StoelKiezen.Click += new System.EventHandler(this.nextPage_Click);
             // 
             // label10
             // 
@@ -348,7 +347,6 @@
             this.Name = "TicketIfNot16";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ticket";
-            this.Load += new System.EventHandler(this.TicketIfNot16_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -162,11 +162,6 @@ namespace MovieReservation
             Seats = "";
         }
 
-        private void Room_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void NextPage_Click(object sender, EventArgs e)
         {
             opgeslagen2 = opgeslagen;

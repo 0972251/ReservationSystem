@@ -22,8 +22,8 @@ namespace MovieReservation
         public string Time;
         public string Date;
         public string KindOfMovie;
-        public List<int> reservedSeats = new List<int>();
-        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<int> reserve)
+        public List<string> reservedSeats = new List<string>();
+        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
 
@@ -53,7 +53,7 @@ namespace MovieReservation
             dateTimePicker1.MaxDate = new DateTime(2028, 6, 20);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void nextPage_Click(object sender, EventArgs e)
         {
             Date = dateTimePicker1.Text;
             Time = comboBox2.Text;
@@ -92,27 +92,12 @@ namespace MovieReservation
             countTime += 1;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void previousPage_Click(object sender, EventArgs e)
         {
             movieChoice mc = new movieChoice(KindOfMovie, reservedSeats);
             this.Hide();
             mc.ShowDialog();
             this.Close();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTime_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDescription_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -20,9 +20,9 @@ namespace MovieReservation
         public string Date;
         public string Time;
         public string KindOfMovie;
-        public List<int> reservedSeats = new List<int>();
+        public List<string> reservedSeats = new List<string>();
 
-        public Ticket(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
+        public Ticket(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
 
@@ -51,7 +51,7 @@ namespace MovieReservation
             FindSeat.Enabled = false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void nextPage_Click(object sender, EventArgs e)
         {
             string ticket1 = comboBox1.Text.ToString();
             string ticket2 = comboBox2.Text.ToString();
@@ -73,7 +73,7 @@ namespace MovieReservation
             }
             else
             {
-                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats, KindOfMovie);
+                Room3D room = new Room3D(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
                 this.Hide();
                 room.ShowDialog();
                 this.Close();
@@ -82,7 +82,7 @@ namespace MovieReservation
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void previousPage_Click(object sender, EventArgs e)
         {
             dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie, reservedSeats);
             this.Hide();
@@ -91,7 +91,7 @@ namespace MovieReservation
             
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void ageCheck_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked == false)
             {

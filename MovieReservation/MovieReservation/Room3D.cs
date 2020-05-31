@@ -12,6 +12,9 @@ namespace MovieReservation
 {
     public partial class Room3D : Form
     {
+        public Color Gray = Color.FromArgb(119, 136, 153);
+        public Color White = Color.FromArgb(255, 255, 255);
+
         public int AmountSeats;
         public int count = 0;
         public string Title;
@@ -21,12 +24,16 @@ namespace MovieReservation
         public string Description;
         public string Date;
         public string Time;
-        public Color Gray = Color.FromArgb(119, 136, 153);
-        public Color White = Color.FromArgb(255, 255, 255);
         public string KindOfMovie;
-        public string Seats;
-        public List<int> reservedSeats = new List<int>();
-        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve, string kindOfMovie)
+        public string Seats = "";
+        public List<string> reservedSeats = new List<string>();
+        public List<string> opgeslagen = new List<string>();
+        public List<string> Leeg = new List<string>();
+        public List<string> Leeg2 = new List<string>();
+        public List<string> opgeslagen2 = new List<string>();
+        public List<string> numberSeats = new List<string>();
+
+        public Room3D(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
             Title = title;
@@ -38,56 +45,140 @@ namespace MovieReservation
             Date = date;
             Time = time;
             KindOfMovie = kindofmovie;
-            Seats = "";
-            reservedSeats = reserve;
+            opgeslagen = reserve;
+            seatSaved();
         }
 
         public void seatDisable()
         {
-
+            seatSaved();
             if (count == AmountSeats)
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
                     b.Enabled = false;
+                    button57.Enabled = true;
                     Annuleren.Enabled = true;
                     NextPage.Enabled = true;
-                    button99.Enabled = true;
+                }
+
+                foreach (var d in reservedSeats)
+                {
+                    opgeslagen.Add(d);
                 }
             }
+            else
+            {
+                foreach (var b in Controls.OfType<Button>())
+                {
+                    foreach (var t in opgeslagen)
+                    {
+                        if (b.Text == t)
+                        {
+                            b.Enabled = false;
+                            b.BackColor = Gray;
+                        }
+                    }
+                }
+                NextPage.Enabled = false;
+
+
+            }
+
+        }
+
+        public void Cancel()
+        {
+
+            foreach (var a in reservedSeats)
+            {
+                opgeslagen.Remove(a);
+            }
+            foreach (var b in Controls.OfType<Button>())
+            {
+                foreach (var t in reservedSeats)
+                {
+                    if (b.Text == t)
+                    {
+                        b.Enabled = true;
+                        b.BackColor = White;
+                    }
+                }
+            }
+
+
+            foreach (var b in Controls.OfType<Button>())
+            {
+                b.Enabled = true;
+            }
+            seatSaved();
+            count = 0;
+            Seats = "";
+            reservedSeats = Leeg;
+            numberSeats = Leeg2;
+
+
+
         }
 
         private void allButtons_Click(object sender, EventArgs e)
         {
             count += 1;
-            seatDisable();
             Button seatButton = (Button)sender;
             seatButton.Enabled = false;
             seatButton.BackColor = Gray;
-            Seats += seatButton.Text + ", ";
+            Seats += seatButton.Text + " ";
+            reservedSeats.Add(seatButton.Text);
+            seatDisable();
         }
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "3D", AmountSeats, Seats, PictureName, reservedSeats, KindOfMovie);
+            opgeslagen2 = opgeslagen;
+            reservedSeats = Leeg;
+            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "2D", AmountSeats, Seats, PictureName, opgeslagen2, KindOfMovie);
+            this.Hide();
             ticket.ShowDialog();
+            this.Close();
         }
 
         private void Annuleren_Click(object sender, EventArgs e)
         {
-            foreach (var b in Controls.OfType<Button>())
-            {
-                b.Enabled = true;
-                b.BackColor = White;
-                count = 0;
-                Seats = "";
-            }
+            Cancel();
+            NextPage.Enabled = false;
+            Seats = "";
         }
 
         private void previousPage_Click(object sender, EventArgs e)
         {
-            Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
-            tk.ShowDialog();
+            if (Age == "16")
+            {
+                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, opgeslagen);
+                this.Hide();
+                tk.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, opgeslagen);
+                this.Hide();
+                tk16.ShowDialog();
+                this.Close();
+            }
+        }
+        public void seatSaved()
+        {
+            foreach (var b in Controls.OfType<Button>())
+            {
+                foreach (var t in opgeslagen)
+                {
+                    if (b.Text == t)
+                    {
+                        b.Enabled = false;
+                        b.BackColor = Gray;
+                    }
+                }
+            }
         }
     }
 }

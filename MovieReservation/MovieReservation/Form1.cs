@@ -27,7 +27,7 @@ namespace MovieReservation
             this.Close();
         }
 
-        private void Medewerker_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             collaboratorLogin login = new collaboratorLogin();
             this.Hide();

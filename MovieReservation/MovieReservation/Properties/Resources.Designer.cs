@@ -63,6 +63,16 @@ namespace MovieReservation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loginImage {
+            get {
+                object obj = ResourceManager.GetObject("loginImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2020_05_18_at_13_10_45 {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2020-05-18 at 13.10.45", resourceCulture);

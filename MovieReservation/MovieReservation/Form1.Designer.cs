@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.Medewerker = new System.Windows.Forms.Button();
             this.Klant = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -40,28 +40,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(323, 161);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(353, 156);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 31);
+            this.label1.Size = new System.Drawing.Size(491, 47);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Ik ben een...";
-            // 
-            // Medewerker
-            // 
-            this.Medewerker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Medewerker.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Medewerker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Medewerker.Font = new System.Drawing.Font("Arial", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Medewerker.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Medewerker.Location = new System.Drawing.Point(413, 225);
-            this.Medewerker.Margin = new System.Windows.Forms.Padding(2);
-            this.Medewerker.Name = "Medewerker";
-            this.Medewerker.Size = new System.Drawing.Size(172, 64);
-            this.Medewerker.TabIndex = 8;
-            this.Medewerker.Text = "MEDEWERKER";
-            this.Medewerker.UseVisualStyleBackColor = false;
-            this.Medewerker.Click += new System.EventHandler(this.Medewerker_Click);
+            this.label1.Text = "Welkom Bij SmartCinema";
             // 
             // Klant
             // 
@@ -70,24 +53,39 @@
             this.Klant.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Klant.Font = new System.Drawing.Font("Arial", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Klant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Klant.Location = new System.Drawing.Point(215, 225);
-            this.Klant.Margin = new System.Windows.Forms.Padding(2);
+            this.Klant.Location = new System.Drawing.Point(361, 288);
             this.Klant.Name = "Klant";
-            this.Klant.Size = new System.Drawing.Size(172, 64);
+            this.Klant.Size = new System.Drawing.Size(215, 71);
             this.Klant.TabIndex = 7;
-            this.Klant.Text = "KLANT";
+            this.Klant.Text = "Bezoeker";
             this.Klant.UseVisualStyleBackColor = false;
             this.Klant.Click += new System.EventHandler(this.Klant_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Arial", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(629, 288);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(215, 71);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Medewerker";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MovieReservation.Properties.Resources.WhatsApp_Image_2020_05_18_at_13_34_34;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Medewerker);
             this.Controls.Add(this.Klant);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -99,8 +97,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Medewerker;
         private System.Windows.Forms.Button Klant;
+        private System.Windows.Forms.Button button1;
     }
 }
 

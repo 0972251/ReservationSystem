@@ -74,7 +74,7 @@
             this.button1.TabIndex = 40;
             this.button1.Text = "Ticket Kiezen";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.nextPage_Click);
             // 
             // labelDescription
             // 
@@ -144,7 +144,7 @@
             this.button2.TabIndex = 48;
             this.button2.Text = "Terug";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.previousPage_Click);
             // 
             // pictureBoxClassification
             // 
@@ -180,7 +180,6 @@
             this.pictureBoxMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMovie.TabIndex = 34;
             this.pictureBoxMovie.TabStop = false;
-            this.pictureBoxMovie.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // dateTime
             // 
@@ -207,7 +206,6 @@
             this.Name = "dateTime";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "dateTime";
-            this.Load += new System.EventHandler(this.dateTime_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClassification)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).EndInit();

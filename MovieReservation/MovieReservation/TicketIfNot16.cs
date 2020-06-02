@@ -20,8 +20,8 @@ namespace MovieReservation
         public string Date;
         public string Time;
         public string KindOfMovie;
-        public List<int> reservedSeats = new List<int>();
-        public TicketIfNot16(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
+        public List<string> reservedSeats = new List<string>();
+        public TicketIfNot16(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
 
@@ -49,7 +49,7 @@ namespace MovieReservation
             label1.Text = Title;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void nextPage_Click(object sender, EventArgs e)
         {
             string ticket1 = comboBox1.Text.ToString();
             string ticket2 = comboBox2.Text.ToString();
@@ -80,37 +80,12 @@ namespace MovieReservation
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void previousPage_Click(object sender, EventArgs e)
         {
             dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie, reservedSeats);
             this.Hide();
             dt.ShowDialog();
             this.Close();
-        }
-
-        private void TicketIfNot16_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

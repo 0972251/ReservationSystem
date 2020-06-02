@@ -13,7 +13,7 @@ namespace MovieReservation
     public partial class Form1 : Form
     {
         public string KindOfMovie = "";
-        public List<int> reservedMovie = new List<int>();
+        public List<string> reservedMovie = new List<string>();
         public Form1()
         {
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace MovieReservation
             this.Close();
         }
 
-        private void Medewerker_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             collaboratorLogin login = new collaboratorLogin();
             this.Hide();

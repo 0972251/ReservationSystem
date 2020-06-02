@@ -15,7 +15,7 @@ namespace MovieReservation
     public partial class collaboratorLogin : Form
     {
         public string KindOfMovie = "";
-        public List<int> reservedMovie = new List<int>();
+        public List<string> reservedMovie = new List<string>();
         public collaboratorLogin()
         {
             InitializeComponent();

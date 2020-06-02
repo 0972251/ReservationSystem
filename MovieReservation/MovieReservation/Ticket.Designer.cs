@@ -65,7 +65,7 @@
             this.checkBox1.TabIndex = 51;
             this.checkBox1.Text = "Ik verklaar hierbij dat iedereen die meegaat 16 jaar of ouder is";
             this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.ageCheck_CheckedChanged);
             // 
             // comboBox4
             // 
@@ -243,7 +243,7 @@
             this.FindSeat.TabIndex = 38;
             this.FindSeat.Text = "Stoel Kiezen";
             this.FindSeat.UseVisualStyleBackColor = false;
-            this.FindSeat.Click += new System.EventHandler(this.button2_Click);
+            this.FindSeat.Click += new System.EventHandler(this.nextPage_Click);
             // 
             // GoToBackScreen
             // 
@@ -256,7 +256,7 @@
             this.GoToBackScreen.TabIndex = 37;
             this.GoToBackScreen.Text = "Terug";
             this.GoToBackScreen.UseVisualStyleBackColor = false;
-            this.GoToBackScreen.Click += new System.EventHandler(this.button1_Click);
+            this.GoToBackScreen.Click += new System.EventHandler(this.previousPage_Click);
             // 
             // label1
             // 

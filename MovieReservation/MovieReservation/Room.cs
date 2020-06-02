@@ -27,13 +27,13 @@ namespace MovieReservation
         public string Seats;
         public string KindOfMovie;
         public List<string> reservedSeats = new List<string>();
-        public List<int> opgeslagen = new List<int>();
+        public List<string> opgeslagen = new List<string>();
         public List<string> Leeg = new List<string>();
-        public List<int> Leeg2 = new List<int>();
-        public List<int> opgeslagen2 = new List<int>();
-        public List<int> numberSeats = new List<int>();
+        public List<string> Leeg2 = new List<string>();
+        public List<string> opgeslagen2 = new List<string>();
+        public List<string> numberSeats = new List<string>();
 
-        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<int> reserve)
+        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
             Title = title;
@@ -63,53 +63,53 @@ namespace MovieReservation
                     Annuleren.Enabled = true;
                     NextPage.Enabled = true;
                 }
-                foreach (var s in reservedSeats)
-                {
-                    Seats = Seats + s;
-                }
-                foreach (var d in numberSeats)
+
+                foreach (var d in reservedSeats)
                 {
                     opgeslagen.Add(d);
                 }
             }
             else
             {
-                for (int i = 1; i <= 56; i++)
+                foreach (var b in Controls.OfType<Button>())
                 {
                     foreach (var t in opgeslagen)
                     {
-                        if (i == t)
+                        if (b.Text == t)
                         {
-                            string buttonName = "button" + i;
-                            this.Controls[buttonName].Enabled = false;
-                            this.Controls[buttonName].BackColor = Gray;
-                            NextPage.Enabled = false;
+                            b.Enabled = false;
+                            b.BackColor = Gray;
                         }
                     }
                 }
+                NextPage.Enabled = false;
+
 
             }
+
         }
 
         public void Cancel()
         {
 
-            foreach (var a in numberSeats)
+            foreach (var a in reservedSeats)
             {
                 opgeslagen.Remove(a);
             }
-            for (int i = 1; i <= 56; i++)
+            foreach (var b in Controls.OfType<Button>())
             {
-                foreach (var t in numberSeats)
+                foreach (var t in reservedSeats)
                 {
-                    if (i == t)
+                    if (b.Text == t)
                     {
-                        string buttonName = "button" + i;
-                        this.Controls[buttonName].Enabled = true;
-                        this.Controls[buttonName].BackColor = White;
+                        b.Enabled = true;
+                        b.BackColor = White;
                     }
                 }
             }
+
+
+
             foreach (var b in Controls.OfType<Button>())
             {
                 b.Enabled = true;
@@ -162,11 +162,6 @@ namespace MovieReservation
             Seats = "";
         }
 
-        private void Room_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void NextPage_Click(object sender, EventArgs e)
         {
             opgeslagen2 = opgeslagen;
@@ -179,15 +174,14 @@ namespace MovieReservation
 
         public void seatSaved()
         {
-            for (int i = 1; i <= 56; i++)
+            foreach (var b in Controls.OfType<Button>())
             {
                 foreach (var t in opgeslagen)
                 {
-                    if (i == t)
+                    if (b.Text == t)
                     {
-                        string buttonName = "button" + i;
-                        this.Controls[buttonName].Enabled = false;
-                        this.Controls[buttonName].BackColor = Gray;
+                        b.Enabled = false;
+                        b.BackColor = Gray;
                     }
                 }
             }

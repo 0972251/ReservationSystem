@@ -22,9 +22,9 @@ namespace MovieReservation
         public string Time;
         public string Date;
         public string KindOfMovie;
-        public List<int> reservedSeats = new List<int>();
+        public List<string> reservedSeats = new List<string>();
         public string[] TimeArray = new string[] { "09:00", "11:30", "14:00", "21:00", "23:00" };
-        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<int> reserve)
+        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<string> reserve)
         {
             InitializeComponent();
 
@@ -94,7 +94,7 @@ namespace MovieReservation
             return time.ToString().Substring(9, 5);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void nextPage_Click(object sender, EventArgs e)
         {
             Date = dateTimePicker1.Text;
             Time = comboBox2.Text;
@@ -135,27 +135,12 @@ namespace MovieReservation
             countTime += 1;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void previousPage_Click(object sender, EventArgs e)
         {
             movieChoice mc = new movieChoice(KindOfMovie, reservedSeats);
             this.Hide();
             mc.ShowDialog();
             this.Close();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTime_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDescription_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

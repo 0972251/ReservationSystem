@@ -15,7 +15,8 @@ namespace QuickType
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
-    public partial class Welcome
+    public partial class Movies
+
     {
         [JsonProperty("Nieuw")]
         public Nieuw Nieuw { get; set; }

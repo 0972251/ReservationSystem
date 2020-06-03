@@ -6,7 +6,8 @@
             "Age": 16,
             "Time": "109 minuten",
             "Description": "Beveiligingsbedrijf Rising Spirit Technologies weet met nanotechnologie een\noverleden soldaat, Ray Garrison genaamd, terug tot leven te wekken. De\ntransfusie heeft van hem een moordmachine gemaakt die niet te stuiten is,\nuitgerust met verbeterde vermogens, zoals genezing, snelheid en verdraagzaamheid.\nRay probeert vervolgens te achterhalen wie hem dit aangedaan heeft en zint op wraak.",
-            "PictureName": "afb3"
+            "PictureName": "afb3",
+            "MovieTime": ["06:48", "22:34", "23:27", "02:22"]
         },
 
         "N2": {
@@ -15,7 +16,8 @@
             "Age": 12,
             "Time": "120 minuten",
             "Description": "Geprezen filmmaker Niki Caro brengt het epische verhaal van de legendarische\nkrijger van China tot leven in Disney's Mulan, waarin een heldhaftige jonge vrouw\nuit liefde voor haar familie en haar land, alles riskeert om een ​​van de grootste\nkrijgers te worden die China ooit heeft gekend. Wanneer de keizer van China\nbesluit dat één man per gezin moet dienen in het keizerlijke leger, om het land\nte kunnen verdedigen tegen indringers uit het Noorden, neemt Hua Mulan,\nde oudste dochter van een respectabele krijger, de in het geheim de plaats\nvan haar zieke vader in.",
-            "PictureName": "afb4"
+            "PictureName": "afb4",
+            "MovieTime": ["09:09", "09:17", "11:22"]
         },
 
         "N3": {
@@ -24,7 +26,8 @@
             "Age": 16,
             "Time": "163 minuten",
             "Description": "In 'No Time to Die' heeft James Bond zijn turbulente leven als geheim\nagent achter zich gelaten en leidt hij een rustig bestaan op Jamaica.\nZijn rust is echter van korte duur wanneer zijn oude vriend Felix Leiter\nvan de CIA opduikt met de vraag naar hulp. Het brengt hem op het\nspoor van een mysterieuze schurk gewapend met gevaarlijke nieuwe\ntechnologie.",
-            "PictureName": "afb1"
+            "PictureName": "afb1",
+            "MovieTime": ["00:28", "01:07", "03:16"]
         },
 
         "N4": {
@@ -33,7 +36,8 @@
             "Age": 16,
             "Time": "120 minuten",
             "Description": "De jaren 80. Diana Prince wordt geconfronteerd met de Koude Oorlog\nen is op weg naar de Sovjet-Unie. Daar zal ze het op moeten nemen\ntegen Barbara Ann Minerva, beter bekend als de levensgevaarlijke\n'Cheetah'. Barbara was een Britse antropoloog die via de plantengod\nUrtzkartaga speciale krachten heeft gekregen.",
-            "PictureName": "afb2"
+            "PictureName": "afb2",
+            "MovieTime": ["22:37", "00:17", "01:46"]
         },
 
         "N5": {
@@ -72,7 +76,8 @@
       "Age": 16,
       "Time": "123 minuten",
       "Description": "In 'Jumanji: The Next Level' keert het groepje terug, maar is het spel\nveranderd. Wanneer ze terugkeren naar Jumanji om iemand van hen\nte redden, ontdekken ze dat niets is wat ze vooraf hadden verwacht.\nDe spelers zullen onbekende delen moeten trotseren, van dorre\nwoestijnen tot besneeuwde bergen, om te ontsnappen aan 's werelds\nmeest gevaarlijke spel.",
-      "PictureName": "afb23"
+      "PictureName": "afb23",
+      "MovieTime": ["00:43", "00:53", "02:16"]
     },
 
     "A4": {
@@ -83,13 +88,15 @@
       "Description": "Henry Brogan is een moordenaar op leeftijd, werkzaam voor de NSA,\ndie van plan is zijn carrière de rug toe te keren. Zijn opdrachtgevers\nwillen hem echter niet laten gaan. Henry moet het plotseling opnemen\ntegen zijn opvolger, die wel erg veel gelijkenissen vertoont.",
       "PictureName": "afb24"
     },
+
     "A5": {
       "Title": "Fast and Furious 9",
       "Genre": "Actie",
       "Age": 16,
       "Time": "135 minuten",
       "Description": "'Fast 9' volgt Dominic Toretto die zich samen met Letty Ortiz teruggetrokken\nheeft om een gezin te stichten. Ze proberen hun zoon Brian onder rustige\nomstandigheden op te voeden, waarbij ze hun roekeloze bestaan achter\nzich hebben gelaten. Onder andere de terugkeer van Cipher lijkt echter roet\nin het eten te gooien.",
-      "PictureName": "afb20"
+      "PictureName": "afb20",
+      "MovieTime": ["06:32", "21:12", "23:31", "02:47"]
     }
   },
 
@@ -101,7 +108,8 @@
             "Age": 12,
             "Time": "100 minuten",
             "Description": "George heeft het moeilijk om de rollen van de jungle koning, vader\nen echtgenoot te vervullen. Zijn stressniveau neemt toe wanneer zijn\nschoonmoeder van plan is alles wat hem na aan het hart ligt weg te nemen.",
-            "PictureName": "afb25"
+            "PictureName": "afb25",
+            "MovieTime": ["18:16", "18:54", "22:18"]
         },
 
         "C2": {
@@ -110,7 +118,8 @@
             "Age": 16,
             "Time": "117 minuten",
             "Description": "Ali is spelersmakelaar die door haar mannelijke collega's steeds opzij\nwordt geschoven. Op een dag beschikt ze over het vermogen om\nde gedachten van mannen te lezen. Ze besluit dit in haar voordeel te\ngebruiken en poogt als eerste de volgende superster binnen\nhet basketbalwereldje binnen te halen.",
-            "PictureName": "afb26"
+            "PictureName": "afb26",
+            "MovieTime": ["16:41", "19:25", "21:04"]
         },
 
         "C3": {
@@ -119,7 +128,8 @@
             "Age": 16,
             "Time": "115 minuten",
             "Description": "'Men in Black: International' volgt de agenten M en H, twee leden\nvan een geheime, internationale organisatie. Ze hebben al jaren\nde wereld moeten behoeden voor bedreigingen van het uitschot\nvan het heelal. Maar nu stuiten ze mogelijk op hun grootste,\nglobale bedreiging ooit; er bevindt zich een mol binnen hun organisatie.",
-            "PictureName": "afb27"
+            "PictureName": "afb27",
+            "MovieTime": ["19:05", "20:09", "21:52", "23:07"]
         },
 
         "C4": {
@@ -128,7 +138,8 @@
             "Age": 16,
             "Time": "101 minuten",
             "Description": "Stanley Ipkiss is een bankmedewerker die constant wordt vernederd\ntijdens confrontaties, en niet voor zichzelf durft op te komen. Na één\nvan de ergste dagen uit z'n leven vindt hij een masker. Wanneer hij\nhet masker opzet,komt zijn binnenste ik boven; een cartoon-achtige,\nromantische en wilde man. Een misdaadbaas gaat achter Ipkiss aan,\nnadat een vriend van hem, dankzij Ipkiss, de dood vindt.",
-            "PictureName": "afb28"
+            "PictureName": "afb28",
+            "MovieTime": ["20:26", "20:28", "21:30", "03:36"]
         },
 
         "C5": {
@@ -137,7 +148,8 @@
             "Age": 6,
             "Time": "94 minuten",
             "Description": "Mr. Popper is een machtige zakenman uit New York, die plotseling\nzes pinguïns erft van zijn vader. Hij verandert zijn appartement in\neen wonderlijke winterwereld. Het blijkt niet makkelijk te zijn om voor\nde dieren te zorgen, maar gaandeweg gaat het hem steeds beter af.\nOndertussen leert Popper ook het belang van familie en vrienden\nkennen. Zijn beroepsmatige en zakelijke kant begint langzaam af\nte brokkelen.",
-            "PictureName": "afb29"
+            "PictureName": "afb29",
+            "MovieTime": ["19:08", "20:14", "22:39"]
         }
     },
 
@@ -148,7 +160,8 @@
             "Age": 12,
             "Time":"110 minuten",
             "Description": "Recep İvedik zit thuis televisie te kijken wanneer hij wordt verrast\nmet een uitnodiging voor het jaarlijkse Gedroogde Bonen Festival\nin de provincie Konya. Recep is opgetogen en haalt zijn vriend\nNurullah over om mee te gaan, maar door miscommunicatie met\nhet reisbureau krijgen ze tickets naar Kenia in Afrika in plaats van\nKonya in Turkije. Na aankomst in Kenia gaan ze op safari en komen\nze in contact met een plaatselijke stam.",
-            "PictureName": "afb30"
+            "PictureName": "afb30",
+            "MovieTime": ["11:21", "13:52", "17:54"]
         },
 
         "T2": {
@@ -175,7 +188,8 @@
             "Age": 16,
             "Time": "132 minuten",
             "Description": "Memo is een herder die tijdens een militaire staatsgreep samen met\nzijn geliefde dochter en oma in een dorp woont. Memo, die een\nverstandelijke beperking heeft, is gelukkig in zijn eigen wereldje.\nMaar dan wordt hij ten onrechte beschuldigd van moord.",
-            "PictureName": "afb33"
+            "PictureName": "afb33",
+            "MovieTime": ["13:26", "13:52", "16:12"]
         },
 
         "T5": {
@@ -195,7 +209,8 @@
             "Age": 12,
             "Time": "141 minuten",
             "Description": "Rahul gaat op reis naar een klein dorpje in Tamil Nadu om aldaar\nde laatste wens van zijn opa te vervullen: zijn overgebleven as verstrooien\nin het heilige water van Rameshwaram. Onderweg ontmoet hij de dochter\nvan een lokale heer. Hij wordt verliefd op haar waarna hen onderweg \neen onverwacht avontuur wacht.",
-            "PictureName": "afb35"
+            "PictureName": "afb35",
+            "MovieTime": ["13:14", "13:53", "16:34"]
         },
 
         "B2": {
@@ -204,7 +219,8 @@
             "Age": 6,
             "Time": "211 minuten",
             "Description": "Rahul wordt verliefd op Anjali, maar zijn vader is daar niet blij mee.\nHij heeft liever dat zijn zoon met Naina trouwt. Na een hevige ruzie\nwillen de zoon en zijn vader niets meer met elkaar te maken hebben.\nAnjali' s zus echter, smeedt met Rahul's broer een plan om de familie\nweer bij elkaar te krijgen",
-            "PictureName": "afb36"
+            "PictureName": "afb36",
+            "MovieTime": ["14:15", "16:08", "16:27"]
         },
 
         "B3": {
@@ -213,7 +229,8 @@
             "Age": 12,
             "Time": "150 minuten",
             "Description": "Chulbul Pandey is een onverschrokken en beroemde agent, die zichzelf\nRobin Hood Pandey noemt. Hij leidt een comfortabel leventje met zijn gezin.\nDe zaken nemen voor hem een onverwachte wending wanneer zijn verleden\nhem achtervolgt als zijn vijand Balli weer opduikt. De omstandigheden dwingen\nChulbul het rechtvaardige pad te volgen om zijn geliefden en familie te beschermen\nen te doen wat goed is voor hen.",
-            "PictureName": "afb37"
+            "PictureName": "afb37",
+            "MovieTime": ["13:27", "13:41", "16:05"]
         },
 
         "B4": {
@@ -242,7 +259,8 @@
             "Age": 6,
             "Time": "100 minuten",
             "Description": "Andy is inmiddels te oud voor speelgoed en heeft zijn collectie gegeven\naan de 4-jarige Bonnie die steeds minder met cowboy Woody speelt.\nWanneer ze tijdens haar kennismakingsdag een poppetje maakt van\neen plastic vorkje en afval, heeft ze een nieuwe favoriete pop: Forky.\nDie begrijpt echter niet wat hij moet doen en tijdens een familiereisje\nverdwijnt hij spoorloos. Woody, die weet hoe belangrijk Forky is\nvoor Bonnie, besluit alles op alles te zetten om Forky terug te brengen.\nDaarvoor moet hij zijn weg zien te vinden in een voor hem onbekende\nwereld vol spannende avonturen en verrassende ontmoetingen.",
-            "PictureName": "afb40"
+            "PictureName": "afb40",
+            "MovieTime": ["09:12", "09:20", "11:43"]
         },
 
         "K2": {
@@ -260,7 +278,8 @@
             "Age": 6,
             "Time": "103 minuten",
             "Description": "Elsa de sneeuwkoningin heeft een buitengewoon geschenk: de kracht\nom ijs en sneeuw te creëren. Maar hoe gelukkig ze ook is om omringd\nte zijn door de mensen van Arendelle, Elsa is vreemd van streek.\nNa het horen van een mysterieuze stem die haar roept, reist Elsa naar\nde betoverde bossen en donkere zeeën buiten haar koninkrijk\n- een avontuur dat al snel verandert in een reis van zelfontdekking.",
-            "PictureName": "afb42"
+            "PictureName": "afb42",
+            "MovieTime":["09:06", "09:08", "11:39"]
         },
 
         "K4": {
@@ -269,7 +288,8 @@
             "Age": 6,
             "Time": "86 minuten",
             "Description": "De fantasievolle June ontdekt een pretpark genaamd Wonderland,\ndat verborgen zit in het bos. Het park beschikt over leuke glijbanen\nen pratende dieren. June ontdekt al snel dat het park uit haar eigen\nfantasie is ontsproten en dat ze de enige hoop is, samen met de dieren,\nom deze magische plek te redden.",
-            "PictureName": "afb43"
+            "PictureName": "afb43",
+            "MovieTime": ["09:03", "11:18", "11:30"]
         },
 
         "K5": {
@@ -278,7 +298,8 @@
             "Age": 6,
             "Time": "118 minuten",
             "Description": "Simba is een jonge leeuw en zoon van leeuwenkoning Mufasa.\nHij kijkt op tegen zijn vader en neemt zijn koninklijke bestemming ter harte.\nDat zint Mufasa's jaloerse broer Scar absoluut niet en hij smeedt samen met\neen groep hyena's een plan om zowel Mufasa als Simba uit de weg te ruimen,\nzodat hij zelf de macht kan grijpen.",
-            "PictureName": "afb44"
+            "PictureName": "afb44",
+            "MovieTime":["09:15", "10:59", "11:47"]
         }
 
     },

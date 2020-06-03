@@ -115,11 +115,6 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "11:30",
-            "13:00",
-            "17:00",
-            "21:00"});
             this.comboBox2.Location = new System.Drawing.Point(595, 143);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
@@ -143,7 +138,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.Location = new System.Drawing.Point(60, 32);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(161, 46);
             this.button2.TabIndex = 48;
@@ -205,7 +200,7 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBoxMovie);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1082, 591);
             this.MinimumSize = new System.Drawing.Size(1082, 591);
             this.Name = "dateTime";

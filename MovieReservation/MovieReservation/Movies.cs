@@ -4,7 +4,7 @@
 //
 //    using QuickType;
 //
-//    var movies = Movies.FromJson(jsonString);
+//    var welcome = Welcome.FromJson(jsonString);
 
 namespace QuickType
 {
@@ -15,7 +15,7 @@ namespace QuickType
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
-    public partial class Movies
+    public partial class Welcome
     {
         [JsonProperty("Nieuw")]
         public Nieuw Nieuw { get; set; }
@@ -79,6 +79,9 @@ namespace QuickType
 
         [JsonProperty("PictureName")]
         public string PictureName { get; set; }
+
+        [JsonProperty("MovieTime", NullValueHandling = NullValueHandling.Ignore)]
+        public string[] MovieTime { get; set; }
     }
 
     public partial class Animatie
@@ -187,9 +190,6 @@ namespace QuickType
 
         [JsonProperty("N5")]
         public A1 N5 { get; set; }
-
-        [JsonProperty("N6")]
-        public A1 N6 { get; set; }
     }
 
     public partial class Turks
@@ -210,14 +210,14 @@ namespace QuickType
         public A1 T5 { get; set; }
     }
 
-    public partial class Movies
+    public partial class Welcome
     {
-        public static Movies FromJson(string json) => JsonConvert.DeserializeObject<Movies>(json, QuickType.Converter.Settings);
+        public static Welcome FromJson(string json) => JsonConvert.DeserializeObject<Welcome>(json, QuickType.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this Movies self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
+        public static string ToJson(this Welcome self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
     }
 
     internal static class Converter

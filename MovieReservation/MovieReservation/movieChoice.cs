@@ -23,12 +23,13 @@ namespace MovieReservation
         public string Description;
         public string PictureName;
         public string KindOfMovie;
-        public List<string> reservedSeats = new List<string>();
+        public List<string> reservedSeats;
 
-        public movieChoice(string kindofmovie, List<string> reserve)
+
+        public movieChoice(string kindofmovie, List<string> reservedSeats)
         {
             InitializeComponent();
-            reservedSeats = reserve;
+            this.reservedSeats = reservedSeats;
             KindOfMovie = kindofmovie;
             Movies movies = JsonConvert.DeserializeObject<Movies>(File.ReadAllText("Movies.json"));
             label2.Text = movies.Turks.T4.Title;

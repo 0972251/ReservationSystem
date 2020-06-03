@@ -13,40 +13,21 @@ namespace MovieReservation
 
     public partial class Room : Form
     {
+        public string Age = dateTime.Age;
         public int AmountSeats;
         public int count = 0;
-        public string Title;
-        public string Genre;
-        public string Age;
-        public string PictureName;
-        public string Description;
-        public string Date;
-        public string Time;
         public Color Gray = Color.FromArgb(119, 136, 153);
         public Color White = Color.FromArgb(255, 255, 255);
         public string Seats;
-        public string KindOfMovie;
         public List<string> reservedSeats = new List<string>();
         public List<string> opgeslagen = new List<string>();
         public List<string> Leeg = new List<string>();
-        public List<string> Leeg2 = new List<string>();
-        public List<string> opgeslagen2 = new List<string>();
-        public List<string> numberSeats = new List<string>();
 
-        public Room(int amountSeats, string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
+        public Room(int amountSeats)
         {
             InitializeComponent();
-            Title = title;
-            Genre = genre;
-            Age = age;
-            PictureName = pictureName;
-            Description = description;
             AmountSeats = amountSeats;
-            Date = date;
-            Time = time;
             Seats = "";
-            KindOfMovie = kindofmovie;
-            opgeslagen = reserve;
             seatSaved();
 
         }
@@ -118,9 +99,6 @@ namespace MovieReservation
             count = 0;
             Seats = "";
             reservedSeats = Leeg;
-            numberSeats = Leeg2;
-
-
 
         }
 
@@ -141,14 +119,14 @@ namespace MovieReservation
         {
             if (Age == "16")
             {
-                Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, opgeslagen);
+                Ticket tk = new Ticket(reservedSeats);
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
             else
             {
-                TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, opgeslagen);
+                TicketIfNot16 tk16 = new TicketIfNot16();
                 this.Hide();
                 tk16.ShowDialog();
                 this.Close();
@@ -164,9 +142,8 @@ namespace MovieReservation
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            opgeslagen2 = opgeslagen;
             reservedSeats = Leeg;
-            TicketConfrim ticket = new TicketConfrim(Title, Date, Time, "2D", AmountSeats, Seats, PictureName, opgeslagen2, KindOfMovie);
+            TicketConfrim ticket = new TicketConfrim("2D", AmountSeats, Seats, reservedSeats);
             this.Hide();
             ticket.ShowDialog();
             this.Close();

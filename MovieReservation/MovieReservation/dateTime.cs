@@ -12,30 +12,34 @@ namespace MovieReservation
 {
     public partial class dateTime : Form
     {
+        public static int indexDay;
+        public static int indexTime;
+        public static string[][] RoomDayTimeArray = new string[5][];
+        public static List<string>[][] ReservedList =  new List<string>[5][];
+        public bool checkMakingList;
         public int countDate = 0;
         public int countTime = 0;
-        public string Title;
-        public string Genre;
-        public string Age;
-        public string PictureName;
-        public string Description;
-        public string Time;
-        public string Date;
-        public string KindOfMovie;
-        public List<string> reservedSeats = new List<string>();
-        public string[] TimeArray = new string[] { "09:00", "11:30", "14:00", "21:00", "23:00" };
-        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<string> reserve)
+        public static string Title;
+        public static string Genre;
+        public static string Age;
+        public static string PictureName;
+        public static string Description;
+        public static string Time;
+        public static string Date;
+        public static string KindOfMovie;
+        public static string[][] RoomTimeArray = new string[6][];
+        public string[] TimeArray = new string[] { "09:12", "09:06", "09:15", "09:09", "09:20", "09:17", "09:08", "11:22", "11:18", "11:43", "11:39", "10:59", "11:30", "11:47", "11:21", "13:52", "13:14", "13:53", "13:54", "13:27", "13:26", "14:15", "13:41", "16:12", "16:05", "17:54", "16:34", "16:27", "16:08", "18:16", "16:41", "18:54", "19:05", "20:14", "19:25", "20:28", "20:09", "20:26", "19:08", "21:04", "21:30", "22:18", "21:52", "22:39", "22:34", "22:37", "21:12"};
+
+        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<string> reservedSeats)
         {
             InitializeComponent();
-
+            ReservedList[indexDay][indexTime] = reservedSeats;
             Title = title;
             Genre = genre;
             Age = age;
             PictureName = pictureName;
             Description = description;
             KindOfMovie = kindofmovie;
-            reservedSeats = reserve;
-
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -51,22 +55,7 @@ namespace MovieReservation
             labelTitle.Text = Title;
             labelDescription.Text = Description;
             dateTimePicker1.MinDate = DateTime.Today;
-            dateTimePicker1.MaxDate = new DateTime(2028, 6, 20);
-
-
-
-/*            DateTime time1 = DateTime.Now;
-            string i = "10:00";
-            string j = "20:00";
-            DateTime test = DateTime.Parse(i);
-            DateTime testj = DateTime.Parse(j);
-            string test1 = removeDateFromDate(test);
-            string test2 = removeDateFromDate(testj);
-            comboBox2.Items.Add(test1);
-            comboBox2.Items.Add(test2);
-
-            result = DateTime.Compare(DateTime.Now, test);*/
-
+            dateTimePicker1.MaxDate = DateTime.Today.AddDays(5);
 
         }
         public void comboboxSetTime(DateTime date, DateTime datenow)
@@ -89,6 +78,30 @@ namespace MovieReservation
             }
         }
 
+        public int ManageDay(DateTime date)
+        {
+            DateTime[] dateArray = new DateTime[] { DateTime.Today, DateTime.Today.AddDays(1), DateTime.Today.AddDays(2), DateTime.Today.AddDays(3), DateTime.Today.AddDays(4), DateTime.Today.AddDays(5) };
+            for (int index = 0; index < dateArray.Length; index++)
+            {
+                if (date == dateArray[index])
+                {
+                    return index;
+                }
+            }
+            return 0;
+        }
+        public int ManageTime(string time)
+        {
+            for (int index = 0; index < TimeArray.Length; index++)
+            {
+                if (time == TimeArray[index])
+                {
+                    return index;
+                }
+            }
+            return 0;
+        }
+
         public string removeDateFromDate(DateTime time)
         {
             return time.ToString().Substring(9, 5);
@@ -103,14 +116,14 @@ namespace MovieReservation
             {
                 if (Age == "16")
                 {
-                    Ticket tk = new Ticket(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
+                    Ticket tk = new Ticket(ReservedList[indexDay][indexTime]);
                     this.Hide();
                     tk.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    TicketIfNot16 tk16 = new TicketIfNot16(Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
+                    TicketIfNot16 tk16 = new TicketIfNot16();
                     this.Hide();
                     tk16.ShowDialog();
                     this.Close();
@@ -121,26 +134,69 @@ namespace MovieReservation
                 MessageBox.Show("Je moet nog een datum of tijd kiezen");
             }
         }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void datePicker(object sender, EventArgs e)
         {
             countDate += 1;
             comboBox2.Items.Clear();
             comboboxSetTime(dateTimePicker1.Value.Date, DateTime.Today);
-
+            indexDay = ManageDay(dateTimePicker1.Value.Date);
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void TimePicker(object sender, EventArgs e)
         {
             countTime += 1;
+            indexTime = ManageTime(comboBox2.Text);
+            int index = indexTime;
         }
 
         private void previousPage_Click(object sender, EventArgs e)
         {
-            movieChoice mc = new movieChoice(KindOfMovie, reservedSeats);
+            movieChoice mc = new movieChoice(KindOfMovie, ReservedList[indexDay][indexTime]);
             this.Hide();
             mc.ShowDialog();
             this.Close();
+        }
+
+        private void dateTime_Load(object sender, EventArgs e)
+        {
+            comboboxSetTime(DateTime.Today, DateTime.Today);
+            if (!checkMakingList)
+            {
+                for (int i = 0; i < RoomTimeArray.Length; i++)
+                {
+                    RoomTimeArray[i] = new string[48];
+                    for (int j = 0; j < RoomTimeArray.Length; j++)
+                    {
+                        RoomTimeArray[i][j] = TimeArray[j];
+                    }
+                }
+                for (int x = 0; x < RoomTimeArray.Length; x++)
+                {
+                    RoomTimeArray[x] = new string[8];
+                    for (int z = 0; z < RoomTimeArray[x].Length; z++)
+                    {
+                        RoomTimeArray[x][z] = TimeArray[z];
+                    }
+                }
+                List<string>[] list1 = new List<string>[48];
+                List<string>[] list2 = new List<string>[48];
+                List<string>[] list3 = new List<string>[48];
+                List<string>[] list4 = new List<string>[48];
+                List<string>[] list5 = new List<string>[48];
+                for (int y = 0; y < list1.Length; y++)
+                {
+                    list1[y] = new List<string>();
+                    list2[y] = new List<string>();
+                    list3[y] = new List<string>();
+                    list4[y] = new List<string>();
+                    list5[y] = new List<string>();
+
+                }
+                List<string>[][] reservedList = new List<string>[][] { list1, list2, list3, list4, list5 };
+                ReservedList = reservedList;
+                checkMakingList = true;
+            }
+            // welke dag het is geklikt geef index daar van en index van tijd controleer welke zaal
         }
     }
 }

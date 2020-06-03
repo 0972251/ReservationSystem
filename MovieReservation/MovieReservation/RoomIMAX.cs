@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MovieReservation
 {
-    public partial class Room3D : Form
+    public partial class RoomIMAX : Form
     {
         public string Age = dateTime.Age;
         public int indexDay = dateTime.indexDay;
@@ -20,16 +20,16 @@ namespace MovieReservation
         public int AmountSeats;
         public int count = 0;
         public string Seats = "";
-        public List<string> currentSeats;
-        public List<string> ReservedSeats = new List<string>();
+        public List<string> currentReservedSeats;
+        public List<string> opgeslagen = new List<string>();
         public List<string> Leeg = new List<string>();
         public List<string> Leeg2 = new List<string>();
 
 
-        public Room3D(int amountSeats, List<string> reservedSeats)
+        public RoomIMAX(int amountSeats)
         {
             InitializeComponent();
-            ReservedSeats = reservedSeats;
+
             AmountSeats = amountSeats;
             seatSaved();
         }
@@ -47,16 +47,16 @@ namespace MovieReservation
                     NextPage.Enabled = true;
                 }
 
-                foreach (var d in currentSeats)
+                foreach (var d in currentReservedSeats)
                 {
-                    ReservedSeats.Add(d);
+                    opgeslagen.Add(d);
                 }
             }
             else
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
-                    foreach (var t in ReservedSeats)
+                    foreach (var t in currentReservedSeats)
                     {
                         if (b.Text == t)
                         {
@@ -72,13 +72,13 @@ namespace MovieReservation
 
         public void Cancel()
         {
-            foreach (var a in currentSeats)
+            foreach (var a in currentReservedSeats)
             {
-                currentSeats.Remove(a);
+                opgeslagen.Remove(a);
             }
             foreach (var b in Controls.OfType<Button>())
             {
-                foreach (var t in currentSeats)
+                foreach (var t in currentReservedSeats)
                 {
                     if (b.Text == t)
                     {
@@ -96,7 +96,7 @@ namespace MovieReservation
             seatSaved();
             count = 0;
             Seats = "";
-            currentSeats = Leeg;
+            currentReservedSeats = Leeg;
 
         }
 
@@ -107,13 +107,13 @@ namespace MovieReservation
             seatButton.Enabled = false;
             seatButton.BackColor = Gray;
             Seats += seatButton.Text + " ";
-            currentSeats.Add(seatButton.Text);
+            currentReservedSeats.Add(seatButton.Text);
             seatDisable();
         }
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            TicketConfrim ticket = new TicketConfrim("2D", AmountSeats, Seats, currentSeats);
+            TicketConfrim ticket = new TicketConfrim("2D", AmountSeats, Seats, currentReservedSeats);
             this.Hide();
             ticket.ShowDialog();
             this.Close();
@@ -130,7 +130,7 @@ namespace MovieReservation
         {
             if (Age == "16")
             {
-                Ticket tk = new Ticket(currentSeats);
+                Ticket tk = new Ticket(currentReservedSeats);
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
@@ -147,7 +147,7 @@ namespace MovieReservation
         {
             foreach (var b in Controls.OfType<Button>())
             {
-                foreach (var t in ReservedSeats)
+                foreach (var t in opgeslagen)
                 {
                     if (b.Text == t)
                     {

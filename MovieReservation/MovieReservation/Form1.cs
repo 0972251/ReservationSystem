@@ -12,8 +12,8 @@ namespace MovieReservation
 {
     public partial class Form1 : Form
     {
+        public List<string> reservedSeats;
         public string KindOfMovie = "";
-        public List<string> reservedMovie = new List<string>();
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace MovieReservation
 
         private void Klant_Click(object sender, EventArgs e)
         {
-            movieChoice movie = new movieChoice(KindOfMovie, reservedMovie);
+            movieChoice movie = new movieChoice(KindOfMovie, reservedSeats);
             this.Hide();
             movie.ShowDialog();
             this.Close();

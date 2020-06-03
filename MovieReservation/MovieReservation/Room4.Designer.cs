@@ -1,6 +1,6 @@
 ﻿namespace MovieReservation
 {
-    partial class Room2
+    partial class Room4
     {
         /// <summary>
         /// Required designer variable.
@@ -876,7 +876,7 @@
             this.button1.Text = "A1";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // Room2
+            // Room4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -943,8 +943,8 @@
             this.Controls.Add(this.button1);
             this.MaximumSize = new System.Drawing.Size(957, 553);
             this.MinimumSize = new System.Drawing.Size(957, 553);
-            this.Name = "Room2";
-            this.Text = "Room2";
+            this.Name = "Room4";
+            this.Text = "Room4";
             this.ResumeLayout(false);
             this.PerformLayout();
 

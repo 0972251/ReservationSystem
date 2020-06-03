@@ -12,28 +12,17 @@ namespace MovieReservation
 {
     public partial class TicketIfNot16 : Form
     {
-        public string Title;
-        public string Genre;
-        public string Age;
-        public string PictureName;
-        public string Description;
-        public string Date;
-        public string Time;
-        public string KindOfMovie;
-        public List<string> reservedSeats = new List<string>();
-        public TicketIfNot16(string title, string genre, string age, string pictureName, string description, string date, string time, string kindofmovie, List<string> reserve)
+        public string Title = dateTime.Title;
+        public string Genre = dateTime.Genre;
+        public string Age = dateTime.Age;
+        public string PictureName = dateTime.PictureName;
+        public string Description = dateTime.Description;
+        public string KindOfMovie = dateTime.KindOfMovie;
+        public List<string> reservedSeats;
+
+        public TicketIfNot16()
         {
             InitializeComponent();
-
-            Title = title;
-            Genre = genre;
-            Age = age;
-            PictureName = pictureName;
-            Description = description;
-            Date = date;
-            Time = time;
-            KindOfMovie = kindofmovie;
-            reservedSeats = reserve;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -51,15 +40,12 @@ namespace MovieReservation
 
         private void nextPage_Click(object sender, EventArgs e)
         {
-            string ticket1 = comboBox1.Text.ToString();
-            string ticket2 = comboBox2.Text.ToString();
-            string ticket3 = comboBox3.Text.ToString();
-            string ticket4 = comboBox4.Text.ToString();
+            // hier stuur je de normale zalen
 
-            int Normaal = int.Parse(ticket1);
-            int Student = int.Parse(ticket2);
-            int Kind = int.Parse(ticket3);
-            int Senior = int.Parse(ticket4);
+            int Normaal = int.Parse(comboBox1.Text);
+            int Student = int.Parse(comboBox2.Text);
+            int Kind = int.Parse(comboBox3.Text);
+            int Senior = int.Parse(comboBox4.Text);
 
             int totalSeats = Normaal + Student + Senior + Kind;
 
@@ -73,7 +59,7 @@ namespace MovieReservation
             }
             else
             {
-                Room room = new Room(totalSeats, Title, Genre, Age, PictureName, Description, Date, Time, KindOfMovie, reservedSeats);
+                Room room = new Room(totalSeats);
                 this.Hide();
                 room.ShowDialog();
                 this.Close();

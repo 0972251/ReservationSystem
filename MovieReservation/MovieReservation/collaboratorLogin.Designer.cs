@@ -64,7 +64,6 @@
             this.label2.Size = new System.Drawing.Size(137, 18);
             this.label2.TabIndex = 20;
             this.label2.Text = "Gebruikersnaam:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnLogin
             // 
@@ -113,7 +112,6 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(151, 26);
             this.txtUserName.TabIndex = 16;
-            this.txtUserName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -128,7 +126,6 @@
             this.label1.Size = new System.Drawing.Size(217, 35);
             this.label1.TabIndex = 15;
             this.label1.Text = "Medewerker LOGIN";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // collaboratorLogin
             // 

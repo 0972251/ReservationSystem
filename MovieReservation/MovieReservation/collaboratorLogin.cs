@@ -12,10 +12,11 @@ using System.Data.SqlClient;
 
 namespace MovieReservation
 {
+    
     public partial class collaboratorLogin : Form
     {
+        public List<string> reservedSeats;
         public string KindOfMovie = "";
-        public List<string> reservedMovie = new List<string>();
         public collaboratorLogin()
         {
             InitializeComponent();
@@ -47,7 +48,7 @@ namespace MovieReservation
                     sda.Fill(dta);
                     if (dta.Rows.Count == 1)
                         {
-                        movieChoice movie = new movieChoice(KindOfMovie, reservedMovie);
+                        movieChoice movie = new movieChoice(KindOfMovie, reservedSeats);
                         this.Hide();
                         movie.ShowDialog();
                         this.Close();
@@ -74,21 +75,6 @@ namespace MovieReservation
                 return false;
             }
             return true;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

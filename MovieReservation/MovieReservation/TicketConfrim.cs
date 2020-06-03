@@ -12,34 +12,23 @@ namespace MovieReservation
 {
     public partial class TicketConfrim : Form
     {
-        public string Title;
-        public string Date;
-        public string Time;
+        public string Title = dateTime.Title;
+        public string Date = dateTime.Date;
+        public string Time = dateTime.Time;
+        public string PictureName = dateTime.PictureName;
+        public List<string> reservedSeats;
         public string Room;
         public int Amount;
         public string Seats;
-        public string PictureName;
-        public List<string> reservedSeats = new List<string>();
-        public string test = "";
-        public string KindOfMovie;
-        public TicketConfrim(string title, string date, string time, string room, int amount, string seats, string pictureName, List<string> reserve, string kindOfMovie)
+        public string KindOfMovie = "";
+        public TicketConfrim(string room, int amount, string seats, List<string> reservedSeats)
         {
-            Title = title;
-            Date = date;
-            Time = time;
+            this.reservedSeats = reservedSeats;
             Room = room;
             Amount = amount;
             Seats = seats;
-            PictureName = pictureName;
-            reservedSeats = reserve;
-            KindOfMovie = kindOfMovie;
 
             InitializeComponent();
-
-            foreach (var b in reservedSeats)
-            {
-                test += b;
-            }
 
             labelTitle.Text = Title;
             labelDate.Text = Date;

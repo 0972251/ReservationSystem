@@ -277,6 +277,7 @@
             this.button45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button45.BackColor = System.Drawing.Color.White;
             this.button45.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button45.Location = new System.Drawing.Point(554, 368);
             this.button45.Margin = new System.Windows.Forms.Padding(2);
             this.button45.Name = "button45";
@@ -291,6 +292,7 @@
             this.button44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button44.BackColor = System.Drawing.Color.White;
             this.button44.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button44.Location = new System.Drawing.Point(510, 368);
             this.button44.Margin = new System.Windows.Forms.Padding(2);
             this.button44.Name = "button44";
@@ -305,6 +307,7 @@
             this.button43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button43.BackColor = System.Drawing.Color.White;
             this.button43.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button43.Location = new System.Drawing.Point(467, 368);
             this.button43.Margin = new System.Windows.Forms.Padding(2);
             this.button43.Name = "button43";
@@ -319,6 +322,7 @@
             this.button42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button42.BackColor = System.Drawing.Color.White;
             this.button42.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button42.Location = new System.Drawing.Point(423, 368);
             this.button42.Margin = new System.Windows.Forms.Padding(2);
             this.button42.Name = "button42";
@@ -333,6 +337,7 @@
             this.button41.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button41.BackColor = System.Drawing.Color.White;
             this.button41.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button41.Location = new System.Drawing.Point(379, 368);
             this.button41.Margin = new System.Windows.Forms.Padding(2);
             this.button41.Name = "button41";
@@ -347,6 +352,7 @@
             this.button40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button40.BackColor = System.Drawing.Color.White;
             this.button40.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button40.Location = new System.Drawing.Point(336, 368);
             this.button40.Margin = new System.Windows.Forms.Padding(2);
             this.button40.Name = "button40";
@@ -994,6 +1000,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.MaximumSize = new System.Drawing.Size(957, 553);
+            this.MinimumSize = new System.Drawing.Size(957, 553);
             this.Name = "Room";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Room";

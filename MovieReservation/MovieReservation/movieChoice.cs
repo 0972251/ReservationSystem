@@ -23,7 +23,7 @@ namespace MovieReservation
         public string Description;
         public string PictureName;
         public string KindOfMovie;
-        public List<string> reservedSeats;
+        public List<string> reservedSeats = new List<string>() { "A1" };
 
 
         public movieChoice(string kindofmovie, List<string> reservedSeats)

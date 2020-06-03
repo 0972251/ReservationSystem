@@ -19,7 +19,7 @@ namespace MovieReservation
         public bool checkMakingList;
         public int countDate = 0;
         public int countTime = 0;
-        public static string Title;
+        public static string Title = "";
         public static string Genre;
         public static string Age;
         public static string PictureName;

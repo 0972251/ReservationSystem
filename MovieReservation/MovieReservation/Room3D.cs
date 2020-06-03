@@ -58,7 +58,7 @@ namespace MovieReservation
                 {
                     foreach (var t in ReservedSeats)
                     {
-                        if (b.Text == t)
+                        if (b.Name == t)
                         {
                             b.Enabled = false;
                             b.BackColor = Gray;
@@ -80,7 +80,7 @@ namespace MovieReservation
             {
                 foreach (var t in currentSeats)
                 {
-                    if (b.Text == t)
+                    if (b.Name == t)
                     {
                         b.Enabled = true;
                         b.BackColor = White;
@@ -107,7 +107,7 @@ namespace MovieReservation
             seatButton.Enabled = false;
             seatButton.BackColor = Gray;
             Seats += seatButton.Text + " ";
-            currentSeats.Add(seatButton.Text);
+            currentSeats.Add(seatButton.Name);
             seatDisable();
         }
 
@@ -149,7 +149,7 @@ namespace MovieReservation
             {
                 foreach (var t in ReservedSeats)
                 {
-                    if (b.Text == t)
+                    if (b.Name == t)
                     {
                         b.Enabled = false;
                         b.BackColor = Gray;

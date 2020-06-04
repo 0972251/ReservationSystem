@@ -20,11 +20,9 @@ namespace MovieReservation
         public int AmountSeats;
         public int count = 0;
         public string Seats = "";
-        public List<string> currentSeats;
-        public List<string> ReservedSeats = new List<string>();
+        public List<string> currentSeats = new List<string>();
+        public List<string> ReservedSeats;
         public List<string> Leeg = new List<string>();
-        public List<string> Leeg2 = new List<string>();
-
 
         public Room3D(int amountSeats, List<string> reservedSeats)
         {
@@ -113,7 +111,7 @@ namespace MovieReservation
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            TicketConfrim ticket = new TicketConfrim("2D", AmountSeats, Seats, currentSeats);
+            TicketConfrim ticket = new TicketConfrim("3D", AmountSeats, Seats, currentSeats);
             this.Hide();
             ticket.ShowDialog();
             this.Close();
@@ -130,14 +128,14 @@ namespace MovieReservation
         {
             if (Age == "16")
             {
-                Ticket tk = new Ticket(currentSeats);
+                Ticket tk = new Ticket(currentSeats, dateTime.RoomIndex);
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
             else
             {
-                TicketIfNot16 tk16 = new TicketIfNot16();
+                TicketIfNot16 tk16 = new TicketIfNot16(currentSeats, dateTime.RoomIndex);
                 this.Hide();
                 tk16.ShowDialog();
                 this.Close();

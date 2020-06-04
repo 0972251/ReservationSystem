@@ -895,7 +895,7 @@
             this.button57.TabIndex = 170;
             this.button57.Text = "Terug";
             this.button57.UseVisualStyleBackColor = false;
-            this.button57.Click += new System.EventHandler(this.button57_Click);
+            this.button57.Click += new System.EventHandler(this.previousPage_Click);
             // 
             // Annuleren
             // 

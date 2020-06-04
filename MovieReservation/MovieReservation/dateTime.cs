@@ -12,10 +12,13 @@ namespace MovieReservation
 {
     public partial class dateTime : Form
     {
+        public static int RoomIndex;
+        public static string[] MovieTime;
         public static int indexDay;
         public static int indexTime;
         public static string[][] RoomDayTimeArray = new string[5][];
-        public static List<string>[][] ReservedList =  new List<string>[5][];
+        public static List<string>[][] ReservedList;
+        public List<string> reservedSeats;
         public bool checkMakingList;
         public int countDate = 0;
         public int countTime = 0;
@@ -27,13 +30,19 @@ namespace MovieReservation
         public static string Time;
         public static string Date;
         public static string KindOfMovie;
-        public static string[][] RoomTimeArray = new string[6][];
-        public string[] TimeArray = new string[] { "09:12", "09:06", "09:15", "09:09", "09:20", "09:17", "09:08", "11:22", "11:18", "11:43", "11:39", "10:59", "11:30", "11:47", "11:21", "13:52", "13:14", "13:53", "13:54", "13:27", "13:26", "14:15", "13:41", "16:12", "16:05", "17:54", "16:34", "16:27", "16:08", "18:16", "16:41", "18:54", "19:05", "20:14", "19:25", "20:28", "20:09", "20:26", "19:08", "21:04", "21:30", "22:18", "21:52", "22:39", "22:34", "22:37", "21:12"};
+        public static string[][] RoomTimeArray = new string[7][];
+        public string[] TimeArray = new string[] { "09:12", "09:06", "09:15", "09:09", "09:03", "09:20", "09:17", "09:08", "11:22", "11:18", "11:43", "11:39", "10:59", "11:30", "11:47", "11:21", "13:52", "13:14", "13:53", "13:54", "13:27", "13:26", "14:15", "13:41", "16:12", "16:05", "17:54", "16:34", "16:27", "16:08", "18:16", "16:41", "18:54", "19:05", "20:14", "19:25", "20:28", "20:09", "20:26", "19:08", "21:04", "21:30", "22:18", "21:52", "22:39", "22:34", "22:37", "21:12", "23:27", "23:31", "00:28", "00:17", "00:43", "00:53", "01:07", "23:57"};
 
-        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<string> reservedSeats)
+        public dateTime(string title, string genre, string age, string pictureName, string description, string kindofmovie, List<string> reservedSeats, string[] movieTime)
         {
             InitializeComponent();
-            ReservedList[indexDay][indexTime] = reservedSeats;
+
+            foreach (var item in reservedSeats)
+            {
+                ReservedList[indexDay][indexTime].Add(item);
+            }
+            MovieTime = movieTime;
+            this.reservedSeats = reservedSeats;
             Title = title;
             Genre = genre;
             Age = age;
@@ -60,9 +69,9 @@ namespace MovieReservation
         }
         public void comboboxSetTime(DateTime date, DateTime datenow)
         {
-            for (int i = 0; i < TimeArray.Length; i++)
+            for (int i = 0; i < MovieTime.Length; i++)
             {
-                DateTime test = DateTime.Parse(TimeArray[i]);
+                DateTime test = DateTime.Parse(MovieTime[i]);
                 string test1 = removeDateFromDate(test);
       
                 int result = DateTime.Compare(DateTime.Now, test);
@@ -101,6 +110,17 @@ namespace MovieReservation
             }
             return 0;
         }
+        public int ManageRoom()
+        {
+            if (indexTime % 8 == 0) { return 8; }
+            if (indexTime % 7 == 0) { return 7; }
+            if (indexTime % 6 == 0) { return 6; }
+            if (indexTime % 5 == 0) { return 5; }
+            if (indexTime % 4 == 0) { return 4; }
+            if (indexTime % 3 == 0) { return 3; }
+            if (indexTime % 2 == 0) { return 2; }
+            else { return 1; }
+        }
 
         public string removeDateFromDate(DateTime time)
         {
@@ -114,16 +134,17 @@ namespace MovieReservation
 
             if (countDate >= 1 && countTime >= 1)
             {
+                RoomIndex = ManageRoom();
                 if (Age == "16")
                 {
-                    Ticket tk = new Ticket(ReservedList[indexDay][indexTime]);
+                    Ticket tk = new Ticket(ReservedList[indexDay][indexTime], RoomIndex);
                     this.Hide();
                     tk.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    TicketIfNot16 tk16 = new TicketIfNot16();
+                    TicketIfNot16 tk16 = new TicketIfNot16(ReservedList[indexDay][indexTime], RoomIndex);
                     this.Hide();
                     tk16.ShowDialog();
                     this.Close();
@@ -159,6 +180,7 @@ namespace MovieReservation
 
         private void dateTime_Load(object sender, EventArgs e)
         {
+
             comboboxSetTime(DateTime.Today, DateTime.Today);
             if (!checkMakingList)
             {
@@ -178,11 +200,11 @@ namespace MovieReservation
                         RoomTimeArray[x][z] = TimeArray[z];
                     }
                 }
-                List<string>[] list1 = new List<string>[48];
-                List<string>[] list2 = new List<string>[48];
-                List<string>[] list3 = new List<string>[48];
-                List<string>[] list4 = new List<string>[48];
-                List<string>[] list5 = new List<string>[48];
+                List<string>[] list1 = new List<string>[56];
+                List<string>[] list2 = new List<string>[56];
+                List<string>[] list3 = new List<string>[56];
+                List<string>[] list4 = new List<string>[56];
+                List<string>[] list5 = new List<string>[56];
                 for (int y = 0; y < list1.Length; y++)
                 {
                     list1[y] = new List<string>();
@@ -190,7 +212,6 @@ namespace MovieReservation
                     list3[y] = new List<string>();
                     list4[y] = new List<string>();
                     list5[y] = new List<string>();
-
                 }
                 List<string>[][] reservedList = new List<string>[][] { list1, list2, list3, list4, list5 };
                 ReservedList = reservedList;

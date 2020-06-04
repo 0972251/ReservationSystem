@@ -20,16 +20,14 @@ namespace MovieReservation
         public int AmountSeats;
         public int count = 0;
         public string Seats = "";
-        public List<string> currentReservedSeats;
-        public List<string> opgeslagen = new List<string>();
+        public List<string> currentSeats = new List<string>();
+        public List<string> ReservedSeats;
         public List<string> Leeg = new List<string>();
-        public List<string> Leeg2 = new List<string>();
 
-
-        public RoomIMAX(int amountSeats)
+        public RoomIMAX(int amountSeats, List<string> reservedSeats)
         {
             InitializeComponent();
-
+            ReservedSeats = reservedSeats;
             AmountSeats = amountSeats;
             seatSaved();
         }
@@ -47,18 +45,18 @@ namespace MovieReservation
                     NextPage.Enabled = true;
                 }
 
-                foreach (var d in currentReservedSeats)
+                foreach (var d in currentSeats)
                 {
-                    opgeslagen.Add(d);
+                    ReservedSeats.Add(d);
                 }
             }
             else
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
-                    foreach (var t in currentReservedSeats)
+                    foreach (var t in ReservedSeats)
                     {
-                        if (b.Text == t)
+                        if (b.Name == t)
                         {
                             b.Enabled = false;
                             b.BackColor = Gray;
@@ -72,15 +70,15 @@ namespace MovieReservation
 
         public void Cancel()
         {
-            foreach (var a in currentReservedSeats)
+            foreach (var a in currentSeats)
             {
-                opgeslagen.Remove(a);
+                currentSeats.Remove(a);
             }
             foreach (var b in Controls.OfType<Button>())
             {
-                foreach (var t in currentReservedSeats)
+                foreach (var t in currentSeats)
                 {
-                    if (b.Text == t)
+                    if (b.Name == t)
                     {
                         b.Enabled = true;
                         b.BackColor = White;
@@ -96,7 +94,7 @@ namespace MovieReservation
             seatSaved();
             count = 0;
             Seats = "";
-            currentReservedSeats = Leeg;
+            currentSeats = Leeg;
 
         }
 
@@ -107,13 +105,13 @@ namespace MovieReservation
             seatButton.Enabled = false;
             seatButton.BackColor = Gray;
             Seats += seatButton.Text + " ";
-            currentReservedSeats.Add(seatButton.Text);
+            currentSeats.Add(seatButton.Name);
             seatDisable();
         }
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            TicketConfrim ticket = new TicketConfrim("2D", AmountSeats, Seats, currentReservedSeats);
+            TicketConfrim ticket = new TicketConfrim("IMAX", AmountSeats, Seats, currentSeats);
             this.Hide();
             ticket.ShowDialog();
             this.Close();
@@ -130,14 +128,14 @@ namespace MovieReservation
         {
             if (Age == "16")
             {
-                Ticket tk = new Ticket(currentReservedSeats);
+                Ticket tk = new Ticket(currentSeats, dateTime.RoomIndex);
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
             else
             {
-                TicketIfNot16 tk16 = new TicketIfNot16();
+                TicketIfNot16 tk16 = new TicketIfNot16(currentSeats, dateTime.RoomIndex);
                 this.Hide();
                 tk16.ShowDialog();
                 this.Close();
@@ -147,9 +145,9 @@ namespace MovieReservation
         {
             foreach (var b in Controls.OfType<Button>())
             {
-                foreach (var t in opgeslagen)
+                foreach (var t in ReservedSeats)
                 {
-                    if (b.Text == t)
+                    if (b.Name == t)
                     {
                         b.Enabled = false;
                         b.BackColor = Gray;

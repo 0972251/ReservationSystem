@@ -18,13 +18,15 @@ namespace MovieReservation
         public string PictureName = dateTime.PictureName;
         public string Description = dateTime.Description;
         public string KindOfMovie = dateTime.KindOfMovie;
+        public int RoomIndex;
         public List<string> reservedSeats;
 
 
-        public Ticket(List<string> reservedSeats)
+        public Ticket(List<string> reservedSeats, int roomIndex)
         {
-            this.reservedSeats = reservedSeats;
             InitializeComponent();
+            this.reservedSeats = reservedSeats;
+            RoomIndex = roomIndex;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 
@@ -62,11 +64,64 @@ namespace MovieReservation
             }
             else
             {
+                if (RoomIndex == 1)
+                {
+                    Room room = new Room(totalSeats, reservedSeats);
+                    this.Hide();
+                    room.ShowDialog();
+                    this.Close();
+                }
+                if (RoomIndex == 2)
+                {
+                    Room2 room = new Room2(totalSeats, reservedSeats);
+                    this.Hide();
+                    room.ShowDialog();
+                    this.Close();
+                }
+                if (RoomIndex == 3)
+                {
+                    Room3 room = new Room3(totalSeats, reservedSeats);
+                    this.Hide();
+                    room.ShowDialog();
+                    this.Close();
+                }
+                if (RoomIndex == 4)
+                {
+                    Room4 room = new Room4(totalSeats, reservedSeats);
+                    this.Hide();
+                    room.ShowDialog();
+                    this.Close();
+                }
+                if (RoomIndex == 5)
+                {
+                    RoomDolby room = new RoomDolby(totalSeats, reservedSeats);
+                    this.Hide();
+                    room.ShowDialog();
+                    this.Close();
+                }
+                if (RoomIndex == 6)
+                {
+                    Room4DX room = new Room4DX(totalSeats, reservedSeats);
+                    this.Hide();
+                    room.ShowDialog();
+                    this.Close();
+                }
+                if (RoomIndex == 7)
+                {
+                    Room3D room = new Room3D(totalSeats, reservedSeats);
+                    this.Hide();
+                    room.ShowDialog();
+                    this.Close();
+                }
+                if (RoomIndex == 8)
+                {
+                    RoomIMAX room = new RoomIMAX(totalSeats, reservedSeats);
+                    this.Hide();
+                    room.ShowDialog();
+                    this.Close();
+                }
                 // welke zaal moet gestuurt worden
-                Room3D room = new Room3D(totalSeats, reservedSeats);
-                this.Hide();
-                room.ShowDialog();
-                this.Close();
+                
             }
 
             
@@ -74,7 +129,7 @@ namespace MovieReservation
 
         private void previousPage_Click(object sender, EventArgs e)
         {
-            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie, reservedSeats);
+            dateTime dt = new dateTime(Title, Genre, Age, PictureName, Description, KindOfMovie, reservedSeats, dateTime.MovieTime);
             this.Hide();
             dt.ShowDialog();
             this.Close();

@@ -10,26 +10,26 @@ using System.Windows.Forms;
 
 namespace MovieReservation
 {
-
     public partial class Room3 : Form
     {
         public string Age = dateTime.Age;
-        public int AmountSeats;
-        public int count = 0;
+        public int indexDay = dateTime.indexDay;
+        public int indexTime = dateTime.indexTime;
         public Color Gray = Color.FromArgb(119, 136, 153);
         public Color White = Color.FromArgb(255, 255, 255);
-        public string Seats;
-        public List<string> reservedSeats = new List<string>();
-        public List<string> opgeslagen = new List<string>();
+        public int AmountSeats;
+        public int count = 0;
+        public string Seats = "";
+        public List<string> currentSeats = new List<string>();
+        public List<string> ReservedSeats;
         public List<string> Leeg = new List<string>();
 
-        public Room3(int amountSeats)
+        public Room3(int amountSeats, List<string> reservedSeats)
         {
             InitializeComponent();
+            ReservedSeats = reservedSeats;
             AmountSeats = amountSeats;
-            Seats = "";
             seatSaved();
-
         }
 
         public void seatDisable()
@@ -45,18 +45,18 @@ namespace MovieReservation
                     NextPage.Enabled = true;
                 }
 
-                foreach (var d in reservedSeats)
+                foreach (var d in currentSeats)
                 {
-                    opgeslagen.Add(d);
+                    ReservedSeats.Add(d);
                 }
             }
             else
             {
                 foreach (var b in Controls.OfType<Button>())
                 {
-                    foreach (var t in opgeslagen)
+                    foreach (var t in ReservedSeats)
                     {
-                        if (b.Text == t)
+                        if (b.Name == t)
                         {
                             b.Enabled = false;
                             b.BackColor = Gray;
@@ -64,31 +64,27 @@ namespace MovieReservation
                     }
                 }
                 NextPage.Enabled = false;
-
-
             }
 
         }
 
         public void Cancel()
         {
-
-            foreach (var a in reservedSeats)
+            foreach (var a in currentSeats)
             {
-                opgeslagen.Remove(a);
+                currentSeats.Remove(a);
             }
             foreach (var b in Controls.OfType<Button>())
             {
-                foreach (var t in reservedSeats)
+                foreach (var t in currentSeats)
                 {
-                    if (b.Text == t)
+                    if (b.Name == t)
                     {
                         b.Enabled = true;
                         b.BackColor = White;
                     }
                 }
             }
-
 
 
             foreach (var b in Controls.OfType<Button>())
@@ -98,7 +94,7 @@ namespace MovieReservation
             seatSaved();
             count = 0;
             Seats = "";
-            reservedSeats = Leeg;
+            currentSeats = Leeg;
 
         }
 
@@ -109,28 +105,16 @@ namespace MovieReservation
             seatButton.Enabled = false;
             seatButton.BackColor = Gray;
             Seats += seatButton.Text + " ";
-            reservedSeats.Add(seatButton.Text);
+            currentSeats.Add(seatButton.Name);
             seatDisable();
         }
 
-
-
-        private void button57_Click(object sender, EventArgs e)
+        private void NextPage_Click(object sender, EventArgs e)
         {
-            if (Age == "16")
-            {
-                Ticket tk = new Ticket(reservedSeats);
-                this.Hide();
-                tk.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                TicketIfNot16 tk16 = new TicketIfNot16();
-                this.Hide();
-                tk16.ShowDialog();
-                this.Close();
-            }
+            TicketConfrim ticket = new TicketConfrim("2D", AmountSeats, Seats, currentSeats);
+            this.Hide();
+            ticket.ShowDialog();
+            this.Close();
         }
 
         private void Annuleren_Click(object sender, EventArgs e)
@@ -140,22 +124,30 @@ namespace MovieReservation
             Seats = "";
         }
 
-        private void NextPage_Click(object sender, EventArgs e)
+        private void previousPage_Click(object sender, EventArgs e)
         {
-            reservedSeats = Leeg;
-            TicketConfrim ticket = new TicketConfrim("2D", AmountSeats, Seats, reservedSeats);
-            this.Hide();
-            ticket.ShowDialog();
-            this.Close();
+            if (Age == "16")
+            {
+                Ticket tk = new Ticket(currentSeats, dateTime.RoomIndex);
+                this.Hide();
+                tk.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                TicketIfNot16 tk16 = new TicketIfNot16(currentSeats, dateTime.RoomIndex);
+                this.Hide();
+                tk16.ShowDialog();
+                this.Close();
+            }
         }
-
         public void seatSaved()
         {
             foreach (var b in Controls.OfType<Button>())
             {
-                foreach (var t in opgeslagen)
+                foreach (var t in ReservedSeats)
                 {
-                    if (b.Text == t)
+                    if (b.Name == t)
                     {
                         b.Enabled = false;
                         b.BackColor = Gray;

@@ -19,7 +19,7 @@ namespace MovieReservation
         public static string[][] RoomDayTimeArray = new string[5][];
         public static List<string>[][] ReservedList;
         public List<string> reservedSeats;
-        public bool checkMakingList;
+        public static bool checkMakingList;
         public int countDate = 0;
         public int countTime = 0;
         public static string Title = "";

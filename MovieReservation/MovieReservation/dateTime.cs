@@ -37,7 +37,7 @@ namespace MovieReservation
         {
             InitializeComponent();
 
-            foreach (var item in reservedSeats)
+            foreach (var item in reservedSeats.ToList())
             {
                 ReservedList[indexDay][indexTime].Add(item);
             }

@@ -25,6 +25,7 @@ namespace MovieReservation
         {
             InitializeComponent();
             RoomIndex = roomIndex;
+            this.reservedSeats = reservedSeats;
 
             string path = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 

@@ -205,6 +205,7 @@ namespace MovieReservation
                 List<string>[] list3 = new List<string>[56];
                 List<string>[] list4 = new List<string>[56];
                 List<string>[] list5 = new List<string>[56];
+                List<string>[] list6 = new List<string>[56];
                 for (int y = 0; y < list1.Length; y++)
                 {
                     list1[y] = new List<string>();
@@ -212,8 +213,9 @@ namespace MovieReservation
                     list3[y] = new List<string>();
                     list4[y] = new List<string>();
                     list5[y] = new List<string>();
+                    list6[y] = new List<string>();
                 }
-                List<string>[][] reservedList = new List<string>[][] { list1, list2, list3, list4, list5 };
+                List<string>[][] reservedList = new List<string>[][] { list1, list2, list3, list4, list5, list6 };
                 ReservedList = reservedList;
                 checkMakingList = true;
             }

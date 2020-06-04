@@ -70,9 +70,9 @@ namespace MovieReservation
 
         public void Cancel()
         {
-            foreach (var a in currentSeats)
+            foreach (var a in currentSeats.ToList())
             {
-                currentSeats.Remove(a);
+                ReservedSeats.Remove(a);
             }
             foreach (var b in Controls.OfType<Button>())
             {
@@ -96,6 +96,7 @@ namespace MovieReservation
             Seats = "";
             currentSeats = Leeg;
 
+
         }
 
         private void allButtons_Click(object sender, EventArgs e)
@@ -111,7 +112,7 @@ namespace MovieReservation
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            TicketConfrim ticket = new TicketConfrim("4DX", AmountSeats, Seats, currentSeats);
+            TicketConfrim ticket = new TicketConfrim("2D", AmountSeats, Seats, ReservedSeats);
             this.Hide();
             ticket.ShowDialog();
             this.Close();
@@ -126,16 +127,20 @@ namespace MovieReservation
 
         private void previousPage_Click(object sender, EventArgs e)
         {
+            foreach (var a in currentSeats.ToList())
+            {
+                ReservedSeats.Remove(a);
+            }
             if (Age == "16")
             {
-                Ticket tk = new Ticket(currentSeats, dateTime.RoomIndex);
+                Ticket tk = new Ticket(ReservedSeats, dateTime.RoomIndex);
                 this.Hide();
                 tk.ShowDialog();
                 this.Close();
             }
             else
             {
-                TicketIfNot16 tk16 = new TicketIfNot16(currentSeats, dateTime.RoomIndex);
+                TicketIfNot16 tk16 = new TicketIfNot16(ReservedSeats, dateTime.RoomIndex);
                 this.Hide();
                 tk16.ShowDialog();
                 this.Close();

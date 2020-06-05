@@ -88,3 +88,4 @@ C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservatio
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Room4DX.resources
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.RoomDolby.resources
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.RoomIMAX.resources
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.csproj.CoreCompileInputs.cache

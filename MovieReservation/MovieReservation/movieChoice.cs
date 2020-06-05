@@ -71,7 +71,7 @@ namespace MovieReservation
             label4.Text = movies.Nieuw.N3.Title;
             label5.Text = movies.Nieuw.N4.Title;
             label6.Text = movies.Actie.A5.Title;
-            label7.Text = "Actie Films";
+            label7.Text = "Actie films";
         }
 
         private void actieToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -103,7 +103,7 @@ namespace MovieReservation
             label4.Text = movies.Bollywood.B1.Title;
             label5.Text = movies.Bollywood.B3.Title;
             label6.Text = movies.Bollywood.B2.Title;
-            label7.Text = "Internationale Films";
+            label7.Text = "Internationale films";
         }
 
         private void comedyToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -640,7 +640,7 @@ namespace MovieReservation
                 label4.Text = movies.Comedy.C4.Title;
                 label5.Text = movies.Nieuw.N1.Title;
                 label6.Text = movies.Actie.A5.Title;
-                label7.Text = "Meest Bekeken";
+                label7.Text = "Meest bekeken";
             }
             else if (KindOfMovie == "action")
             {
@@ -822,7 +822,7 @@ namespace MovieReservation
             label4.Text = movies.Comedy.C4.Title;
             label5.Text = movies.Nieuw.N1.Title;
             label6.Text = movies.Actie.A5.Title;
-            label7.Text = "Meest Bekeken";
+            label7.Text = "Meest bekeken";
         }
     }
 }

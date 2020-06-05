@@ -5,7 +5,7 @@
             "Genre": "Nieuw",
             "Age": 16,
             "Time": "109 minuten",
-            "Description": "Beveiligingsbedrijf Rising Spirit Technologies weet met nanotechnologie een\noverleden soldaat, Ray Garrison genaamd, terug tot leven te wekken. De\ntransfusie heeft van hem een moordmachine gemaakt die niet te stuiten is,\nuitgerust met verbeterde vermogens, zoals genezing, snelheid en verdraagzaamheid.\nRay probeert vervolgens te achterhalen wie hem dit aangedaan heeft en zint op wraak.",
+            "Description": "Beveiligingsbedrijf Rising Spirit Technologies weet met nanotechnologie een\noverleden soldaat, Ray Garrison genaamd, terug tot leven te wekken. De\ntransfusie heeft van hem een moordmachine gemaakt die niet te stoppen is,\nuitgerust met verbeterde vermogens, zoals genezing, snelheid en verdraagzaamheid.\nRay probeert vervolgens te achterhalen wie hem dit aangedaan heeft en zint op wraak.",
             "PictureName": "afb3",
             "MovieTime": [ "11:18", "22:34", "23:27" ]
         },
@@ -15,9 +15,9 @@
             "Genre": "Nieuw",
             "Age": 12,
             "Time": "120 minuten",
-            "Description": "Geprezen filmmaker Niki Caro brengt het epische verhaal van de legendarische\nkrijger van China tot leven in Disney's Mulan, waarin een heldhaftige jonge vrouw\nuit liefde voor haar familie en haar land, alles riskeert om een ​​van de grootste\nkrijgers te worden die China ooit heeft gekend. Wanneer de keizer van China\nbesluit dat één man per gezin moet dienen in het keizerlijke leger, om het land\nte kunnen verdedigen tegen indringers uit het Noorden, neemt Hua Mulan,\nde oudste dochter van een respectabele krijger, de in het geheim de plaats\nvan haar zieke vader in.",
+            "Description": "Geprezen filmmaker Niki Caro brengt het epische verhaal van de legendarische\nkrijger van China tot leven in Disney's Mulan, waarin een heldhaftige jonge vrouw\nuit liefde voor haar familie en haar land, alles riskeert om één ​​van de grootste\nkrijgers te worden die China ooit heeft gekend. Wanneer de keizer van China\nbesluit dat één man per gezin moet dienen in het keizerlijke leger, om het land\nte kunnen verdedigen tegen indringers uit het Noorden, neemt Hua Mulan,\nde oudste dochter van een respectabele krijger, in het geheim de plaats\nvan haar zieke vader in.",
             "PictureName": "afb4",
-            "MovieTime": ["09:09", "09:17", "11:22"]
+            "MovieTime": [ "09:09", "09:17", "11:22" ]
         },
 
         "N3": {
@@ -103,11 +103,11 @@
     
     "Comedy": {
         "C1": {
-            "Title": "George in\nThe Jungle 2",
+            "Title": "George of\nThe Jungle 2",
             "Genre": "Comedy",
             "Age": 12,
             "Time": "100 minuten",
-            "Description": "George heeft het moeilijk om de rollen van de jungle koning, vader\nen echtgenoot te vervullen. Zijn stressniveau neemt toe wanneer zijn\nschoonmoeder van plan is alles wat hem na aan het hart ligt weg te nemen.",
+            "Description": "George heeft het moeilijk om de rollen van de jungle koning, vader\nen echtgenoot te vervullen. Zijn stressniveau neemt toe wanneer zijn\nschoonmoeder van plan is alles wat hem aan het hart ligt weg te nemen.",
             "PictureName": "afb25",
             "MovieTime": ["18:16", "18:54", "22:18"]
         },
@@ -178,7 +178,7 @@
             "Genre": "Turks",
             "Age": 16,
             "Time": "127 minuten",
-            "Description": "Arif, die probeert zelf geproduceerde valse ufo-foto's te verkopen,\nis een tapijtverkoper, touroperator, reisgids kortom een manusje van alles.\nMaar op een dag wordt hij door buitenaardse wezens ontvoerd die hij in\nwerkelijkheid in de verste verte niet eens heeft gezien. Hij wordt\nmeegenomen naar de planeet G.O.R.A. waar de boosaardige Logar de\ndienst uitmaakt. Hij probeert zijn grootvaders wraak op de aardbewoners\nop zich te nemen door ze op te sluiten op de planeet en ze daar\nte mishandelen. Arif wordt gevangen gezet en raakt bevriend met zijn\nmedegevangenen: Faruk, een Bob Marley look-a-like, en 216 een\nonderdanige androïde. Samen bedenken ze een ontsnappingsplan.",
+            "Description": "Arif, die probeert zelf geproduceerde valse ufo-foto's te verkopen,\nis een tapijtverkoper, touroperator en reisgids, kortom een manusje van alles.\nMaar op een dag wordt hij door buitenaardse wezens ontvoerd die hij in\nwerkelijkheid in de verste verte niet eens heeft gezien. Hij wordt\nmeegenomen naar de planeet G.O.R.A. waar de boosaardige Logar de\ndienst uitmaakt. Hij probeert zijn grootvaders wraak op de aardbewoners\nop zich te nemen door ze op te sluiten op de planeet en ze daar\nte mishandelen. Arif wordt gevangen gezet en raakt bevriend met zijn\nmedegevangenen: Faruk, een Bob Marley look-a-like, en 216, een\nonderdanige androïde. Samen bedenken ze een ontsnappingsplan.",
             "PictureName": "afb32"
         },
 

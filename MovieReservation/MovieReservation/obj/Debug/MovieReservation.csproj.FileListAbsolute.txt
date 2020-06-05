@@ -83,3 +83,9 @@ E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieRe
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Room4DX.resources
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.RoomDolby.resources
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.RoomIMAX.resources
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Room2.resources
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Room3.resources
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Room4.resources
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Room4DX.resources
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.RoomDolby.resources
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.RoomIMAX.resources

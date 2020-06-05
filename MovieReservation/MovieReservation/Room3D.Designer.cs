@@ -84,7 +84,6 @@
             this.button54 = new System.Windows.Forms.Button();
             this.button55 = new System.Windows.Forms.Button();
             this.button56 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
             this.button58 = new System.Windows.Forms.Button();
             this.button59 = new System.Windows.Forms.Button();
             this.button60 = new System.Windows.Forms.Button();
@@ -128,8 +127,9 @@
             this.button98 = new System.Windows.Forms.Button();
             this.Annuleren = new System.Windows.Forms.Button();
             this.NextPage = new System.Windows.Forms.Button();
-            this.button99 = new System.Windows.Forms.Button();
+            this.previousPage = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button57 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -928,20 +928,6 @@
             this.button56.UseVisualStyleBackColor = false;
             this.button56.Click += new System.EventHandler(this.allButtons_Click);
             // 
-            // button57
-            // 
-            this.button57.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button57.BackColor = System.Drawing.Color.White;
-            this.button57.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button57.Location = new System.Drawing.Point(331, 367);
-            this.button57.Margin = new System.Windows.Forms.Padding(2);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(36, 35);
-            this.button57.TabIndex = 57;
-            this.button57.Text = "F5";
-            this.button57.UseVisualStyleBackColor = false;
-            this.button57.Click += new System.EventHandler(this.allButtons_Click);
-            // 
             // button58
             // 
             this.button58.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1557,25 +1543,25 @@
             this.NextPage.UseVisualStyleBackColor = false;
             this.NextPage.Click += new System.EventHandler(this.NextPage_Click);
             // 
-            // button99
+            // previousPage
             // 
-            this.button99.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button99.BackColor = System.Drawing.Color.Gold;
-            this.button99.Location = new System.Drawing.Point(23, 26);
-            this.button99.Name = "button99";
-            this.button99.Size = new System.Drawing.Size(114, 46);
-            this.button99.TabIndex = 174;
-            this.button99.Text = "Terug";
-            this.button99.UseVisualStyleBackColor = false;
-            this.button99.Click += new System.EventHandler(this.previousPage_Click);
+            this.previousPage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.previousPage.BackColor = System.Drawing.Color.Gold;
+            this.previousPage.Location = new System.Drawing.Point(23, 26);
+            this.previousPage.Name = "previousPage";
+            this.previousPage.Size = new System.Drawing.Size(114, 46);
+            this.previousPage.TabIndex = 174;
+            this.previousPage.Text = "Terug";
+            this.previousPage.UseVisualStyleBackColor = false;
+            this.previousPage.Click += new System.EventHandler(this.previousPage_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(211, 50);
+            this.label1.Location = new System.Drawing.Point(223, 81);
             this.label1.MaximumSize = new System.Drawing.Size(500, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(493, 8);
@@ -1583,14 +1569,28 @@
             this.label1.Text = "_________________________________________________________________________________" +
     "\r\n\r\n\r\n";
             // 
+            // button57
+            // 
+            this.button57.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button57.BackColor = System.Drawing.Color.White;
+            this.button57.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button57.Location = new System.Drawing.Point(331, 366);
+            this.button57.Margin = new System.Windows.Forms.Padding(2);
+            this.button57.Name = "button57";
+            this.button57.Size = new System.Drawing.Size(36, 35);
+            this.button57.TabIndex = 176;
+            this.button57.Text = "F5";
+            this.button57.UseVisualStyleBackColor = false;
+            this.button57.Click += new System.EventHandler(this.allButtons_Click);
+            // 
             // Room3D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MovieReservation.Properties.Resources.WhatsApp_Image_2020_05_18_at_13_34_34;
-            this.ClientSize = new System.Drawing.Size(941, 514);
+            this.ClientSize = new System.Drawing.Size(940, 513);
+            this.Controls.Add(this.button57);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button99);
+            this.Controls.Add(this.previousPage);
             this.Controls.Add(this.NextPage);
             this.Controls.Add(this.Annuleren);
             this.Controls.Add(this.button92);
@@ -1633,7 +1633,6 @@
             this.Controls.Add(this.button66);
             this.Controls.Add(this.button55);
             this.Controls.Add(this.button56);
-            this.Controls.Add(this.button57);
             this.Controls.Add(this.button58);
             this.Controls.Add(this.button59);
             this.Controls.Add(this.button60);
@@ -1692,8 +1691,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(957, 553);
-            this.MinimumSize = new System.Drawing.Size(957, 553);
+            this.MaximumSize = new System.Drawing.Size(956, 552);
+            this.MinimumSize = new System.Drawing.Size(956, 552);
             this.Name = "Room3D";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Room3D";
@@ -1760,7 +1759,6 @@
         private System.Windows.Forms.Button button54;
         private System.Windows.Forms.Button button55;
         private System.Windows.Forms.Button button56;
-        private System.Windows.Forms.Button button57;
         private System.Windows.Forms.Button button58;
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button60;
@@ -1804,7 +1802,8 @@
         private System.Windows.Forms.Button button98;
         private System.Windows.Forms.Button Annuleren;
         private System.Windows.Forms.Button NextPage;
-        private System.Windows.Forms.Button button99;
+        private System.Windows.Forms.Button previousPage;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button57;
     }
 }

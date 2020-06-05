@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button99 = new System.Windows.Forms.Button();
+            this.previousPage = new System.Windows.Forms.Button();
             this.NextPage = new System.Windows.Forms.Button();
             this.Annuleren = new System.Windows.Forms.Button();
             this.button92 = new System.Windows.Forms.Button();
@@ -72,7 +72,6 @@
             this.button66 = new System.Windows.Forms.Button();
             this.button55 = new System.Windows.Forms.Button();
             this.button56 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
             this.button58 = new System.Windows.Forms.Button();
             this.button59 = new System.Windows.Forms.Button();
             this.button60 = new System.Windows.Forms.Button();
@@ -130,15 +129,16 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button100 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(156, 42);
+            this.label1.Location = new System.Drawing.Point(222, 94);
             this.label1.MaximumSize = new System.Drawing.Size(500, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(493, 8);
@@ -146,17 +146,17 @@
             this.label1.Text = "_________________________________________________________________________________" +
     "\r\n\r\n\r\n";
             // 
-            // button99
+            // previousPage
             // 
-            this.button99.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button99.BackColor = System.Drawing.Color.Gold;
-            this.button99.Location = new System.Drawing.Point(27, 32);
-            this.button99.Name = "button99";
-            this.button99.Size = new System.Drawing.Size(114, 46);
-            this.button99.TabIndex = 276;
-            this.button99.Text = "Terug";
-            this.button99.UseVisualStyleBackColor = false;
-            this.button99.Click += new System.EventHandler(this.previousPage_Click);
+            this.previousPage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.previousPage.BackColor = System.Drawing.Color.Gold;
+            this.previousPage.Location = new System.Drawing.Point(27, 32);
+            this.previousPage.Name = "previousPage";
+            this.previousPage.Size = new System.Drawing.Size(114, 46);
+            this.previousPage.TabIndex = 276;
+            this.previousPage.Text = "Terug";
+            this.previousPage.UseVisualStyleBackColor = false;
+            this.previousPage.Click += new System.EventHandler(this.previousPage_Click);
             // 
             // NextPage
             // 
@@ -758,20 +758,6 @@
             this.button56.Text = "F6";
             this.button56.UseVisualStyleBackColor = false;
             this.button56.Click += new System.EventHandler(this.allButtons_Click);
-            // 
-            // button57
-            // 
-            this.button57.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button57.BackColor = System.Drawing.Color.White;
-            this.button57.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button57.Location = new System.Drawing.Point(335, 373);
-            this.button57.Margin = new System.Windows.Forms.Padding(2);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(36, 35);
-            this.button57.TabIndex = 233;
-            this.button57.Text = "F5";
-            this.button57.UseVisualStyleBackColor = false;
-            this.button57.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // button58
             // 
@@ -1583,13 +1569,28 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.allButtons_Click);
             // 
-            // Room4DX
+            // button100
+            // 
+            this.button100.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button100.BackColor = System.Drawing.Color.White;
+            this.button100.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button100.Location = new System.Drawing.Point(335, 373);
+            this.button100.Margin = new System.Windows.Forms.Padding(2);
+            this.button100.Name = "button100";
+            this.button100.Size = new System.Drawing.Size(36, 35);
+            this.button100.TabIndex = 278;
+            this.button100.Text = "F5";
+            this.button100.UseVisualStyleBackColor = false;
+            this.button100.Click += new System.EventHandler(this.allButtons_Click);
+            // 
+            // RoomDolby
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 514);
+            this.Controls.Add(this.button100);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button99);
+            this.Controls.Add(this.previousPage);
             this.Controls.Add(this.NextPage);
             this.Controls.Add(this.Annuleren);
             this.Controls.Add(this.button92);
@@ -1632,7 +1633,6 @@
             this.Controls.Add(this.button66);
             this.Controls.Add(this.button55);
             this.Controls.Add(this.button56);
-            this.Controls.Add(this.button57);
             this.Controls.Add(this.button58);
             this.Controls.Add(this.button59);
             this.Controls.Add(this.button60);
@@ -1692,7 +1692,7 @@
             this.Controls.Add(this.button1);
             this.MaximumSize = new System.Drawing.Size(957, 553);
             this.MinimumSize = new System.Drawing.Size(957, 553);
-            this.Name = "Room4DX";
+            this.Name = "RoomDolby";
             this.Text = "Room4DX";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1702,7 +1702,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button99;
+        private System.Windows.Forms.Button previousPage;
         private System.Windows.Forms.Button NextPage;
         private System.Windows.Forms.Button Annuleren;
         private System.Windows.Forms.Button button92;
@@ -1745,7 +1745,6 @@
         private System.Windows.Forms.Button button66;
         private System.Windows.Forms.Button button55;
         private System.Windows.Forms.Button button56;
-        private System.Windows.Forms.Button button57;
         private System.Windows.Forms.Button button58;
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button60;
@@ -1803,5 +1802,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button100;
     }
 }

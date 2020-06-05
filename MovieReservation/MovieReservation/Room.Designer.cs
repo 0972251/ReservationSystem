@@ -84,7 +84,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
+            this.previousPage = new System.Windows.Forms.Button();
             this.Annuleren = new System.Windows.Forms.Button();
             this.NextPage = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -885,17 +885,17 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.allButtons_Click);
             // 
-            // button57
+            // previousPage
             // 
-            this.button57.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button57.BackColor = System.Drawing.Color.Gold;
-            this.button57.Location = new System.Drawing.Point(12, 12);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(114, 46);
-            this.button57.TabIndex = 170;
-            this.button57.Text = "Terug";
-            this.button57.UseVisualStyleBackColor = false;
-            this.button57.Click += new System.EventHandler(this.previousPage_Click);
+            this.previousPage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.previousPage.BackColor = System.Drawing.Color.Gold;
+            this.previousPage.Location = new System.Drawing.Point(12, 12);
+            this.previousPage.Name = "previousPage";
+            this.previousPage.Size = new System.Drawing.Size(114, 46);
+            this.previousPage.TabIndex = 170;
+            this.previousPage.Text = "Terug";
+            this.previousPage.UseVisualStyleBackColor = false;
+            this.previousPage.Click += new System.EventHandler(this.previousPage_Click);
             // 
             // Annuleren
             // 
@@ -925,8 +925,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(221, 50);
+            this.label1.Location = new System.Drawing.Point(213, 63);
             this.label1.MaximumSize = new System.Drawing.Size(493, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(493, 8);
@@ -938,12 +939,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MovieReservation.Properties.Resources.WhatsApp_Image_2020_05_18_at_13_34_34;
-            this.ClientSize = new System.Drawing.Size(941, 514);
+            this.ClientSize = new System.Drawing.Size(940, 513);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NextPage);
             this.Controls.Add(this.Annuleren);
-            this.Controls.Add(this.button57);
+            this.Controls.Add(this.previousPage);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.button56);
@@ -1000,8 +1000,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.MaximumSize = new System.Drawing.Size(957, 553);
-            this.MinimumSize = new System.Drawing.Size(957, 553);
+            this.MaximumSize = new System.Drawing.Size(956, 552);
+            this.MinimumSize = new System.Drawing.Size(956, 552);
             this.Name = "Room";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Room";
@@ -1067,7 +1067,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button previousPage;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Annuleren;
         private System.Windows.Forms.Button NextPage;

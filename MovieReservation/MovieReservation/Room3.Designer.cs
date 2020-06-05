@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.NextPage = new System.Windows.Forms.Button();
             this.Annuleren = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
+            this.previousPage = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.button56 = new System.Windows.Forms.Button();
@@ -93,8 +93,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(151, 18);
+            this.label1.Location = new System.Drawing.Point(223, 50);
             this.label1.MaximumSize = new System.Drawing.Size(493, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(493, 8);
@@ -127,17 +128,17 @@
             this.Annuleren.UseVisualStyleBackColor = false;
             this.Annuleren.Click += new System.EventHandler(this.Annuleren_Click);
             // 
-            // button57
+            // previousPage
             // 
-            this.button57.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button57.BackColor = System.Drawing.Color.Gold;
-            this.button57.Location = new System.Drawing.Point(12, 12);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(114, 46);
-            this.button57.TabIndex = 290;
-            this.button57.Text = "Terug";
-            this.button57.UseVisualStyleBackColor = false;
-            this.button57.Click += new System.EventHandler(this.previousPage_Click);
+            this.previousPage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.previousPage.BackColor = System.Drawing.Color.Gold;
+            this.previousPage.Location = new System.Drawing.Point(12, 12);
+            this.previousPage.Name = "previousPage";
+            this.previousPage.Size = new System.Drawing.Size(114, 46);
+            this.previousPage.TabIndex = 290;
+            this.previousPage.Text = "Terug";
+            this.previousPage.UseVisualStyleBackColor = false;
+            this.previousPage.Click += new System.EventHandler(this.previousPage_Click);
             // 
             // button8
             // 
@@ -942,7 +943,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NextPage);
             this.Controls.Add(this.Annuleren);
-            this.Controls.Add(this.button57);
+            this.Controls.Add(this.previousPage);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.button56);
@@ -1013,7 +1014,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button NextPage;
         private System.Windows.Forms.Button Annuleren;
-        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button previousPage;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button56;

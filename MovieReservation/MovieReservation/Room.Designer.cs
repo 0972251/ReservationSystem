@@ -890,7 +890,7 @@
             this.previousPage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.previousPage.BackColor = System.Drawing.Color.Gold;
             this.previousPage.Location = new System.Drawing.Point(16, 15);
-            this.previousPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.previousPage.Margin = new System.Windows.Forms.Padding(4);
             this.previousPage.Name = "previousPage";
             this.previousPage.Size = new System.Drawing.Size(152, 57);
             this.previousPage.TabIndex = 170;
@@ -903,11 +903,11 @@
             this.Annuleren.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Annuleren.BackColor = System.Drawing.Color.Gold;
             this.Annuleren.Location = new System.Drawing.Point(16, 341);
-            this.Annuleren.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Annuleren.Margin = new System.Windows.Forms.Padding(4);
             this.Annuleren.Name = "Annuleren";
             this.Annuleren.Size = new System.Drawing.Size(152, 57);
             this.Annuleren.TabIndex = 171;
-            this.Annuleren.Text = "Annuleren";
+            this.Annuleren.Text = "Stoelen annuleren";
             this.Annuleren.UseVisualStyleBackColor = false;
             this.Annuleren.Click += new System.EventHandler(this.Annuleren_Click);
             // 
@@ -917,7 +917,7 @@
             this.NextPage.BackColor = System.Drawing.Color.Gold;
             this.NextPage.Enabled = false;
             this.NextPage.Location = new System.Drawing.Point(1087, 561);
-            this.NextPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NextPage.Margin = new System.Windows.Forms.Padding(4);
             this.NextPage.Name = "NextPage";
             this.NextPage.Size = new System.Drawing.Size(152, 57);
             this.NextPage.TabIndex = 172;
@@ -1004,7 +1004,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1269, 669);
             this.MinimumSize = new System.Drawing.Size(1269, 669);
             this.Name = "Room";

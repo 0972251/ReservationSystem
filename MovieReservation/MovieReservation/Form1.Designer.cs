@@ -40,11 +40,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20.14286F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(353, 156);
+            this.label1.Location = new System.Drawing.Point(314, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(506, 57);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Welkom Bij SmartCinema";
+            this.label1.Text = "Welkom bij SmartCinema";
             // 
             // Klant
             // 
@@ -53,9 +53,10 @@
             this.Klant.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Klant.Font = new System.Drawing.Font("Comic Sans MS", 14.14286F);
             this.Klant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Klant.Location = new System.Drawing.Point(361, 288);
+            this.Klant.Location = new System.Drawing.Point(321, 230);
+            this.Klant.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Klant.Name = "Klant";
-            this.Klant.Size = new System.Drawing.Size(215, 71);
+            this.Klant.Size = new System.Drawing.Size(191, 57);
             this.Klant.TabIndex = 7;
             this.Klant.Text = "Bezoeker";
             this.Klant.UseVisualStyleBackColor = false;
@@ -68,9 +69,10 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 14.14286F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(629, 288);
+            this.button1.Location = new System.Drawing.Point(559, 230);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(215, 71);
+            this.button1.Size = new System.Drawing.Size(191, 57);
             this.button1.TabIndex = 10;
             this.button1.Text = "Medewerker";
             this.button1.UseVisualStyleBackColor = false;
@@ -78,14 +80,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MovieReservation.Properties.Resources.WhatsApp_Image_2020_05_18_at_13_34_34;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Klant);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

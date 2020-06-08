@@ -40,7 +40,7 @@ namespace MovieReservation
                 foreach (var b in Controls.OfType<Button>())
                 {
                     b.Enabled = false;
-                    button57.Enabled = true;
+                    previousPage.Enabled = true;
                     Annuleren.Enabled = true;
                     NextPage.Enabled = true;
                 }
@@ -127,24 +127,7 @@ namespace MovieReservation
 
         private void previousPage_Click(object sender, EventArgs e)
         {
-            foreach (var a in currentSeats.ToList())
-            {
-                ReservedSeats.Remove(a);
-            }
-            if (Age == "16")
-            {
-                Ticket tk = new Ticket(ReservedSeats, dateTime.RoomIndex);
-                this.Hide();
-                tk.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                TicketIfNot16 tk16 = new TicketIfNot16(ReservedSeats, dateTime.RoomIndex);
-                this.Hide();
-                tk16.ShowDialog();
-                this.Close();
-            }
+
         }
         public void seatSaved()
         {

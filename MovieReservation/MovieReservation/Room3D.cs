@@ -40,7 +40,7 @@ namespace MovieReservation
                 foreach (var b in Controls.OfType<Button>())
                 {
                     b.Enabled = false;
-                    button57.Enabled = true;
+                    previousPage.Enabled = true;
                     Annuleren.Enabled = true;
                     NextPage.Enabled = true;
                 }

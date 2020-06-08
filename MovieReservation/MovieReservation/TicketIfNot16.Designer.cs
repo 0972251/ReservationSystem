@@ -55,9 +55,10 @@
             // GoToBackScreen
             // 
             this.GoToBackScreen.BackColor = System.Drawing.Color.Gold;
-            this.GoToBackScreen.Location = new System.Drawing.Point(68, 40);
+            this.GoToBackScreen.Location = new System.Drawing.Point(60, 32);
+            this.GoToBackScreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GoToBackScreen.Name = "GoToBackScreen";
-            this.GoToBackScreen.Size = new System.Drawing.Size(182, 57);
+            this.GoToBackScreen.Size = new System.Drawing.Size(161, 46);
             this.GoToBackScreen.TabIndex = 0;
             this.GoToBackScreen.Text = "Terug";
             this.GoToBackScreen.UseVisualStyleBackColor = false;
@@ -66,9 +67,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(72, 200);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 160);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 263);
+            this.pictureBox1.Size = new System.Drawing.Size(157, 210);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -76,9 +78,10 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(72, 469);
+            this.pictureBox2.Location = new System.Drawing.Point(64, 375);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 85);
+            this.pictureBox2.Size = new System.Drawing.Size(77, 68);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -86,9 +89,10 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(165, 469);
+            this.pictureBox3.Location = new System.Drawing.Point(147, 375);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(87, 85);
+            this.pictureBox3.Size = new System.Drawing.Size(77, 68);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -139,7 +143,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(297, 26);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Kind (2 t/m 6, 50% korting)";
+            this.label4.Text = "Kind (6 t/m 12, 50% korting)";
             // 
             // label5
             // 
@@ -216,10 +220,10 @@
             "7",
             "8",
             "9"});
-            this.comboBox1.Location = new System.Drawing.Point(951, 342);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(845, 273);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(42, 28);
+            this.comboBox1.Size = new System.Drawing.Size(37, 24);
             this.comboBox1.TabIndex = 48;
             this.comboBox1.Text = "0";
             // 
@@ -238,10 +242,10 @@
             "7",
             "8",
             "9"});
-            this.comboBox2.Location = new System.Drawing.Point(951, 395);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox2.Location = new System.Drawing.Point(845, 316);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(42, 28);
+            this.comboBox2.Size = new System.Drawing.Size(37, 24);
             this.comboBox2.TabIndex = 49;
             this.comboBox2.Text = "0";
             // 
@@ -260,10 +264,10 @@
             "7",
             "8",
             "9"});
-            this.comboBox3.Location = new System.Drawing.Point(951, 452);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox3.Location = new System.Drawing.Point(845, 362);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(42, 28);
+            this.comboBox3.Size = new System.Drawing.Size(37, 24);
             this.comboBox3.TabIndex = 50;
             this.comboBox3.Text = "0";
             // 
@@ -282,19 +286,20 @@
             "7",
             "8",
             "9"});
-            this.comboBox4.Location = new System.Drawing.Point(951, 506);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox4.Location = new System.Drawing.Point(845, 405);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(42, 28);
+            this.comboBox4.Size = new System.Drawing.Size(37, 24);
             this.comboBox4.TabIndex = 51;
             this.comboBox4.Text = "0";
             // 
             // StoelKiezen
             // 
             this.StoelKiezen.BackColor = System.Drawing.Color.Gold;
-            this.StoelKiezen.Location = new System.Drawing.Point(987, 588);
+            this.StoelKiezen.Location = new System.Drawing.Point(877, 470);
+            this.StoelKiezen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StoelKiezen.Name = "StoelKiezen";
-            this.StoelKiezen.Size = new System.Drawing.Size(182, 57);
+            this.StoelKiezen.Size = new System.Drawing.Size(161, 46);
             this.StoelKiezen.TabIndex = 52;
             this.StoelKiezen.Text = "Stoel Kiezen";
             this.StoelKiezen.UseVisualStyleBackColor = false;
@@ -315,10 +320,10 @@
             // 
             // TicketIfNot16
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MovieReservation.Properties.Resources.WhatsApp_Image_2020_05_18_at_13_34_34;
-            this.ClientSize = new System.Drawing.Size(1197, 680);
+            this.ClientSize = new System.Drawing.Size(1064, 544);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.StoelKiezen);
             this.Controls.Add(this.comboBox4);
@@ -338,6 +343,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.GoToBackScreen);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TicketIfNot16";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ticket";

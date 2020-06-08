@@ -48,7 +48,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(346, 182);
+            this.dateTimePicker1.Location = new System.Drawing.Point(342, 182);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(248, 26);
             this.dateTimePicker1.TabIndex = 46;
@@ -92,7 +92,7 @@
             this.labelTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelTitle.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(66, 142);
+            this.labelTitle.Location = new System.Drawing.Point(51, 138);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(82, 35);
             this.labelTitle.TabIndex = 38;
@@ -104,7 +104,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(663, 138);
+            this.label1.Location = new System.Drawing.Point(659, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 29);
             this.label1.TabIndex = 37;
@@ -113,7 +113,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(669, 178);
+            this.comboBox2.Location = new System.Drawing.Point(665, 178);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(136, 28);
             this.comboBox2.TabIndex = 36;
@@ -125,7 +125,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(340, 138);
+            this.label2.Location = new System.Drawing.Point(343, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 29);
             this.label2.TabIndex = 35;

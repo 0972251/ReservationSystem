@@ -38,11 +38,11 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 20.14286F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(314, 125);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 39);
+            this.label1.Size = new System.Drawing.Size(506, 57);
             this.label1.TabIndex = 9;
             this.label1.Text = "Welkom bij SmartCinema";
             // 
@@ -51,7 +51,7 @@
             this.Klant.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Klant.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Klant.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Klant.Font = new System.Drawing.Font("Arial", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Klant.Font = new System.Drawing.Font("Comic Sans MS", 14.14286F);
             this.Klant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Klant.Location = new System.Drawing.Point(321, 230);
             this.Klant.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -67,7 +67,7 @@
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Arial", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 14.14286F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(559, 230);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

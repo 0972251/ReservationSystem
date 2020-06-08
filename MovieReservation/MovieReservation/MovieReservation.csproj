@@ -49,12 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="actionScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="actionScreen.Designer.cs">
-      <DependentUpon>actionScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="collaboratorLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,11 +61,29 @@
     <Compile Include="dateTime.Designer.cs">
       <DependentUpon>dateTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="DolbyScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DolbyScreen.Designer.cs">
+      <DependentUpon>DolbyScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FourDXScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FourDXScreen.Designer.cs">
+      <DependentUpon>FourDXScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMAXScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMAXScreen.Designer.cs">
+      <DependentUpon>IMAXScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Room2.cs">
       <SubType>Form</SubType>
@@ -149,17 +161,23 @@
     <Compile Include="TicketIfNot16.Designer.cs">
       <DependentUpon>TicketIfNot16.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="actionScreen.resx">
-      <DependentUpon>actionScreen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="collaboratorLogin.resx">
       <DependentUpon>collaboratorLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dateTime.resx">
       <DependentUpon>dateTime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DolbyScreen.resx">
+      <DependentUpon>DolbyScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FourDXScreen.resx">
+      <DependentUpon>FourDXScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMAXScreen.resx">
+      <DependentUpon>IMAXScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="movieChoice.resx">
       <DependentUpon>movieChoice.cs</DependentUpon>
@@ -238,6 +256,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\MoviePictures\loginImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MoviePictures\scrollDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MoviePictures\ImaxPicture.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,7 +42,7 @@ namespace MovieReservation
             label7.Text = "Meest bekeken";
         }
 
-        private void actieToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void actieToolStripContextMenuItem3_Click(object sender, EventArgs e)
         {
             //actionMovie.BringToFront();
             KindOfMovie = "action";
@@ -74,7 +74,7 @@ namespace MovieReservation
             label7.Text = "Actie films";
         }
 
-        private void actieToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void internationaalToolContextStripMenuItem_Click(object sender, EventArgs e)
         {
             //international.BringToFront();
             KindOfMovie = "international";
@@ -106,7 +106,7 @@ namespace MovieReservation
             label7.Text = "Internationale films";
         }
 
-        private void comedyToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void comedyToolContextStripMenuItem_Click(object sender, EventArgs e)
         {
             //Comedy.BringToFront();
             KindOfMovie = "comedy";
@@ -762,7 +762,7 @@ namespace MovieReservation
             }
         }
 
-        private void kinderFilmToolStripMenuItem_Click(object sender, EventArgs e)
+        private void kinderfilmsToolContextStripMenuItem_Click_1(object sender, EventArgs e)
         {
             KindOfMovie = "kids";
 
@@ -794,7 +794,7 @@ namespace MovieReservation
 
         }
 
-        private void meestToolStripMenuItem_Click(object sender, EventArgs e)
+        private void meestBekekenToolContextStripMenuItem_Click(object sender, EventArgs e)
         {
             KindOfMovie = "mostwatched";
 
@@ -823,6 +823,45 @@ namespace MovieReservation
             label5.Text = movies.Nieuw.N1.Title;
             label6.Text = movies.Actie.A5.Title;
             label7.Text = "Meest bekeken";
+        }
+
+        private void genreButton_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(genreButton, -40, genreButton.Height);
+        }
+
+        private void KidsButton_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip2.Show(KidsButton, -40, KidsButton.Height);
+        }
+
+        private void technologieButton_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip3.Show(technologieButton, 0, technologieButton.Height);
+        }
+
+        private void iMAXToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IMAXScreen IMAXScreen = new IMAXScreen(KindOfMovie, reservedSeats);
+            this.Hide();
+            IMAXScreen.ShowDialog();
+            this.Close();
+        }
+
+        private void FourdXToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FourDXScreen FourDXScreen = new FourDXScreen(KindOfMovie, reservedSeats);
+            this.Hide();
+            FourDXScreen.ShowDialog();
+            this.Close();
+        }
+
+        private void dolbyCinemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DolbyScreen DolbyScreen = new DolbyScreen(KindOfMovie, reservedSeats);
+            this.Hide();
+            DolbyScreen.ShowDialog();
+            this.Close();
         }
     }
 }

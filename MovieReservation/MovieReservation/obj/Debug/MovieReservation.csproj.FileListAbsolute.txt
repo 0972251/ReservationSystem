@@ -37,7 +37,6 @@ E:\Project\ReservationSystem\MovieReservation\MovieReservation\bin\Debug\MovieRe
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\bin\Debug\Newtonsoft.Json.dll
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\bin\Debug\Newtonsoft.Json.xml
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.csprojAssemblyReference.cache
-E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Form2.resources
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.collaboratorLogin.resources
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.dateTime.resources
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.Form1.resources
@@ -91,3 +90,6 @@ C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservatio
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.IMAXScreen.resources
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.FourDXScreen.resources
 C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.DolbyScreen.resources
+E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.DolbyScreen.resources
+E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.FourDXScreen.resources
+E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.IMAXScreen.resources

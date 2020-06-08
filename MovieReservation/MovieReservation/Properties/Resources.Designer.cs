@@ -63,9 +63,29 @@ namespace MovieReservation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ImaxPicture {
+            get {
+                object obj = ResourceManager.GetObject("ImaxPicture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loginImage {
             get {
                 object obj = ResourceManager.GetObject("loginImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scrollDown {
+            get {
+                object obj = ResourceManager.GetObject("scrollDown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

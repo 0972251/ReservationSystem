@@ -5,7 +5,7 @@
             "Genre": "Nieuw",
             "Age": 16,
             "Time": "109 minuten",
-            "Description": "Beveiligingsbedrijf Rising Spirit Technologies weet met nanotechnologie een\noverleden soldaat, Ray Garrison genaamd, terug tot leven te wekken. De\ntransfusie heeft van hem een moordmachine gemaakt die niet te stuiten is,\nuitgerust met verbeterde vermogens, zoals genezing, snelheid en verdraagzaamheid.\nRay probeert vervolgens te achterhalen wie hem dit aangedaan heeft en zint op wraak.",
+            "Description": "Beveiligingsbedrijf Rising Spirit Technologies weet met nanotechnologie een\noverleden soldaat, Ray Garrison genaamd, terug tot leven te wekken. De\ntransfusie heeft van hem een moordmachine gemaakt die niet te stuiten is,\nuitgerust met verbeterde vermogens, zoals genezing, snelheid en\nverdraagzaamheid.Ray probeert vervolgens te achterhalen wie\nhem dit aangedaan heeft en zint op wraak.",
             "PictureName": "afb3",
             "MovieTime": [ "11:18", "22:34", "23:27" ]
         },
@@ -15,7 +15,7 @@
             "Genre": "Nieuw",
             "Age": 12,
             "Time": "120 minuten",
-            "Description": "Geprezen filmmaker Niki Caro brengt het epische verhaal van de legendarische\nkrijger van China tot leven in Disney's Mulan, waarin een heldhaftige jonge vrouw\nuit liefde voor haar familie en haar land, alles riskeert om een ​​van de grootste\nkrijgers te worden die China ooit heeft gekend. Wanneer de keizer van China\nbesluit dat één man per gezin moet dienen in het keizerlijke leger, om het land\nte kunnen verdedigen tegen indringers uit het Noorden, neemt Hua Mulan,\nde oudste dochter van een respectabele krijger, de in het geheim de plaats\nvan haar zieke vader in.",
+            "Description": "De legendarische krijger van China Mulan, is een heldhaftige jonge vrouw\ndie uit liefde voor haar familie en haar land, alles riskeert om\neen ​​van de grootste krijgers te worden die China ooit heeft gekend.\nOm het land te kunnen verdedigen tegen indringers uit het Noorden,\nneemt Hua Mulan, de oudste dochter van een respectabele krijger,\nin het geheim de plaats van haar zieke vader in.",
             "PictureName": "afb4",
             "MovieTime": ["09:09", "09:17", "11:22"]
         },
@@ -71,7 +71,7 @@
     },
 
     "A3": {
-      "Title": "Jumanji: The next level",
+      "Title": "Jumanji:\nThe next level",
       "Genre": "Actie",
       "Age": 16,
       "Time": "123 minuten",
@@ -94,7 +94,7 @@
       "Genre": "Actie",
       "Age": 16,
       "Time": "135 minuten",
-      "Description": "'Fast 9' volgt Dominic Toretto die zich samen met Letty Ortiz teruggetrokken\nheeft om een gezin te stichten. Ze proberen hun zoon Brian onder rustige\nomstandigheden op te voeden, waarbij ze hun roekeloze bestaan achter\nzich hebben gelaten. Onder andere de terugkeer van Cipher lijkt echter roet\nin het eten te gooien.",
+      "Description": "'Fast 9' volgt Dominic Toretto die zich samen met Letty Ortiz\nteruggetrokken heeft om een gezin te stichten. Ze proberen hun zoon Brian onder rustige\nomstandigheden op te voeden, waarbij ze hun roekeloze bestaan achter\nzich hebben gelaten. Onder andere de terugkeer van Cipher lijkt\nechter roet in het eten te gooien.",
       "PictureName": "afb20",
       "MovieTime": [ "10:59", "21:12", "23:31" ]
     }
@@ -228,7 +228,7 @@
             "Genre": "Bollywood",
             "Age": 12,
             "Time": "150 minuten",
-            "Description": "Chulbul Pandey is een onverschrokken en beroemde agent, die zichzelf\nRobin Hood Pandey noemt. Hij leidt een comfortabel leventje met zijn gezin.\nDe zaken nemen voor hem een onverwachte wending wanneer zijn verleden\nhem achtervolgt als zijn vijand Balli weer opduikt. De omstandigheden dwingen\nChulbul het rechtvaardige pad te volgen om zijn geliefden en familie te beschermen\nen te doen wat goed is voor hen.",
+            "Description": "Chulbul Pandey is een onverschrokken en beroemde agent, die zichzelf\nRobin Hood Pandey noemt. Hij leidt een comfortabel\nleventje met zijn gezin.\nDe zaken nemen voor hem een onverwachte wending wanneer zijn verleden\nhem achtervolgt als zijn vijand Balli weer opduikt.\nDe omstandigheden dwingen Chulbul het rechtvaardige pad te volgen om\nzijn geliefden en familie te beschermen en te doen wat goed is voor hen.",
             "PictureName": "afb37",
             "MovieTime": ["13:27", "13:41", "16:05"]
         },
@@ -297,7 +297,7 @@
             "Genre": "Kind",
             "Age": 6,
             "Time": "118 minuten",
-            "Description": "Simba is een jonge leeuw en zoon van leeuwenkoning Mufasa.\nHij kijkt op tegen zijn vader en neemt zijn koninklijke bestemming ter harte.\nDat zint Mufasa's jaloerse broer Scar absoluut niet en hij smeedt samen met\neen groep hyena's een plan om zowel Mufasa als Simba uit de weg te ruimen,\nzodat hij zelf de macht kan grijpen.",
+            "Description": "Simba is een jonge leeuw en zoon van leeuwenkoning Mufasa.\nHij kijkt op tegen zijn vader en neemt zijn\nkoninklijke bestemming ter harte.\nDat zint Mufasa's jaloerse broer Scar absoluut niet en hij smeedt\nsamen met een groep hyena's een plan om zowel Mufasa als Simba\nuit de weg te ruimen, zodat hij zelf de macht kan grijpen.",
             "PictureName": "afb44",
             "MovieTime":["09:15", "11:47"]
         }
@@ -395,6 +395,23 @@
             "Time": "120 minuten",
             "Description": "Alex is een jonge Britse scholier. Op een dag worden zijn dagelijkse\nproblemen overschaduwd door de ontdekking van het mythische\nzwaard Excalibur. Met het krachtigste zwaard in de geschiedenis in\nhanden van de minst machteloze schooljongen in Groot-Brittannië\nneemt hij het samen met zijn vrienden op tegen een middeleeuwse\nslechterik genaamd Morgana, die de wereld verwoest heeft. Ze krijgen\nhierbij hulp van niemand minder dan Merlin zelf.",
             "PictureName": "afb54"
+        }
+    },
+
+    "Technologie": {
+        "IMAX": {
+            "Description": "IMAX is een indrukwekkende en\noverweldigende filmbeleving. IMAX heeft\ngrote schermen, scherp beeld en intens\ngeluid. IMAX is speciaal ontworpen\nom mensen het gevoel te\ngeven dat ze echt deel uitmaken van de\nfilm.",
+            "PictureName": "ImaxPicture"
+        },
+
+        "DolbyCinema": {
+            "Description": "De actie komt tot leven in extreem levendige\nen realistische beelden.\nBeelden die tot twee keer helderder\nzijn en tot 500 keer meer contrast\nhebben dan standaard.\n\nHet geluid beweegt zo om\nje heen alsof jezelf in het film bent.\nEen adembenemende geluidskwaliteit.",
+            "PictureName": "DolbyCinemaPicture"
+        },
+
+        "FourDX": {
+            "Description": "4DX is een revolutionaire bioscoopervaring,\nwaarbij je de film echt beleeft\nin plaats van alleen bekijkt.\n\nDe 4DX-zalen hebben twintig effecten.\nBewegingseffecten en weerstimulaties\ngeven je het gevoel zelf midden\nin de film te zitten.\n\nMet het vooruitstrevende 4DX systeem,\nkan de perfecte synchronisatie tussen\nbeweging en scherm worden\ngerealiseerd. ",
+            "PictureName": "4DXPicture"
         }
     }
 }

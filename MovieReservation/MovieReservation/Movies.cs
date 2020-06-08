@@ -41,6 +41,9 @@ namespace QuickType
 
         [JsonProperty("Familie")]
         public Familie Familie { get; set; }
+
+        [JsonProperty("Technologie")]
+        public Technologie Technologie { get; set; }
     }
 
     public partial class Actie
@@ -83,6 +86,15 @@ namespace QuickType
 
         [JsonProperty("MovieTime", NullValueHandling = NullValueHandling.Ignore)]
         public string[] MovieTime { get; set; }
+    }
+
+    public partial class Tech1
+    {
+        [JsonProperty("Description")]
+        public string Description { get; set; }
+
+        [JsonProperty("PictureName")]
+        public string PictureName { get; set; }
     }
 
     public partial class Animatie
@@ -209,6 +221,18 @@ namespace QuickType
 
         [JsonProperty("T5")]
         public A1 T5 { get; set; }
+    }
+
+    public partial class Technologie
+    {
+        [JsonProperty("IMAX")]
+        public Tech1 IMAX { get; set; }
+
+        [JsonProperty("DolbyCinema")]
+        public Tech1 DolbyCinema { get; set; }
+
+        [JsonProperty("FourDX")]
+        public Tech1 FourDX  { get; set; }
     }
 
     public partial class Welcome

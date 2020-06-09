@@ -72,9 +72,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(968, 588);
+            this.label6.Location = new System.Drawing.Point(860, 470);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 29);
+            this.label6.Size = new System.Drawing.Size(115, 25);
             this.label6.TabIndex = 45;
             this.label6.Text = "TITEL FILM";
             // 
@@ -84,9 +84,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(731, 588);
+            this.label5.Location = new System.Drawing.Point(650, 470);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 29);
+            this.label5.Size = new System.Drawing.Size(115, 25);
             this.label5.TabIndex = 44;
             this.label5.Text = "TITEL FILM";
             // 
@@ -96,9 +96,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(489, 588);
+            this.label4.Location = new System.Drawing.Point(435, 470);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 29);
+            this.label4.Size = new System.Drawing.Size(115, 25);
             this.label4.TabIndex = 43;
             this.label4.Text = "TITEL FILM";
             // 
@@ -108,9 +108,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 585);
+            this.label2.Location = new System.Drawing.Point(11, 468);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 29);
+            this.label2.Size = new System.Drawing.Size(115, 25);
             this.label2.TabIndex = 42;
             this.label2.Text = "TITEL FILM";
             // 
@@ -120,18 +120,19 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(267, 588);
+            this.label3.Location = new System.Drawing.Point(237, 470);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 29);
+            this.label3.Size = new System.Drawing.Size(115, 25);
             this.label3.TabIndex = 41;
             this.label3.Text = "TITEL FILM";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Location = new System.Drawing.Point(973, 320);
+            this.pictureBox5.Location = new System.Drawing.Point(865, 256);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(206, 265);
+            this.pictureBox5.Size = new System.Drawing.Size(183, 212);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 40;
             this.pictureBox5.TabStop = false;
@@ -140,9 +141,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Location = new System.Drawing.Point(734, 320);
+            this.pictureBox4.Location = new System.Drawing.Point(652, 256);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(206, 265);
+            this.pictureBox4.Size = new System.Drawing.Size(183, 212);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 39;
             this.pictureBox4.TabStop = false;
@@ -151,9 +153,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Location = new System.Drawing.Point(494, 320);
+            this.pictureBox3.Location = new System.Drawing.Point(439, 256);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(206, 265);
+            this.pictureBox3.Size = new System.Drawing.Size(183, 212);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;
@@ -162,9 +165,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(255, 320);
+            this.pictureBox2.Location = new System.Drawing.Point(227, 256);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(206, 265);
+            this.pictureBox2.Size = new System.Drawing.Size(183, 212);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
@@ -173,9 +177,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 320);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 256);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(206, 265);
+            this.pictureBox1.Size = new System.Drawing.Size(183, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
@@ -187,9 +192,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(485, 100);
+            this.label1.Location = new System.Drawing.Point(431, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 50);
+            this.label1.Size = new System.Drawing.Size(207, 41);
             this.label1.TabIndex = 35;
             this.label1.Text = "SmartCinema";
             // 
@@ -199,9 +204,9 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 225);
+            this.label7.Location = new System.Drawing.Point(11, 180);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(162, 40);
+            this.label7.Size = new System.Drawing.Size(136, 35);
             this.label7.TabIndex = 47;
             this.label7.Text = "Soort film";
             // 
@@ -216,14 +221,14 @@
             this.internationaalToolContextStripMenuItem,
             this.meestBekekenToolContextStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(245, 148);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(212, 124);
             // 
             // actieToolStripContextMenuItem3
             // 
             this.actieToolStripContextMenuItem3.BackColor = System.Drawing.Color.White;
             this.actieToolStripContextMenuItem3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
             this.actieToolStripContextMenuItem3.Name = "actieToolStripContextMenuItem3";
-            this.actieToolStripContextMenuItem3.Size = new System.Drawing.Size(244, 36);
+            this.actieToolStripContextMenuItem3.Size = new System.Drawing.Size(211, 30);
             this.actieToolStripContextMenuItem3.Text = "       Actie";
             this.actieToolStripContextMenuItem3.Click += new System.EventHandler(this.actieToolStripContextMenuItem3_Click);
             // 
@@ -232,7 +237,7 @@
             this.comedyToolContextStripMenuItem.BackColor = System.Drawing.Color.White;
             this.comedyToolContextStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
             this.comedyToolContextStripMenuItem.Name = "comedyToolContextStripMenuItem";
-            this.comedyToolContextStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.comedyToolContextStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.comedyToolContextStripMenuItem.Text = "     Comedy";
             this.comedyToolContextStripMenuItem.Click += new System.EventHandler(this.comedyToolContextStripMenuItem_Click);
             // 
@@ -241,7 +246,7 @@
             this.internationaalToolContextStripMenuItem.BackColor = System.Drawing.Color.White;
             this.internationaalToolContextStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
             this.internationaalToolContextStripMenuItem.Name = "internationaalToolContextStripMenuItem";
-            this.internationaalToolContextStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.internationaalToolContextStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.internationaalToolContextStripMenuItem.Text = "  Internationaal";
             this.internationaalToolContextStripMenuItem.Click += new System.EventHandler(this.internationaalToolContextStripMenuItem_Click);
             // 
@@ -253,7 +258,7 @@
             this.meestBekekenToolContextStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
             this.meestBekekenToolContextStripMenuItem.Name = "meestBekekenToolContextStripMenuItem";
             this.meestBekekenToolContextStripMenuItem.ShowShortcutKeys = false;
-            this.meestBekekenToolContextStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.meestBekekenToolContextStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.meestBekekenToolContextStripMenuItem.Text = " Meest bekeken";
             this.meestBekekenToolContextStripMenuItem.Click += new System.EventHandler(this.meestBekekenToolContextStripMenuItem_Click);
             // 
@@ -269,9 +274,10 @@
             this.genreButton.ForeColor = System.Drawing.Color.Black;
             this.genreButton.Image = global::MovieReservation.Properties.Resources.scrollDown;
             this.genreButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.genreButton.Location = new System.Drawing.Point(88, 12);
+            this.genreButton.Location = new System.Drawing.Point(78, 10);
+            this.genreButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.genreButton.Name = "genreButton";
-            this.genreButton.Size = new System.Drawing.Size(144, 49);
+            this.genreButton.Size = new System.Drawing.Size(128, 39);
             this.genreButton.TabIndex = 49;
             this.genreButton.Text = "Genre";
             this.genreButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -291,9 +297,10 @@
             this.KidsButton.ForeColor = System.Drawing.Color.Black;
             this.KidsButton.Image = global::MovieReservation.Properties.Resources.scrollDown;
             this.KidsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.KidsButton.Location = new System.Drawing.Point(544, 12);
+            this.KidsButton.Location = new System.Drawing.Point(484, 10);
+            this.KidsButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.KidsButton.Name = "KidsButton";
-            this.KidsButton.Size = new System.Drawing.Size(121, 49);
+            this.KidsButton.Size = new System.Drawing.Size(108, 39);
             this.KidsButton.TabIndex = 50;
             this.KidsButton.Text = "Kids";
             this.KidsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -306,14 +313,14 @@
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.kinderfilmsToolContextStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(207, 40);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(178, 34);
             // 
             // kinderfilmsToolContextStripMenuItem
             // 
             this.kinderfilmsToolContextStripMenuItem.BackColor = System.Drawing.Color.White;
             this.kinderfilmsToolContextStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
             this.kinderfilmsToolContextStripMenuItem.Name = "kinderfilmsToolContextStripMenuItem";
-            this.kinderfilmsToolContextStripMenuItem.Size = new System.Drawing.Size(206, 36);
+            this.kinderfilmsToolContextStripMenuItem.Size = new System.Drawing.Size(177, 30);
             this.kinderfilmsToolContextStripMenuItem.Text = "Kinderfilms";
             this.kinderfilmsToolContextStripMenuItem.Click += new System.EventHandler(this.kinderfilmsToolContextStripMenuItem_Click_1);
             // 
@@ -329,9 +336,10 @@
             this.technologieButton.ForeColor = System.Drawing.Color.Black;
             this.technologieButton.Image = global::MovieReservation.Properties.Resources.scrollDown;
             this.technologieButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.technologieButton.Location = new System.Drawing.Point(918, 12);
+            this.technologieButton.Location = new System.Drawing.Point(816, 10);
+            this.technologieButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.technologieButton.Name = "technologieButton";
-            this.technologieButton.Size = new System.Drawing.Size(239, 59);
+            this.technologieButton.Size = new System.Drawing.Size(212, 39);
             this.technologieButton.TabIndex = 51;
             this.technologieButton.Text = "Technologie";
             this.technologieButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -344,9 +352,10 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(-18, -14);
+            this.button1.Location = new System.Drawing.Point(-16, -11);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1238, 91);
+            this.button1.Size = new System.Drawing.Size(1100, 73);
             this.button1.TabIndex = 52;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -358,14 +367,14 @@
             this.dolbyCinemaToolStripMenuItem,
             this.dXToolStripMenuItem});
             this.contextMenuStrip3.Name = "contextMenuStrip3";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(237, 112);
+            this.contextMenuStrip3.Size = new System.Drawing.Size(205, 94);
             // 
             // iMAXToolStripMenuItem
             // 
             this.iMAXToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.iMAXToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.iMAXToolStripMenuItem.Name = "iMAXToolStripMenuItem";
-            this.iMAXToolStripMenuItem.Size = new System.Drawing.Size(236, 36);
+            this.iMAXToolStripMenuItem.Size = new System.Drawing.Size(204, 30);
             this.iMAXToolStripMenuItem.Text = "IMAX";
             this.iMAXToolStripMenuItem.Click += new System.EventHandler(this.iMAXToolStripMenuItem_Click);
             // 
@@ -374,7 +383,7 @@
             this.dolbyCinemaToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.dolbyCinemaToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dolbyCinemaToolStripMenuItem.Name = "dolbyCinemaToolStripMenuItem";
-            this.dolbyCinemaToolStripMenuItem.Size = new System.Drawing.Size(236, 36);
+            this.dolbyCinemaToolStripMenuItem.Size = new System.Drawing.Size(204, 30);
             this.dolbyCinemaToolStripMenuItem.Text = "Dolby Cinema";
             this.dolbyCinemaToolStripMenuItem.Click += new System.EventHandler(this.dolbyCinemaToolStripMenuItem_Click);
             // 
@@ -383,17 +392,17 @@
             this.dXToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.dXToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dXToolStripMenuItem.Name = "dXToolStripMenuItem";
-            this.dXToolStripMenuItem.Size = new System.Drawing.Size(236, 36);
+            this.dXToolStripMenuItem.Size = new System.Drawing.Size(204, 30);
             this.dXToolStripMenuItem.Text = "4DX";
             this.dXToolStripMenuItem.Click += new System.EventHandler(this.FourdXToolStripMenuItem_Click);
             // 
             // movieChoice
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::MovieReservation.Properties.Resources.WhatsApp_Image_2020_05_18_at_13_34_34;
-            this.ClientSize = new System.Drawing.Size(1191, 666);
+            this.ClientSize = new System.Drawing.Size(1062, 540);
             this.Controls.Add(this.technologieButton);
             this.Controls.Add(this.KidsButton);
             this.Controls.Add(this.genreButton);
@@ -410,9 +419,9 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximumSize = new System.Drawing.Size(1213, 722);
-            this.MinimumSize = new System.Drawing.Size(1213, 722);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(1080, 587);
+            this.MinimumSize = new System.Drawing.Size(1080, 587);
             this.Name = "movieChoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "movieChoice";

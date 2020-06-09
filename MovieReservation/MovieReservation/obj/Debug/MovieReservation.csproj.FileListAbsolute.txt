@@ -92,3 +92,4 @@ C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservatio
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.DolbyScreen.resources
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.FourDXScreen.resources
 E:\Project\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.IMAXScreen.resources
+C:\ReservationSystem\MovieReservation\MovieReservation\obj\Debug\MovieReservation.csproj.CoreCompileInputs.cache

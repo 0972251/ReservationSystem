@@ -112,7 +112,7 @@ namespace MovieReservation
 
         private void NextPage_Click(object sender, EventArgs e)
         {
-            TicketConfrim ticket = new TicketConfrim("2D", AmountSeats, Seats, ReservedSeats);
+            TicketConfrim ticket = new TicketConfrim("Dolby", AmountSeats, Seats, ReservedSeats, 7);
             this.Hide();
             ticket.ShowDialog();
             this.Close();

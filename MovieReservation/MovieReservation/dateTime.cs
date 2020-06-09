@@ -219,7 +219,6 @@ namespace MovieReservation
                 ReservedList = reservedList;
                 checkMakingList = true;
             }
-            // welke dag het is geklikt geef index daar van en index van tijd controleer welke zaal
         }
     }
 }

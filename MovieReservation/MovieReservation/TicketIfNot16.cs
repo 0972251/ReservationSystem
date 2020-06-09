@@ -43,7 +43,6 @@ namespace MovieReservation
 
         private void nextPage_Click(object sender, EventArgs e)
         {
-            // hier stuur je de normale zalen
 
             int Normaal = int.Parse(comboBox1.Text);
             int Student = int.Parse(comboBox2.Text);

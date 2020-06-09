@@ -124,7 +124,14 @@ namespace MovieReservation
 
         public string removeDateFromDate(DateTime time)
         {
-            return time.ToString().Substring(9, 5);
+            if (DateTime.Today.Day >= 10 || DateTime.Today.Day <= 31)
+            {
+                return time.ToString().Substring(10, 5);
+            }
+            else
+            {
+                return time.ToString().Substring(9, 5);
+            }
         }
 
         private void nextPage_Click(object sender, EventArgs e)

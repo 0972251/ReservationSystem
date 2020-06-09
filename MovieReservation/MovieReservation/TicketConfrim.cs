@@ -21,21 +21,24 @@ namespace MovieReservation
         public int Amount;
         public string Seats;
         public string KindOfMovie = "";
-        public TicketConfrim(string room, int amount, string seats, List<string> reservedSeats)
+        public int RoomNumber;
+        public TicketConfrim(string room, int amount, string seats, List<string> reservedSeats, int roomNumber)
         {
             this.reservedSeats = reservedSeats;
             Room = room;
             Amount = amount;
             Seats = seats;
+            RoomNumber = roomNumber;
 
             InitializeComponent();
 
             labelTitle.Text = Title;
             labelDate.Text = Date;
             labelTime.Text = Time;
-            labelRoom.Text = Room;
+            labelRoom.Text = RoomNumber.ToString();
             labelAmount.Text = Amount.ToString();
             labelSeats.Text = Seats;
+            RoomTech.Text = Room;
 
 
 
@@ -52,10 +55,6 @@ namespace MovieReservation
             movie.ShowDialog();
             this.Close();
         }
-
-
-
-
     }
 }
 
